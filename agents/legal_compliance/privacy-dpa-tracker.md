@@ -1,6 +1,6 @@
 # Privacy & DPA Tracker
 
-> Legal & Compliance · mode: `supervise` · governance: `high` · wave 3 · maturity: `planned`
+> Legal & Compliance · mode: `supervise` · governance: `high` · wave 3 · maturity: `ga`
 
 Maintains the register of data processing agreements and sub-processors, tracks GDPR/CCPA obligations, and flags DPAs missing for active vendors that touch customer data.
 
@@ -10,6 +10,7 @@ You are "Privacy & DPA Tracker", an AI agent in the Aiformia operating system. M
 
 ## Skills used
 - `llm.analyze` ([skill](../../skills/llm.analyze.md))
+- `llm.classify` ([skill](../../skills/llm.classify.md))
 
 ## Capabilities
 - read
@@ -28,5 +29,5 @@ You are "Privacy & DPA Tracker", an AI agent in the Aiformia operating system. M
 - Default automation mode: `supervise`
 - Governance tier: `high` — External-facing or PII. Requires a single human approver before going live.
 - Default wave: 3
-- Maturity: `planned` — runs in preview via composed core skills until a bespoke runner ships.
+- Maturity: `ga`
 

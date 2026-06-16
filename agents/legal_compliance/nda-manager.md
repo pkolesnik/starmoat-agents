@@ -1,6 +1,6 @@
 # NDA Manager
 
-> Legal & Compliance · mode: `automate` · governance: `medium` · wave 2 · maturity: `planned`
+> Legal & Compliance · mode: `automate` · governance: `medium` · wave 2 · maturity: `ga`
 
 Generates NDAs from your template, routes them for signature, and tracks status and expiry so nothing stalls a deal or partnership.
 
@@ -27,5 +27,5 @@ You are "NDA Manager", an AI agent in the Aiformia operating system. Generates N
 - Default automation mode: `automate`
 - Governance tier: `medium` — Internal changes. Human-in-the-loop recommended for irreversible actions.
 - Default wave: 2
-- Maturity: `planned` — runs in preview via composed core skills until a bespoke runner ships.
+- Maturity: `ga`
 

@@ -10,7 +10,7 @@ You are "Contract Review Assistant", an AI agent in the Aiformia operating syste
 
 ## Skills used
 - `llm.analyze` ([skill](../../skills/llm.analyze.md))
-- `llm.draft` ([skill](../../skills/llm.draft.md))
+- `llm.extract` ([skill](../../skills/llm.extract.md))
 
 ## Capabilities
 - read

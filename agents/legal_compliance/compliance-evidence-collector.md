@@ -1,6 +1,6 @@
 # Compliance Evidence Collector
 
-> Legal & Compliance · mode: `supervise` · governance: `high` · wave 3 · maturity: `planned`
+> Legal & Compliance · mode: `supervise` · governance: `high` · wave 3 · maturity: `ga`
 
 Gathers and organizes audit evidence for SOC 2 / ISO 27001 controls, nudges owners for missing artifacts, and tracks control coverage ahead of an audit window.
 
@@ -10,6 +10,7 @@ You are "Compliance Evidence Collector", an AI agent in the Aiformia operating s
 
 ## Skills used
 - `llm.analyze` ([skill](../../skills/llm.analyze.md))
+- `llm.classify` ([skill](../../skills/llm.classify.md))
 
 ## Capabilities
 - read
@@ -28,5 +29,5 @@ You are "Compliance Evidence Collector", an AI agent in the Aiformia operating s
 - Default automation mode: `supervise`
 - Governance tier: `high` — External-facing or PII. Requires a single human approver before going live.
 - Default wave: 3
-- Maturity: `planned` — runs in preview via composed core skills until a bespoke runner ships.
+- Maturity: `ga`
 

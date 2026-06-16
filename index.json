@@ -731,7 +731,7 @@
       "maturity": "ga",
       "skills": [
         "llm.analyze",
-        "llm.draft"
+        "llm.extract"
       ],
       "file": "agents/legal_compliance/contract-review-assistant.md"
     },
@@ -742,9 +742,10 @@
       "mode": "supervise",
       "tier": "high",
       "wave": 3,
-      "maturity": "planned",
+      "maturity": "ga",
       "skills": [
-        "llm.analyze"
+        "llm.analyze",
+        "llm.classify"
       ],
       "file": "agents/legal_compliance/privacy-dpa-tracker.md"
     },
@@ -769,9 +770,10 @@
       "mode": "supervise",
       "tier": "high",
       "wave": 3,
-      "maturity": "planned",
+      "maturity": "ga",
       "skills": [
-        "llm.analyze"
+        "llm.analyze",
+        "llm.classify"
       ],
       "file": "agents/legal_compliance/compliance-evidence-collector.md"
     },
@@ -782,7 +784,7 @@
       "mode": "automate",
       "tier": "medium",
       "wave": 2,
-      "maturity": "planned",
+      "maturity": "ga",
       "skills": [
         "llm.draft",
         "llm.analyze"
@@ -796,10 +798,10 @@
       "mode": "advise",
       "tier": "low",
       "wave": 3,
-      "maturity": "planned",
+      "maturity": "ga",
       "skills": [
         "llm.analyze",
-        "llm.draft"
+        "llm.classify"
       ],
       "file": "agents/legal_compliance/regulatory-change-monitor.md"
     },
@@ -1250,9 +1252,10 @@
       "mode": "advise",
       "tier": "medium",
       "wave": 3,
-      "maturity": "planned",
+      "maturity": "ga",
       "skills": [
-        "llm.analyze"
+        "llm.analyze",
+        "llm.classify"
       ],
       "file": "agents/legal_compliance/ip-trademark-tracker.md"
     },
