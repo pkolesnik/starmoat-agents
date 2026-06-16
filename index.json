@@ -728,7 +728,7 @@
       "mode": "augment",
       "tier": "high",
       "wave": 2,
-      "maturity": "planned",
+      "maturity": "ga",
       "skills": [
         "llm.analyze",
         "llm.draft"
@@ -755,7 +755,7 @@
       "mode": "augment",
       "tier": "medium",
       "wave": 2,
-      "maturity": "preview",
+      "maturity": "ga",
       "skills": [
         "llm.draft",
         "llm.analyze"
@@ -836,7 +836,7 @@
       "mode": "augment",
       "tier": "medium",
       "wave": 2,
-      "maturity": "preview",
+      "maturity": "ga",
       "skills": [
         "llm.analyze",
         "llm.draft"

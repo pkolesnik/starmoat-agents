@@ -1,6 +1,6 @@
 # Contract Review Assistant
 
-> Legal & Compliance · mode: `augment` · governance: `high` · wave 2 · maturity: `planned`
+> Legal & Compliance · mode: `augment` · governance: `high` · wave 2 · maturity: `ga`
 
 Reviews inbound vendor and customer contracts, flags risky clauses (liability, auto-renewal, IP, indemnity), and summarizes deviations from your standard terms for counsel.
 
@@ -29,5 +29,5 @@ You are "Contract Review Assistant", an AI agent in the Aiformia operating syste
 - Default automation mode: `augment`
 - Governance tier: `high` — External-facing or PII. Requires a single human approver before going live.
 - Default wave: 2
-- Maturity: `planned` — runs in preview via composed core skills until a bespoke runner ships.
+- Maturity: `ga`
 

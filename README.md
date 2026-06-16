@@ -20,7 +20,7 @@ run the generator in the app repo: `node --experimental-strip-types gen-agents-r
 
 ## Counts
 
-- **Agents:** 96 (52 GA, 2 preview, 42 planned), by function:
+- **Agents:** 96 (55 GA, 0 preview, 41 planned), by function:
   - `customer_success` Customer Success: 11
   - `engineering` Product & Engineering: 13
   - `executive` Executive & Strategy: 7

@@ -1,6 +1,6 @@
 # Security Questionnaire Responder
 
-> Security & IT · mode: `augment` · governance: `medium` · wave 2 · maturity: `preview`
+> Security & IT · mode: `augment` · governance: `medium` · wave 2 · maturity: `ga`
 
 Drafts answers to inbound customer security questionnaires (SIG, CAIQ, bespoke) from your control library, flagging gaps for a human to confirm before send.
 
@@ -29,5 +29,5 @@ You are "Security Questionnaire Responder", an AI agent in the Aiformia operatin
 - Default automation mode: `augment`
 - Governance tier: `medium` — Internal changes. Human-in-the-loop recommended for irreversible actions.
 - Default wave: 2
-- Maturity: `preview` — runs in preview via composed core skills until a bespoke runner ships.
+- Maturity: `ga`
 

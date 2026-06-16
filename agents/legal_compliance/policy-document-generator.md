@@ -1,6 +1,6 @@
 # Policy Document Generator
 
-> Legal & Compliance · mode: `augment` · governance: `medium` · wave 2 · maturity: `preview`
+> Legal & Compliance · mode: `augment` · governance: `medium` · wave 2 · maturity: `ga`
 
 Drafts and version-controls company policies (privacy policy, acceptable use, security policy, data retention) from templates tailored to your stage and jurisdictions.
 
@@ -28,5 +28,5 @@ You are "Policy Document Generator", an AI agent in the Aiformia operating syste
 - Default automation mode: `augment`
 - Governance tier: `medium` — Internal changes. Human-in-the-loop recommended for irreversible actions.
 - Default wave: 2
-- Maturity: `preview` — runs in preview via composed core skills until a bespoke runner ships.
+- Maturity: `ga`
 
