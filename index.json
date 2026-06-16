@@ -1,0 +1,1383 @@
+{
+  "generatedFrom": "pkolesnik/starmoat (lib/agent-catalog, lib/operating-model-blueprint, lib/skills)",
+  "counts": {
+    "agents": 96,
+    "skills": 5,
+    "workflows": 48
+  },
+  "agents": [
+    {
+      "slug": "icp-lead-scorer",
+      "name": "ICP Lead Scorer",
+      "function": "revenue_gtm",
+      "mode": "automate",
+      "tier": "low",
+      "wave": 1,
+      "maturity": "ga",
+      "file": "agents/icp-lead-scorer.md"
+    },
+    {
+      "slug": "outbound-personalization",
+      "name": "Outbound Personalization Engine",
+      "function": "revenue_gtm",
+      "mode": "augment",
+      "tier": "medium",
+      "wave": 1,
+      "maturity": "ga",
+      "file": "agents/outbound-personalization.md"
+    },
+    {
+      "slug": "demo-followup",
+      "name": "Demo Follow-Up Agent",
+      "function": "revenue_gtm",
+      "mode": "augment",
+      "tier": "high",
+      "wave": 1,
+      "maturity": "ga",
+      "file": "agents/demo-followup.md"
+    },
+    {
+      "slug": "crm-hygiene",
+      "name": "CRM Hygiene Agent",
+      "function": "revenue_gtm",
+      "mode": "automate",
+      "tier": "low",
+      "wave": 2,
+      "maturity": "ga",
+      "file": "agents/crm-hygiene.md"
+    },
+    {
+      "slug": "competitive-battlecard",
+      "name": "Competitive Battlecard Generator",
+      "function": "revenue_gtm",
+      "mode": "automate",
+      "tier": "low",
+      "wave": 2,
+      "maturity": "ga",
+      "file": "agents/competitive-battlecard.md"
+    },
+    {
+      "slug": "proposal-quote-assistant",
+      "name": "Proposal & Quote Assistant",
+      "function": "revenue_gtm",
+      "mode": "augment",
+      "tier": "high",
+      "wave": 2,
+      "maturity": "ga",
+      "file": "agents/proposal-quote-assistant.md"
+    },
+    {
+      "slug": "deal-desk-router",
+      "name": "Deal Desk Router",
+      "function": "revenue_gtm",
+      "mode": "supervise",
+      "tier": "high",
+      "wave": 2,
+      "maturity": "ga",
+      "file": "agents/deal-desk-router.md"
+    },
+    {
+      "slug": "win-loss-analysis",
+      "name": "Win/Loss Analysis Agent",
+      "function": "revenue_gtm",
+      "mode": "automate",
+      "tier": "low",
+      "wave": 3,
+      "maturity": "ga",
+      "file": "agents/win-loss-analysis.md"
+    },
+    {
+      "slug": "pipeline-forecast",
+      "name": "Pipeline Forecast Agent",
+      "function": "revenue_gtm",
+      "mode": "advise",
+      "tier": "medium",
+      "wave": 2,
+      "maturity": "ga",
+      "file": "agents/pipeline-forecast.md"
+    },
+    {
+      "slug": "partner-channel",
+      "name": "Partner & Channel Agent",
+      "function": "revenue_gtm",
+      "mode": "automate",
+      "tier": "low",
+      "wave": 3,
+      "maturity": "ga",
+      "file": "agents/partner-channel.md"
+    },
+    {
+      "slug": "health-score-monitor",
+      "name": "Health Score Monitor",
+      "function": "customer_success",
+      "mode": "automate",
+      "tier": "low",
+      "wave": 1,
+      "maturity": "ga",
+      "file": "agents/health-score-monitor.md"
+    },
+    {
+      "slug": "qbr-prep",
+      "name": "QBR Preparation Agent",
+      "function": "customer_success",
+      "mode": "augment",
+      "tier": "medium",
+      "wave": 2,
+      "maturity": "ga",
+      "file": "agents/qbr-prep.md"
+    },
+    {
+      "slug": "onboarding-milestone-tracker",
+      "name": "Customer Onboarding Tracker",
+      "function": "customer_success",
+      "mode": "automate",
+      "tier": "medium",
+      "wave": 1,
+      "maturity": "ga",
+      "file": "agents/onboarding-milestone-tracker.md"
+    },
+    {
+      "slug": "support-ticket-triage",
+      "name": "Support Ticket Triage",
+      "function": "customer_success",
+      "mode": "augment",
+      "tier": "low",
+      "wave": 1,
+      "maturity": "ga",
+      "file": "agents/support-ticket-triage.md"
+    },
+    {
+      "slug": "renewal-risk-alert",
+      "name": "Renewal Risk Alert",
+      "function": "customer_success",
+      "mode": "advise",
+      "tier": "medium",
+      "wave": 1,
+      "maturity": "ga",
+      "file": "agents/renewal-risk-alert.md"
+    },
+    {
+      "slug": "csat-analysis",
+      "name": "CSAT Analysis Agent",
+      "function": "customer_success",
+      "mode": "automate",
+      "tier": "low",
+      "wave": 2,
+      "maturity": "ga",
+      "file": "agents/csat-analysis.md"
+    },
+    {
+      "slug": "expansion-signal-detector",
+      "name": "Expansion Signal Detector",
+      "function": "customer_success",
+      "mode": "advise",
+      "tier": "low",
+      "wave": 2,
+      "maturity": "ga",
+      "file": "agents/expansion-signal-detector.md"
+    },
+    {
+      "slug": "success-playbook",
+      "name": "Success Playbook Agent",
+      "function": "customer_success",
+      "mode": "advise",
+      "tier": "low",
+      "wave": 3,
+      "maturity": "ga",
+      "file": "agents/success-playbook.md"
+    },
+    {
+      "slug": "revenue-reconciliation",
+      "name": "Revenue Reconciliation Agent",
+      "function": "finance_ops",
+      "mode": "supervise",
+      "tier": "high",
+      "wave": 1,
+      "maturity": "ga",
+      "file": "agents/revenue-reconciliation.md"
+    },
+    {
+      "slug": "burn-rate-monitor",
+      "name": "Burn Rate Monitor",
+      "function": "finance_ops",
+      "mode": "automate",
+      "tier": "low",
+      "wave": 1,
+      "maturity": "ga",
+      "file": "agents/burn-rate-monitor.md"
+    },
+    {
+      "slug": "vendor-invoice-review",
+      "name": "Vendor Invoice Review",
+      "function": "finance_ops",
+      "mode": "supervise",
+      "tier": "high",
+      "wave": 2,
+      "maturity": "ga",
+      "file": "agents/vendor-invoice-review.md"
+    },
+    {
+      "slug": "payroll-anomaly-detector",
+      "name": "Payroll Anomaly Detector",
+      "function": "finance_ops",
+      "mode": "supervise",
+      "tier": "high",
+      "wave": 2,
+      "maturity": "ga",
+      "file": "agents/payroll-anomaly-detector.md"
+    },
+    {
+      "slug": "cash-flow-forecaster",
+      "name": "Cash Flow Forecaster",
+      "function": "finance_ops",
+      "mode": "automate",
+      "tier": "low",
+      "wave": 2,
+      "maturity": "ga",
+      "file": "agents/cash-flow-forecaster.md"
+    },
+    {
+      "slug": "expense-policy-enforcer",
+      "name": "Expense Policy Enforcer",
+      "function": "finance_ops",
+      "mode": "supervise",
+      "tier": "medium",
+      "wave": 3,
+      "maturity": "ga",
+      "file": "agents/expense-policy-enforcer.md"
+    },
+    {
+      "slug": "cap-table-manager",
+      "name": "Cap Table Manager",
+      "function": "finance_ops",
+      "mode": "advise",
+      "tier": "critical",
+      "wave": 3,
+      "maturity": "ga",
+      "file": "agents/cap-table-manager.md"
+    },
+    {
+      "slug": "changelog-generator",
+      "name": "Changelog Generator",
+      "function": "engineering",
+      "mode": "augment",
+      "tier": "low",
+      "wave": 1,
+      "maturity": "ga",
+      "file": "agents/changelog-generator.md"
+    },
+    {
+      "slug": "sprint-planning-assistant",
+      "name": "Sprint Planning Assistant",
+      "function": "engineering",
+      "mode": "advise",
+      "tier": "low",
+      "wave": 2,
+      "maturity": "ga",
+      "file": "agents/sprint-planning-assistant.md"
+    },
+    {
+      "slug": "bug-triage",
+      "name": "Bug Triage Agent",
+      "function": "engineering",
+      "mode": "supervise",
+      "tier": "low",
+      "wave": 1,
+      "maturity": "ga",
+      "file": "agents/bug-triage.md"
+    },
+    {
+      "slug": "code-review-summary",
+      "name": "Code Review Summary",
+      "function": "engineering",
+      "mode": "automate",
+      "tier": "low",
+      "wave": 2,
+      "maturity": "ga",
+      "file": "agents/code-review-summary.md"
+    },
+    {
+      "slug": "incident-response",
+      "name": "Incident Response Coordinator",
+      "function": "engineering",
+      "mode": "augment",
+      "tier": "high",
+      "wave": 2,
+      "maturity": "ga",
+      "file": "agents/incident-response.md"
+    },
+    {
+      "slug": "technical-debt-tracker",
+      "name": "Technical Debt Tracker",
+      "function": "engineering",
+      "mode": "automate",
+      "tier": "low",
+      "wave": 3,
+      "maturity": "ga",
+      "file": "agents/technical-debt-tracker.md"
+    },
+    {
+      "slug": "deployment-monitor",
+      "name": "Deployment Monitor",
+      "function": "engineering",
+      "mode": "automate",
+      "tier": "low",
+      "wave": 2,
+      "maturity": "ga",
+      "file": "agents/deployment-monitor.md"
+    },
+    {
+      "slug": "resume-screener",
+      "name": "Resume Screener",
+      "function": "people",
+      "mode": "advise",
+      "tier": "low",
+      "wave": 2,
+      "maturity": "ga",
+      "file": "agents/resume-screener.md"
+    },
+    {
+      "slug": "job-description-generator",
+      "name": "Job Description Generator",
+      "function": "people",
+      "mode": "augment",
+      "tier": "low",
+      "wave": 2,
+      "maturity": "ga",
+      "file": "agents/job-description-generator.md"
+    },
+    {
+      "slug": "employee-onboarding",
+      "name": "Employee Onboarding Agent",
+      "function": "people",
+      "mode": "automate",
+      "tier": "low",
+      "wave": 2,
+      "maturity": "ga",
+      "file": "agents/employee-onboarding.md"
+    },
+    {
+      "slug": "performance-review-synthesizer",
+      "name": "Performance Review Synthesizer",
+      "function": "people",
+      "mode": "augment",
+      "tier": "medium",
+      "wave": 3,
+      "maturity": "ga",
+      "file": "agents/performance-review-synthesizer.md"
+    },
+    {
+      "slug": "employee-sentiment",
+      "name": "Employee Sentiment Analyzer",
+      "function": "people",
+      "mode": "automate",
+      "tier": "medium",
+      "wave": 3,
+      "maturity": "ga",
+      "file": "agents/employee-sentiment.md"
+    },
+    {
+      "slug": "headcount-planning",
+      "name": "Headcount Planning Agent",
+      "function": "people",
+      "mode": "advise",
+      "tier": "medium",
+      "wave": 3,
+      "maturity": "ga",
+      "file": "agents/headcount-planning.md"
+    },
+    {
+      "slug": "content-brief-generator",
+      "name": "Content Brief Generator",
+      "function": "marketing",
+      "mode": "augment",
+      "tier": "low",
+      "wave": 2,
+      "maturity": "ga",
+      "file": "agents/content-brief-generator.md"
+    },
+    {
+      "slug": "seo-competitive-analyzer",
+      "name": "SEO Competitive Analyzer",
+      "function": "marketing",
+      "mode": "automate",
+      "tier": "low",
+      "wave": 2,
+      "maturity": "ga",
+      "file": "agents/seo-competitive-analyzer.md"
+    },
+    {
+      "slug": "campaign-performance",
+      "name": "Campaign Performance Summarizer",
+      "function": "marketing",
+      "mode": "automate",
+      "tier": "low",
+      "wave": 2,
+      "maturity": "ga",
+      "file": "agents/campaign-performance.md"
+    },
+    {
+      "slug": "newsletter-drafter",
+      "name": "Email Newsletter Drafter",
+      "function": "marketing",
+      "mode": "augment",
+      "tier": "low",
+      "wave": 3,
+      "maturity": "ga",
+      "file": "agents/newsletter-drafter.md"
+    },
+    {
+      "slug": "social-scheduler",
+      "name": "Social Media Scheduler",
+      "function": "marketing",
+      "mode": "augment",
+      "tier": "medium",
+      "wave": 3,
+      "maturity": "ga",
+      "file": "agents/social-scheduler.md"
+    },
+    {
+      "slug": "brand-mention-monitor",
+      "name": "Brand Mention Monitor",
+      "function": "marketing",
+      "mode": "automate",
+      "tier": "low",
+      "wave": 3,
+      "maturity": "ga",
+      "file": "agents/brand-mention-monitor.md"
+    },
+    {
+      "slug": "event-coordinator",
+      "name": "Event & Webinar Coordinator",
+      "function": "marketing",
+      "mode": "augment",
+      "tier": "low",
+      "wave": 3,
+      "maturity": "ga",
+      "file": "agents/event-coordinator.md"
+    },
+    {
+      "slug": "app-store-monitor",
+      "name": "App Store Monitor",
+      "function": "customer_success",
+      "mode": "automate",
+      "tier": "low",
+      "wave": 1,
+      "maturity": "ga",
+      "file": "agents/app-store-monitor.md"
+    },
+    {
+      "slug": "api-cost-tracker",
+      "name": "API Cost Tracker",
+      "function": "finance_ops",
+      "mode": "automate",
+      "tier": "low",
+      "wave": 1,
+      "maturity": "ga",
+      "file": "agents/api-cost-tracker.md"
+    },
+    {
+      "slug": "board-report-generator",
+      "name": "Board Report Generator",
+      "function": "executive",
+      "mode": "augment",
+      "tier": "high",
+      "wave": 3,
+      "maturity": "ga",
+      "file": "agents/board-report-generator.md"
+    },
+    {
+      "slug": "okr-tracker",
+      "name": "OKR Progress Tracker",
+      "function": "executive",
+      "mode": "automate",
+      "tier": "low",
+      "wave": 2,
+      "maturity": "ga",
+      "file": "agents/okr-tracker.md"
+    },
+    {
+      "slug": "competitive-intelligence",
+      "name": "Competitive Intelligence Monitor",
+      "function": "executive",
+      "mode": "automate",
+      "tier": "low",
+      "wave": 2,
+      "maturity": "ga",
+      "file": "agents/competitive-intelligence.md"
+    },
+    {
+      "slug": "investor-update",
+      "name": "Investor Update Drafter",
+      "function": "executive",
+      "mode": "augment",
+      "tier": "high",
+      "wave": 2,
+      "maturity": "ga",
+      "file": "agents/investor-update.md"
+    },
+    {
+      "slug": "strategic-risk-scanner",
+      "name": "Strategic Risk Scanner",
+      "function": "executive",
+      "mode": "advise",
+      "tier": "low",
+      "wave": 3,
+      "maturity": "ga",
+      "file": "agents/strategic-risk-scanner.md"
+    },
+    {
+      "slug": "contract-review-assistant",
+      "name": "Contract Review Assistant",
+      "function": "legal_compliance",
+      "mode": "augment",
+      "tier": "high",
+      "wave": 2,
+      "maturity": "planned",
+      "file": "agents/contract-review-assistant.md"
+    },
+    {
+      "slug": "privacy-dpa-tracker",
+      "name": "Privacy & DPA Tracker",
+      "function": "legal_compliance",
+      "mode": "supervise",
+      "tier": "high",
+      "wave": 3,
+      "maturity": "planned",
+      "file": "agents/privacy-dpa-tracker.md"
+    },
+    {
+      "slug": "policy-document-generator",
+      "name": "Policy Document Generator",
+      "function": "legal_compliance",
+      "mode": "augment",
+      "tier": "medium",
+      "wave": 2,
+      "maturity": "preview",
+      "file": "agents/policy-document-generator.md"
+    },
+    {
+      "slug": "compliance-evidence-collector",
+      "name": "Compliance Evidence Collector",
+      "function": "legal_compliance",
+      "mode": "supervise",
+      "tier": "high",
+      "wave": 3,
+      "maturity": "planned",
+      "file": "agents/compliance-evidence-collector.md"
+    },
+    {
+      "slug": "nda-manager",
+      "name": "NDA Manager",
+      "function": "legal_compliance",
+      "mode": "automate",
+      "tier": "medium",
+      "wave": 2,
+      "maturity": "planned",
+      "file": "agents/nda-manager.md"
+    },
+    {
+      "slug": "regulatory-change-monitor",
+      "name": "Regulatory Change Monitor",
+      "function": "legal_compliance",
+      "mode": "advise",
+      "tier": "low",
+      "wave": 3,
+      "maturity": "planned",
+      "file": "agents/regulatory-change-monitor.md"
+    },
+    {
+      "slug": "access-review-agent",
+      "name": "Access Review Agent",
+      "function": "security_it",
+      "mode": "supervise",
+      "tier": "high",
+      "wave": 2,
+      "maturity": "planned",
+      "file": "agents/access-review-agent.md"
+    },
+    {
+      "slug": "vulnerability-triage-agent",
+      "name": "Vulnerability Triage Agent",
+      "function": "security_it",
+      "mode": "supervise",
+      "tier": "high",
+      "wave": 2,
+      "maturity": "planned",
+      "file": "agents/vulnerability-triage-agent.md"
+    },
+    {
+      "slug": "security-questionnaire-responder",
+      "name": "Security Questionnaire Responder",
+      "function": "security_it",
+      "mode": "augment",
+      "tier": "medium",
+      "wave": 2,
+      "maturity": "preview",
+      "file": "agents/security-questionnaire-responder.md"
+    },
+    {
+      "slug": "it-provisioning-agent",
+      "name": "IT Provisioning Agent",
+      "function": "security_it",
+      "mode": "supervise",
+      "tier": "high",
+      "wave": 2,
+      "maturity": "planned",
+      "file": "agents/it-provisioning-agent.md"
+    },
+    {
+      "slug": "saas-license-monitor",
+      "name": "SaaS & License Monitor",
+      "function": "security_it",
+      "mode": "advise",
+      "tier": "low",
+      "wave": 3,
+      "maturity": "planned",
+      "file": "agents/saas-license-monitor.md"
+    },
+    {
+      "slug": "phishing-report-triage",
+      "name": "Phishing Report Triage",
+      "function": "security_it",
+      "mode": "supervise",
+      "tier": "medium",
+      "wave": 3,
+      "maturity": "planned",
+      "file": "agents/phishing-report-triage.md"
+    },
+    {
+      "slug": "vendor-intake-risk",
+      "name": "Vendor Intake & Risk",
+      "function": "procurement",
+      "mode": "supervise",
+      "tier": "high",
+      "wave": 2,
+      "maturity": "planned",
+      "file": "agents/vendor-intake-risk.md"
+    },
+    {
+      "slug": "contract-renewal-tracker",
+      "name": "Contract Renewal Tracker",
+      "function": "procurement",
+      "mode": "advise",
+      "tier": "medium",
+      "wave": 2,
+      "maturity": "planned",
+      "file": "agents/contract-renewal-tracker.md"
+    },
+    {
+      "slug": "purchase-approval-router",
+      "name": "Purchase Approval Router",
+      "function": "procurement",
+      "mode": "supervise",
+      "tier": "medium",
+      "wave": 2,
+      "maturity": "planned",
+      "file": "agents/purchase-approval-router.md"
+    },
+    {
+      "slug": "saas-spend-optimizer",
+      "name": "SaaS Spend Optimizer",
+      "function": "procurement",
+      "mode": "advise",
+      "tier": "low",
+      "wave": 3,
+      "maturity": "planned",
+      "file": "agents/saas-spend-optimizer.md"
+    },
+    {
+      "slug": "sales-call-summarizer",
+      "name": "Sales Call Summarizer",
+      "function": "revenue_gtm",
+      "mode": "augment",
+      "tier": "low",
+      "wave": 2,
+      "maturity": "planned",
+      "file": "agents/sales-call-summarizer.md"
+    },
+    {
+      "slug": "meeting-scheduler",
+      "name": "Meeting Scheduler",
+      "function": "revenue_gtm",
+      "mode": "automate",
+      "tier": "low",
+      "wave": 2,
+      "maturity": "planned",
+      "file": "agents/meeting-scheduler.md"
+    },
+    {
+      "slug": "territory-quota-planner",
+      "name": "Territory & Quota Planner",
+      "function": "revenue_gtm",
+      "mode": "advise",
+      "tier": "medium",
+      "wave": 3,
+      "maturity": "planned",
+      "file": "agents/territory-quota-planner.md"
+    },
+    {
+      "slug": "ad-campaign-optimizer",
+      "name": "Ad Campaign Optimizer",
+      "function": "marketing",
+      "mode": "advise",
+      "tier": "medium",
+      "wave": 2,
+      "maturity": "planned",
+      "file": "agents/ad-campaign-optimizer.md"
+    },
+    {
+      "slug": "landing-page-cro",
+      "name": "Landing Page & CRO Analyzer",
+      "function": "marketing",
+      "mode": "advise",
+      "tier": "low",
+      "wave": 3,
+      "maturity": "planned",
+      "file": "agents/landing-page-cro.md"
+    },
+    {
+      "slug": "pr-press-release",
+      "name": "PR & Press Release Drafter",
+      "function": "marketing",
+      "mode": "augment",
+      "tier": "medium",
+      "wave": 3,
+      "maturity": "planned",
+      "file": "agents/pr-press-release.md"
+    },
+    {
+      "slug": "community-manager",
+      "name": "Community Management",
+      "function": "marketing",
+      "mode": "augment",
+      "tier": "medium",
+      "wave": 3,
+      "maturity": "planned",
+      "file": "agents/community-manager.md"
+    },
+    {
+      "slug": "knowledge-base-maintainer",
+      "name": "Knowledge Base Maintainer",
+      "function": "customer_success",
+      "mode": "augment",
+      "tier": "low",
+      "wave": 2,
+      "maturity": "planned",
+      "file": "agents/knowledge-base-maintainer.md"
+    },
+    {
+      "slug": "voice-of-customer",
+      "name": "Voice of Customer Synthesizer",
+      "function": "customer_success",
+      "mode": "advise",
+      "tier": "low",
+      "wave": 3,
+      "maturity": "planned",
+      "file": "agents/voice-of-customer.md"
+    },
+    {
+      "slug": "feature-request-analyzer",
+      "name": "Feature Request Analyzer",
+      "function": "engineering",
+      "mode": "advise",
+      "tier": "low",
+      "wave": 2,
+      "maturity": "planned",
+      "file": "agents/feature-request-analyzer.md"
+    },
+    {
+      "slug": "oncall-scheduler",
+      "name": "On-Call & Escalation Scheduler",
+      "function": "engineering",
+      "mode": "automate",
+      "tier": "medium",
+      "wave": 3,
+      "maturity": "planned",
+      "file": "agents/oncall-scheduler.md"
+    },
+    {
+      "slug": "api-docs-generator",
+      "name": "API Docs Generator",
+      "function": "engineering",
+      "mode": "augment",
+      "tier": "low",
+      "wave": 3,
+      "maturity": "planned",
+      "file": "agents/api-docs-generator.md"
+    },
+    {
+      "slug": "test-coverage-monitor",
+      "name": "Test Coverage Monitor",
+      "function": "engineering",
+      "mode": "advise",
+      "tier": "low",
+      "wave": 3,
+      "maturity": "planned",
+      "file": "agents/test-coverage-monitor.md"
+    },
+    {
+      "slug": "performance-regression-detector",
+      "name": "Performance Regression Detector",
+      "function": "engineering",
+      "mode": "supervise",
+      "tier": "medium",
+      "wave": 3,
+      "maturity": "planned",
+      "file": "agents/performance-regression-detector.md"
+    },
+    {
+      "slug": "product-analytics-insights",
+      "name": "Product Analytics Insights",
+      "function": "engineering",
+      "mode": "advise",
+      "tier": "low",
+      "wave": 2,
+      "maturity": "planned",
+      "file": "agents/product-analytics-insights.md"
+    },
+    {
+      "slug": "meeting-notes-actions",
+      "name": "Meeting Notes & Action Items",
+      "function": "executive",
+      "mode": "augment",
+      "tier": "low",
+      "wave": 2,
+      "maturity": "planned",
+      "file": "agents/meeting-notes-actions.md"
+    },
+    {
+      "slug": "market-sizing-analyst",
+      "name": "Market Sizing & TAM Analyst",
+      "function": "executive",
+      "mode": "advise",
+      "tier": "low",
+      "wave": 3,
+      "maturity": "planned",
+      "file": "agents/market-sizing-analyst.md"
+    },
+    {
+      "slug": "ar-collections",
+      "name": "AR & Collections Agent",
+      "function": "finance_ops",
+      "mode": "supervise",
+      "tier": "medium",
+      "wave": 2,
+      "maturity": "planned",
+      "file": "agents/ar-collections.md"
+    },
+    {
+      "slug": "ap-bill-pay",
+      "name": "AP & Bill Pay Agent",
+      "function": "finance_ops",
+      "mode": "supervise",
+      "tier": "high",
+      "wave": 3,
+      "maturity": "planned",
+      "file": "agents/ap-bill-pay.md"
+    },
+    {
+      "slug": "budget-variance-analyzer",
+      "name": "Budget vs Actual Analyzer",
+      "function": "finance_ops",
+      "mode": "advise",
+      "tier": "low",
+      "wave": 3,
+      "maturity": "planned",
+      "file": "agents/budget-variance-analyzer.md"
+    },
+    {
+      "slug": "interview-scheduler",
+      "name": "Interview Scheduler",
+      "function": "people",
+      "mode": "automate",
+      "tier": "low",
+      "wave": 2,
+      "maturity": "planned",
+      "file": "agents/interview-scheduler.md"
+    },
+    {
+      "slug": "comp-benchmarking",
+      "name": "Compensation Benchmarking",
+      "function": "people",
+      "mode": "advise",
+      "tier": "high",
+      "wave": 3,
+      "maturity": "planned",
+      "file": "agents/comp-benchmarking.md"
+    },
+    {
+      "slug": "pto-leave-tracker",
+      "name": "PTO & Leave Tracker",
+      "function": "people",
+      "mode": "automate",
+      "tier": "medium",
+      "wave": 3,
+      "maturity": "planned",
+      "file": "agents/pto-leave-tracker.md"
+    },
+    {
+      "slug": "ip-trademark-tracker",
+      "name": "IP & Trademark Tracker",
+      "function": "legal_compliance",
+      "mode": "advise",
+      "tier": "medium",
+      "wave": 3,
+      "maturity": "planned",
+      "file": "agents/ip-trademark-tracker.md"
+    },
+    {
+      "slug": "security-awareness-trainer",
+      "name": "Security Awareness Trainer",
+      "function": "security_it",
+      "mode": "automate",
+      "tier": "medium",
+      "wave": 3,
+      "maturity": "planned",
+      "file": "agents/security-awareness-trainer.md"
+    },
+    {
+      "slug": "backup-dr-monitor",
+      "name": "Backup & DR Monitor",
+      "function": "security_it",
+      "mode": "supervise",
+      "tier": "high",
+      "wave": 3,
+      "maturity": "planned",
+      "file": "agents/backup-dr-monitor.md"
+    },
+    {
+      "slug": "device-compliance-monitor",
+      "name": "Device Compliance Monitor",
+      "function": "security_it",
+      "mode": "supervise",
+      "tier": "high",
+      "wave": 3,
+      "maturity": "planned",
+      "file": "agents/device-compliance-monitor.md"
+    },
+    {
+      "slug": "supplier-performance",
+      "name": "Supplier Performance Tracker",
+      "function": "procurement",
+      "mode": "advise",
+      "tier": "low",
+      "wave": 3,
+      "maturity": "planned",
+      "file": "agents/supplier-performance.md"
+    }
+  ],
+  "skills": [
+    {
+      "slug": "llm.summarize",
+      "name": "Summarize",
+      "file": "skills/llm.summarize.md"
+    },
+    {
+      "slug": "llm.classify",
+      "name": "Classify",
+      "file": "skills/llm.classify.md"
+    },
+    {
+      "slug": "llm.extract",
+      "name": "Extract",
+      "file": "skills/llm.extract.md"
+    },
+    {
+      "slug": "llm.draft",
+      "name": "Draft",
+      "file": "skills/llm.draft.md"
+    },
+    {
+      "slug": "llm.analyze",
+      "name": "Analyze",
+      "file": "skills/llm.analyze.md"
+    }
+  ],
+  "workflows": [
+    {
+      "key": "rev.lead_capture_qualification",
+      "name": "Lead Capture & Qualification",
+      "function": "revenue_gtm",
+      "valueStage": "go_to_market",
+      "essential": true,
+      "file": "workflows/rev.lead_capture_qualification.md"
+    },
+    {
+      "key": "rev.outbound_prospecting",
+      "name": "Outbound Prospecting",
+      "function": "revenue_gtm",
+      "valueStage": "go_to_market",
+      "essential": false,
+      "file": "workflows/rev.outbound_prospecting.md"
+    },
+    {
+      "key": "rev.deal_management",
+      "name": "Deal Management & Pipeline Hygiene",
+      "function": "revenue_gtm",
+      "valueStage": "go_to_market",
+      "essential": true,
+      "file": "workflows/rev.deal_management.md"
+    },
+    {
+      "key": "rev.quote_to_close",
+      "name": "Quote-to-Close",
+      "function": "revenue_gtm",
+      "valueStage": "go_to_market",
+      "essential": true,
+      "file": "workflows/rev.quote_to_close.md"
+    },
+    {
+      "key": "rev.forecasting",
+      "name": "Revenue Forecasting",
+      "function": "revenue_gtm",
+      "valueStage": "business_impact",
+      "essential": true,
+      "file": "workflows/rev.forecasting.md"
+    },
+    {
+      "key": "rev.partnerships",
+      "name": "Partner & Channel Management",
+      "function": "revenue_gtm",
+      "valueStage": "go_to_market",
+      "essential": false,
+      "file": "workflows/rev.partnerships.md"
+    },
+    {
+      "key": "mkt.content_production",
+      "name": "Content Production",
+      "function": "marketing",
+      "valueStage": "go_to_market",
+      "essential": true,
+      "file": "workflows/mkt.content_production.md"
+    },
+    {
+      "key": "mkt.seo",
+      "name": "SEO & Organic Growth",
+      "function": "marketing",
+      "valueStage": "go_to_market",
+      "essential": true,
+      "file": "workflows/mkt.seo.md"
+    },
+    {
+      "key": "mkt.demand_gen",
+      "name": "Demand Generation & Campaigns",
+      "function": "marketing",
+      "valueStage": "go_to_market",
+      "essential": true,
+      "file": "workflows/mkt.demand_gen.md"
+    },
+    {
+      "key": "mkt.lifecycle_email",
+      "name": "Lifecycle & Email Marketing",
+      "function": "marketing",
+      "valueStage": "go_to_market",
+      "essential": false,
+      "file": "workflows/mkt.lifecycle_email.md"
+    },
+    {
+      "key": "mkt.brand_pr",
+      "name": "Brand & Reputation Monitoring",
+      "function": "marketing",
+      "valueStage": "go_to_market",
+      "essential": false,
+      "file": "workflows/mkt.brand_pr.md"
+    },
+    {
+      "key": "mkt.events",
+      "name": "Events & Webinars",
+      "function": "marketing",
+      "valueStage": "go_to_market",
+      "essential": false,
+      "file": "workflows/mkt.events.md"
+    },
+    {
+      "key": "cs.onboarding",
+      "name": "Customer Onboarding",
+      "function": "customer_success",
+      "valueStage": "go_to_market",
+      "essential": true,
+      "file": "workflows/cs.onboarding.md"
+    },
+    {
+      "key": "cs.health_monitoring",
+      "name": "Account Health Monitoring",
+      "function": "customer_success",
+      "valueStage": "customer_intelligence",
+      "essential": true,
+      "file": "workflows/cs.health_monitoring.md"
+    },
+    {
+      "key": "cs.support",
+      "name": "Customer Support",
+      "function": "customer_success",
+      "valueStage": "customer_intelligence",
+      "essential": true,
+      "file": "workflows/cs.support.md"
+    },
+    {
+      "key": "cs.renewals",
+      "name": "Renewals Management",
+      "function": "customer_success",
+      "valueStage": "go_to_market",
+      "essential": true,
+      "file": "workflows/cs.renewals.md"
+    },
+    {
+      "key": "cs.expansion",
+      "name": "Expansion & Upsell",
+      "function": "customer_success",
+      "valueStage": "go_to_market",
+      "essential": false,
+      "file": "workflows/cs.expansion.md"
+    },
+    {
+      "key": "eng.sprint_planning",
+      "name": "Sprint Planning & Delivery",
+      "function": "engineering",
+      "valueStage": "delivery_execution",
+      "essential": true,
+      "file": "workflows/eng.sprint_planning.md"
+    },
+    {
+      "key": "eng.code_review",
+      "name": "Code Review & Quality",
+      "function": "engineering",
+      "valueStage": "delivery_execution",
+      "essential": true,
+      "file": "workflows/eng.code_review.md"
+    },
+    {
+      "key": "eng.release_management",
+      "name": "Release & Deployment",
+      "function": "engineering",
+      "valueStage": "delivery_execution",
+      "essential": true,
+      "file": "workflows/eng.release_management.md"
+    },
+    {
+      "key": "eng.bug_triage",
+      "name": "Bug Triage",
+      "function": "engineering",
+      "valueStage": "delivery_execution",
+      "essential": true,
+      "file": "workflows/eng.bug_triage.md"
+    },
+    {
+      "key": "eng.incident_response",
+      "name": "Incident Response",
+      "function": "engineering",
+      "valueStage": "delivery_execution",
+      "essential": true,
+      "file": "workflows/eng.incident_response.md"
+    },
+    {
+      "key": "eng.tech_debt",
+      "name": "Technical Debt Management",
+      "function": "engineering",
+      "valueStage": "delivery_execution",
+      "essential": false,
+      "file": "workflows/eng.tech_debt.md"
+    },
+    {
+      "key": "exec.okr_management",
+      "name": "OKR & Goal Management",
+      "function": "executive",
+      "valueStage": "strategy_prioritization",
+      "essential": true,
+      "file": "workflows/exec.okr_management.md"
+    },
+    {
+      "key": "exec.board_reporting",
+      "name": "Board & Investor Reporting",
+      "function": "executive",
+      "valueStage": "business_impact",
+      "essential": true,
+      "file": "workflows/exec.board_reporting.md"
+    },
+    {
+      "key": "exec.strategic_intelligence",
+      "name": "Competitive & Strategic Intelligence",
+      "function": "executive",
+      "valueStage": "strategy_prioritization",
+      "essential": false,
+      "file": "workflows/exec.strategic_intelligence.md"
+    },
+    {
+      "key": "fin.revenue_recognition",
+      "name": "Revenue Recognition & Reconciliation",
+      "function": "finance_ops",
+      "valueStage": "business_operations",
+      "essential": true,
+      "file": "workflows/fin.revenue_recognition.md"
+    },
+    {
+      "key": "fin.spend_management",
+      "name": "Spend & Expense Management",
+      "function": "finance_ops",
+      "valueStage": "business_operations",
+      "essential": true,
+      "file": "workflows/fin.spend_management.md"
+    },
+    {
+      "key": "fin.cash_runway",
+      "name": "Cash & Runway Management",
+      "function": "finance_ops",
+      "valueStage": "business_impact",
+      "essential": true,
+      "file": "workflows/fin.cash_runway.md"
+    },
+    {
+      "key": "fin.financial_reporting",
+      "name": "Financial Reporting",
+      "function": "finance_ops",
+      "valueStage": "business_impact",
+      "essential": true,
+      "file": "workflows/fin.financial_reporting.md"
+    },
+    {
+      "key": "fin.payroll",
+      "name": "Payroll & Compensation",
+      "function": "finance_ops",
+      "valueStage": "business_operations",
+      "essential": true,
+      "file": "workflows/fin.payroll.md"
+    },
+    {
+      "key": "fin.cap_table",
+      "name": "Cap Table & Equity",
+      "function": "finance_ops",
+      "valueStage": "business_operations",
+      "essential": false,
+      "file": "workflows/fin.cap_table.md"
+    },
+    {
+      "key": "ppl.recruiting",
+      "name": "Recruiting & Hiring",
+      "function": "people",
+      "valueStage": "business_operations",
+      "essential": true,
+      "file": "workflows/ppl.recruiting.md"
+    },
+    {
+      "key": "ppl.onboarding_offboarding",
+      "name": "Employee Onboarding & Offboarding",
+      "function": "people",
+      "valueStage": "business_operations",
+      "essential": true,
+      "file": "workflows/ppl.onboarding_offboarding.md"
+    },
+    {
+      "key": "ppl.performance",
+      "name": "Performance & Reviews",
+      "function": "people",
+      "valueStage": "business_operations",
+      "essential": false,
+      "file": "workflows/ppl.performance.md"
+    },
+    {
+      "key": "ppl.engagement",
+      "name": "Employee Engagement & Sentiment",
+      "function": "people",
+      "valueStage": "business_operations",
+      "essential": false,
+      "file": "workflows/ppl.engagement.md"
+    },
+    {
+      "key": "ppl.headcount_planning",
+      "name": "Headcount Planning",
+      "function": "people",
+      "valueStage": "business_operations",
+      "essential": false,
+      "file": "workflows/ppl.headcount_planning.md"
+    },
+    {
+      "key": "legal.contract_management",
+      "name": "Contract Management",
+      "function": "legal_compliance",
+      "valueStage": "business_operations",
+      "essential": true,
+      "file": "workflows/legal.contract_management.md"
+    },
+    {
+      "key": "legal.privacy",
+      "name": "Data Privacy & DPAs",
+      "function": "legal_compliance",
+      "valueStage": "business_operations",
+      "essential": true,
+      "file": "workflows/legal.privacy.md"
+    },
+    {
+      "key": "legal.policies",
+      "name": "Policy & Governance Documents",
+      "function": "legal_compliance",
+      "valueStage": "business_operations",
+      "essential": false,
+      "file": "workflows/legal.policies.md"
+    },
+    {
+      "key": "legal.compliance_audits",
+      "name": "Compliance & Audit Readiness",
+      "function": "legal_compliance",
+      "valueStage": "business_operations",
+      "essential": false,
+      "file": "workflows/legal.compliance_audits.md"
+    },
+    {
+      "key": "secit.access_management",
+      "name": "Access & Identity Management",
+      "function": "security_it",
+      "valueStage": "business_operations",
+      "essential": true,
+      "file": "workflows/secit.access_management.md"
+    },
+    {
+      "key": "secit.vulnerability_management",
+      "name": "Vulnerability Management",
+      "function": "security_it",
+      "valueStage": "business_operations",
+      "essential": true,
+      "file": "workflows/secit.vulnerability_management.md"
+    },
+    {
+      "key": "secit.security_compliance",
+      "name": "Security Reviews & Questionnaires",
+      "function": "security_it",
+      "valueStage": "business_operations",
+      "essential": true,
+      "file": "workflows/secit.security_compliance.md"
+    },
+    {
+      "key": "secit.it_operations",
+      "name": "IT Operations & SaaS Management",
+      "function": "security_it",
+      "valueStage": "business_operations",
+      "essential": false,
+      "file": "workflows/secit.it_operations.md"
+    },
+    {
+      "key": "proc.vendor_management",
+      "name": "Vendor Intake & Management",
+      "function": "procurement",
+      "valueStage": "business_operations",
+      "essential": false,
+      "file": "workflows/proc.vendor_management.md"
+    },
+    {
+      "key": "proc.purchase_approvals",
+      "name": "Purchase Approvals",
+      "function": "procurement",
+      "valueStage": "business_operations",
+      "essential": false,
+      "file": "workflows/proc.purchase_approvals.md"
+    },
+    {
+      "key": "proc.saas_optimization",
+      "name": "Renewals & SaaS Spend Optimization",
+      "function": "procurement",
+      "valueStage": "business_operations",
+      "essential": false,
+      "file": "workflows/proc.saas_optimization.md"
+    }
+  ]
+}

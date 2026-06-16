@@ -1,19 +1,36 @@
 # Aiformia Agents
 
-This repo contains the agent identities, skill manifests, and automation configurations for [Aiformia](https://github.com/pkolesnik/aiformia) — an AI Transformation Operating System.
+Agent identities, skill manifests, workflow specs, and pipeline configs for
+[Aiformia / StarMoat](https://github.com/pkolesnik/starmoat) — an AI Transformation
+Operating System. **Generated from the app's source of truth** (do not hand-edit;
+run the generator in the app repo: `node --experimental-strip-types gen-agents-repo.mts`).
 
 ## Structure
 
-- `agents/` — Agent identity files (CLAUDE.md-style system prompts and tool definitions)
-- `skills/` — Skill and tool capability definitions
-- `automations/` — Per-automation run prompts and governance manifests
+- `agents/{slug}.md` — 96 agent identities (system prompt, capabilities, integrations, governance)
+- `skills/{slug}.md` — 5 composable skill manifests (prompt-as-data)
+- `workflows/{key}.md` — 48 canonical operating-model workflows (purpose, KPIs, handoffs)
+- `pipelines/` — how workflows chain into runnable, scheduled pipelines
+- `index.json` — machine-readable catalog
 
-## Usage
+## Counts
 
-Each automation, agent, and skill in the Aiformia app links to a file in this repo. The base URL is configured in **Admin > Organization > Developer Settings**. To use your own repo, update that setting — all links in the app will update automatically.
+- **Agents:** 96 (52 GA, 2 preview, 42 planned)
+  - Customer Success: 11
+  - Product & Engineering: 13
+  - Executive & Strategy: 7
+  - Finance: 11
+  - Legal & Compliance: 7
+  - Marketing: 11
+  - People: 9
+  - Procurement: 5
+  - Revenue & GTM: 13
+  - Security & IT: 9
+- **Skills:** 5
+- **Workflows:** 48 (30 essential)
 
-## Conventions
+## Runtime vs. definitions
 
-- Agent files: `agents/{slug}.md` — identity, tools, behavior, guardrails
-- Skill files: `skills/{slug}.md` — capability spec, guardrails, example use
-- Automation folders: `automations/{slug}/CLAUDE.md` — run prompt, governance manifest, RA notes
+The **runtime** (Next.js app, agent runners, the orchestrator/executor) lives in the
+app repo. **This repo holds the definitions** the app links to by slug. The base URL
+is configured in **Admin > Organization > Developer Settings**.
