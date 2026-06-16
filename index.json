@@ -14,7 +14,11 @@
       "tier": "low",
       "wave": 1,
       "maturity": "ga",
-      "file": "agents/icp-lead-scorer.md"
+      "skills": [
+        "llm.analyze",
+        "llm.draft"
+      ],
+      "file": "agents/revenue_gtm/icp-lead-scorer.md"
     },
     {
       "slug": "outbound-personalization",
@@ -24,7 +28,11 @@
       "tier": "medium",
       "wave": 1,
       "maturity": "ga",
-      "file": "agents/outbound-personalization.md"
+      "skills": [
+        "llm.analyze",
+        "llm.draft"
+      ],
+      "file": "agents/revenue_gtm/outbound-personalization.md"
     },
     {
       "slug": "demo-followup",
@@ -34,7 +42,11 @@
       "tier": "high",
       "wave": 1,
       "maturity": "ga",
-      "file": "agents/demo-followup.md"
+      "skills": [
+        "llm.analyze",
+        "llm.draft"
+      ],
+      "file": "agents/revenue_gtm/demo-followup.md"
     },
     {
       "slug": "crm-hygiene",
@@ -44,7 +56,11 @@
       "tier": "low",
       "wave": 2,
       "maturity": "ga",
-      "file": "agents/crm-hygiene.md"
+      "skills": [
+        "llm.analyze",
+        "llm.draft"
+      ],
+      "file": "agents/revenue_gtm/crm-hygiene.md"
     },
     {
       "slug": "competitive-battlecard",
@@ -54,7 +70,10 @@
       "tier": "low",
       "wave": 2,
       "maturity": "ga",
-      "file": "agents/competitive-battlecard.md"
+      "skills": [
+        "llm.draft"
+      ],
+      "file": "agents/revenue_gtm/competitive-battlecard.md"
     },
     {
       "slug": "proposal-quote-assistant",
@@ -64,7 +83,11 @@
       "tier": "high",
       "wave": 2,
       "maturity": "ga",
-      "file": "agents/proposal-quote-assistant.md"
+      "skills": [
+        "llm.analyze",
+        "llm.draft"
+      ],
+      "file": "agents/revenue_gtm/proposal-quote-assistant.md"
     },
     {
       "slug": "deal-desk-router",
@@ -74,7 +97,11 @@
       "tier": "high",
       "wave": 2,
       "maturity": "ga",
-      "file": "agents/deal-desk-router.md"
+      "skills": [
+        "llm.analyze",
+        "llm.classify"
+      ],
+      "file": "agents/revenue_gtm/deal-desk-router.md"
     },
     {
       "slug": "win-loss-analysis",
@@ -84,7 +111,11 @@
       "tier": "low",
       "wave": 3,
       "maturity": "ga",
-      "file": "agents/win-loss-analysis.md"
+      "skills": [
+        "llm.analyze",
+        "llm.draft"
+      ],
+      "file": "agents/revenue_gtm/win-loss-analysis.md"
     },
     {
       "slug": "pipeline-forecast",
@@ -94,7 +125,11 @@
       "tier": "medium",
       "wave": 2,
       "maturity": "ga",
-      "file": "agents/pipeline-forecast.md"
+      "skills": [
+        "llm.analyze",
+        "llm.draft"
+      ],
+      "file": "agents/revenue_gtm/pipeline-forecast.md"
     },
     {
       "slug": "partner-channel",
@@ -104,7 +139,10 @@
       "tier": "low",
       "wave": 3,
       "maturity": "ga",
-      "file": "agents/partner-channel.md"
+      "skills": [
+        "llm.analyze"
+      ],
+      "file": "agents/revenue_gtm/partner-channel.md"
     },
     {
       "slug": "health-score-monitor",
@@ -114,7 +152,10 @@
       "tier": "low",
       "wave": 1,
       "maturity": "ga",
-      "file": "agents/health-score-monitor.md"
+      "skills": [
+        "llm.analyze"
+      ],
+      "file": "agents/customer_success/health-score-monitor.md"
     },
     {
       "slug": "qbr-prep",
@@ -124,7 +165,11 @@
       "tier": "medium",
       "wave": 2,
       "maturity": "ga",
-      "file": "agents/qbr-prep.md"
+      "skills": [
+        "llm.analyze",
+        "llm.draft"
+      ],
+      "file": "agents/customer_success/qbr-prep.md"
     },
     {
       "slug": "onboarding-milestone-tracker",
@@ -134,7 +179,11 @@
       "tier": "medium",
       "wave": 1,
       "maturity": "ga",
-      "file": "agents/onboarding-milestone-tracker.md"
+      "skills": [
+        "llm.analyze",
+        "llm.draft"
+      ],
+      "file": "agents/customer_success/onboarding-milestone-tracker.md"
     },
     {
       "slug": "support-ticket-triage",
@@ -144,7 +193,12 @@
       "tier": "low",
       "wave": 1,
       "maturity": "ga",
-      "file": "agents/support-ticket-triage.md"
+      "skills": [
+        "llm.analyze",
+        "llm.draft",
+        "llm.classify"
+      ],
+      "file": "agents/customer_success/support-ticket-triage.md"
     },
     {
       "slug": "renewal-risk-alert",
@@ -154,7 +208,10 @@
       "tier": "medium",
       "wave": 1,
       "maturity": "ga",
-      "file": "agents/renewal-risk-alert.md"
+      "skills": [
+        "llm.analyze"
+      ],
+      "file": "agents/customer_success/renewal-risk-alert.md"
     },
     {
       "slug": "csat-analysis",
@@ -164,7 +221,11 @@
       "tier": "low",
       "wave": 2,
       "maturity": "ga",
-      "file": "agents/csat-analysis.md"
+      "skills": [
+        "llm.analyze",
+        "llm.draft"
+      ],
+      "file": "agents/customer_success/csat-analysis.md"
     },
     {
       "slug": "expansion-signal-detector",
@@ -174,7 +235,10 @@
       "tier": "low",
       "wave": 2,
       "maturity": "ga",
-      "file": "agents/expansion-signal-detector.md"
+      "skills": [
+        "llm.analyze"
+      ],
+      "file": "agents/customer_success/expansion-signal-detector.md"
     },
     {
       "slug": "success-playbook",
@@ -184,7 +248,10 @@
       "tier": "low",
       "wave": 3,
       "maturity": "ga",
-      "file": "agents/success-playbook.md"
+      "skills": [
+        "llm.analyze"
+      ],
+      "file": "agents/customer_success/success-playbook.md"
     },
     {
       "slug": "revenue-reconciliation",
@@ -194,7 +261,11 @@
       "tier": "high",
       "wave": 1,
       "maturity": "ga",
-      "file": "agents/revenue-reconciliation.md"
+      "skills": [
+        "llm.analyze",
+        "llm.classify"
+      ],
+      "file": "agents/finance_ops/revenue-reconciliation.md"
     },
     {
       "slug": "burn-rate-monitor",
@@ -204,7 +275,10 @@
       "tier": "low",
       "wave": 1,
       "maturity": "ga",
-      "file": "agents/burn-rate-monitor.md"
+      "skills": [
+        "llm.analyze"
+      ],
+      "file": "agents/finance_ops/burn-rate-monitor.md"
     },
     {
       "slug": "vendor-invoice-review",
@@ -214,7 +288,11 @@
       "tier": "high",
       "wave": 2,
       "maturity": "ga",
-      "file": "agents/vendor-invoice-review.md"
+      "skills": [
+        "llm.analyze",
+        "llm.classify"
+      ],
+      "file": "agents/finance_ops/vendor-invoice-review.md"
     },
     {
       "slug": "payroll-anomaly-detector",
@@ -224,7 +302,11 @@
       "tier": "high",
       "wave": 2,
       "maturity": "ga",
-      "file": "agents/payroll-anomaly-detector.md"
+      "skills": [
+        "llm.analyze",
+        "llm.classify"
+      ],
+      "file": "agents/finance_ops/payroll-anomaly-detector.md"
     },
     {
       "slug": "cash-flow-forecaster",
@@ -234,7 +316,10 @@
       "tier": "low",
       "wave": 2,
       "maturity": "ga",
-      "file": "agents/cash-flow-forecaster.md"
+      "skills": [
+        "llm.analyze"
+      ],
+      "file": "agents/finance_ops/cash-flow-forecaster.md"
     },
     {
       "slug": "expense-policy-enforcer",
@@ -244,7 +329,11 @@
       "tier": "medium",
       "wave": 3,
       "maturity": "ga",
-      "file": "agents/expense-policy-enforcer.md"
+      "skills": [
+        "llm.analyze",
+        "llm.classify"
+      ],
+      "file": "agents/finance_ops/expense-policy-enforcer.md"
     },
     {
       "slug": "cap-table-manager",
@@ -254,7 +343,10 @@
       "tier": "critical",
       "wave": 3,
       "maturity": "ga",
-      "file": "agents/cap-table-manager.md"
+      "skills": [
+        "llm.analyze"
+      ],
+      "file": "agents/finance_ops/cap-table-manager.md"
     },
     {
       "slug": "changelog-generator",
@@ -264,7 +356,11 @@
       "tier": "low",
       "wave": 1,
       "maturity": "ga",
-      "file": "agents/changelog-generator.md"
+      "skills": [
+        "llm.analyze",
+        "llm.draft"
+      ],
+      "file": "agents/engineering/changelog-generator.md"
     },
     {
       "slug": "sprint-planning-assistant",
@@ -274,7 +370,11 @@
       "tier": "low",
       "wave": 2,
       "maturity": "ga",
-      "file": "agents/sprint-planning-assistant.md"
+      "skills": [
+        "llm.analyze",
+        "llm.draft"
+      ],
+      "file": "agents/engineering/sprint-planning-assistant.md"
     },
     {
       "slug": "bug-triage",
@@ -284,7 +384,11 @@
       "tier": "low",
       "wave": 1,
       "maturity": "ga",
-      "file": "agents/bug-triage.md"
+      "skills": [
+        "llm.analyze",
+        "llm.draft"
+      ],
+      "file": "agents/engineering/bug-triage.md"
     },
     {
       "slug": "code-review-summary",
@@ -294,7 +398,10 @@
       "tier": "low",
       "wave": 2,
       "maturity": "ga",
-      "file": "agents/code-review-summary.md"
+      "skills": [
+        "llm.analyze"
+      ],
+      "file": "agents/engineering/code-review-summary.md"
     },
     {
       "slug": "incident-response",
@@ -304,7 +411,11 @@
       "tier": "high",
       "wave": 2,
       "maturity": "ga",
-      "file": "agents/incident-response.md"
+      "skills": [
+        "llm.analyze",
+        "llm.draft"
+      ],
+      "file": "agents/engineering/incident-response.md"
     },
     {
       "slug": "technical-debt-tracker",
@@ -314,7 +425,11 @@
       "tier": "low",
       "wave": 3,
       "maturity": "ga",
-      "file": "agents/technical-debt-tracker.md"
+      "skills": [
+        "llm.analyze",
+        "llm.draft"
+      ],
+      "file": "agents/engineering/technical-debt-tracker.md"
     },
     {
       "slug": "deployment-monitor",
@@ -324,7 +439,10 @@
       "tier": "low",
       "wave": 2,
       "maturity": "ga",
-      "file": "agents/deployment-monitor.md"
+      "skills": [
+        "llm.analyze"
+      ],
+      "file": "agents/engineering/deployment-monitor.md"
     },
     {
       "slug": "resume-screener",
@@ -334,7 +452,10 @@
       "tier": "low",
       "wave": 2,
       "maturity": "ga",
-      "file": "agents/resume-screener.md"
+      "skills": [
+        "llm.analyze"
+      ],
+      "file": "agents/people/resume-screener.md"
     },
     {
       "slug": "job-description-generator",
@@ -344,7 +465,11 @@
       "tier": "low",
       "wave": 2,
       "maturity": "ga",
-      "file": "agents/job-description-generator.md"
+      "skills": [
+        "llm.analyze",
+        "llm.draft"
+      ],
+      "file": "agents/people/job-description-generator.md"
     },
     {
       "slug": "employee-onboarding",
@@ -354,7 +479,11 @@
       "tier": "low",
       "wave": 2,
       "maturity": "ga",
-      "file": "agents/employee-onboarding.md"
+      "skills": [
+        "llm.draft",
+        "llm.analyze"
+      ],
+      "file": "agents/people/employee-onboarding.md"
     },
     {
       "slug": "performance-review-synthesizer",
@@ -364,7 +493,11 @@
       "tier": "medium",
       "wave": 3,
       "maturity": "ga",
-      "file": "agents/performance-review-synthesizer.md"
+      "skills": [
+        "llm.analyze",
+        "llm.draft"
+      ],
+      "file": "agents/people/performance-review-synthesizer.md"
     },
     {
       "slug": "employee-sentiment",
@@ -374,7 +507,11 @@
       "tier": "medium",
       "wave": 3,
       "maturity": "ga",
-      "file": "agents/employee-sentiment.md"
+      "skills": [
+        "llm.analyze",
+        "llm.draft"
+      ],
+      "file": "agents/people/employee-sentiment.md"
     },
     {
       "slug": "headcount-planning",
@@ -384,7 +521,11 @@
       "tier": "medium",
       "wave": 3,
       "maturity": "ga",
-      "file": "agents/headcount-planning.md"
+      "skills": [
+        "llm.analyze",
+        "llm.draft"
+      ],
+      "file": "agents/people/headcount-planning.md"
     },
     {
       "slug": "content-brief-generator",
@@ -394,7 +535,10 @@
       "tier": "low",
       "wave": 2,
       "maturity": "ga",
-      "file": "agents/content-brief-generator.md"
+      "skills": [
+        "llm.draft"
+      ],
+      "file": "agents/marketing/content-brief-generator.md"
     },
     {
       "slug": "seo-competitive-analyzer",
@@ -404,7 +548,11 @@
       "tier": "low",
       "wave": 2,
       "maturity": "ga",
-      "file": "agents/seo-competitive-analyzer.md"
+      "skills": [
+        "llm.analyze",
+        "llm.draft"
+      ],
+      "file": "agents/marketing/seo-competitive-analyzer.md"
     },
     {
       "slug": "campaign-performance",
@@ -414,7 +562,11 @@
       "tier": "low",
       "wave": 2,
       "maturity": "ga",
-      "file": "agents/campaign-performance.md"
+      "skills": [
+        "llm.analyze",
+        "llm.draft"
+      ],
+      "file": "agents/marketing/campaign-performance.md"
     },
     {
       "slug": "newsletter-drafter",
@@ -424,7 +576,11 @@
       "tier": "low",
       "wave": 3,
       "maturity": "ga",
-      "file": "agents/newsletter-drafter.md"
+      "skills": [
+        "llm.analyze",
+        "llm.draft"
+      ],
+      "file": "agents/marketing/newsletter-drafter.md"
     },
     {
       "slug": "social-scheduler",
@@ -434,7 +590,11 @@
       "tier": "medium",
       "wave": 3,
       "maturity": "ga",
-      "file": "agents/social-scheduler.md"
+      "skills": [
+        "llm.analyze",
+        "llm.draft"
+      ],
+      "file": "agents/marketing/social-scheduler.md"
     },
     {
       "slug": "brand-mention-monitor",
@@ -444,7 +604,10 @@
       "tier": "low",
       "wave": 3,
       "maturity": "ga",
-      "file": "agents/brand-mention-monitor.md"
+      "skills": [
+        "llm.analyze"
+      ],
+      "file": "agents/marketing/brand-mention-monitor.md"
     },
     {
       "slug": "event-coordinator",
@@ -454,7 +617,11 @@
       "tier": "low",
       "wave": 3,
       "maturity": "ga",
-      "file": "agents/event-coordinator.md"
+      "skills": [
+        "llm.analyze",
+        "llm.draft"
+      ],
+      "file": "agents/marketing/event-coordinator.md"
     },
     {
       "slug": "app-store-monitor",
@@ -464,7 +631,11 @@
       "tier": "low",
       "wave": 1,
       "maturity": "ga",
-      "file": "agents/app-store-monitor.md"
+      "skills": [
+        "llm.analyze",
+        "llm.draft"
+      ],
+      "file": "agents/customer_success/app-store-monitor.md"
     },
     {
       "slug": "api-cost-tracker",
@@ -474,7 +645,11 @@
       "tier": "low",
       "wave": 1,
       "maturity": "ga",
-      "file": "agents/api-cost-tracker.md"
+      "skills": [
+        "llm.analyze",
+        "llm.draft"
+      ],
+      "file": "agents/finance_ops/api-cost-tracker.md"
     },
     {
       "slug": "board-report-generator",
@@ -484,7 +659,11 @@
       "tier": "high",
       "wave": 3,
       "maturity": "ga",
-      "file": "agents/board-report-generator.md"
+      "skills": [
+        "llm.analyze",
+        "llm.draft"
+      ],
+      "file": "agents/executive/board-report-generator.md"
     },
     {
       "slug": "okr-tracker",
@@ -494,7 +673,11 @@
       "tier": "low",
       "wave": 2,
       "maturity": "ga",
-      "file": "agents/okr-tracker.md"
+      "skills": [
+        "llm.analyze",
+        "llm.draft"
+      ],
+      "file": "agents/executive/okr-tracker.md"
     },
     {
       "slug": "competitive-intelligence",
@@ -504,7 +687,11 @@
       "tier": "low",
       "wave": 2,
       "maturity": "ga",
-      "file": "agents/competitive-intelligence.md"
+      "skills": [
+        "llm.analyze",
+        "llm.draft"
+      ],
+      "file": "agents/executive/competitive-intelligence.md"
     },
     {
       "slug": "investor-update",
@@ -514,7 +701,11 @@
       "tier": "high",
       "wave": 2,
       "maturity": "ga",
-      "file": "agents/investor-update.md"
+      "skills": [
+        "llm.analyze",
+        "llm.draft"
+      ],
+      "file": "agents/executive/investor-update.md"
     },
     {
       "slug": "strategic-risk-scanner",
@@ -524,7 +715,11 @@
       "tier": "low",
       "wave": 3,
       "maturity": "ga",
-      "file": "agents/strategic-risk-scanner.md"
+      "skills": [
+        "llm.analyze",
+        "llm.draft"
+      ],
+      "file": "agents/executive/strategic-risk-scanner.md"
     },
     {
       "slug": "contract-review-assistant",
@@ -534,7 +729,11 @@
       "tier": "high",
       "wave": 2,
       "maturity": "planned",
-      "file": "agents/contract-review-assistant.md"
+      "skills": [
+        "llm.analyze",
+        "llm.draft"
+      ],
+      "file": "agents/legal_compliance/contract-review-assistant.md"
     },
     {
       "slug": "privacy-dpa-tracker",
@@ -544,7 +743,10 @@
       "tier": "high",
       "wave": 3,
       "maturity": "planned",
-      "file": "agents/privacy-dpa-tracker.md"
+      "skills": [
+        "llm.analyze"
+      ],
+      "file": "agents/legal_compliance/privacy-dpa-tracker.md"
     },
     {
       "slug": "policy-document-generator",
@@ -554,7 +756,11 @@
       "tier": "medium",
       "wave": 2,
       "maturity": "preview",
-      "file": "agents/policy-document-generator.md"
+      "skills": [
+        "llm.draft",
+        "llm.analyze"
+      ],
+      "file": "agents/legal_compliance/policy-document-generator.md"
     },
     {
       "slug": "compliance-evidence-collector",
@@ -564,7 +770,10 @@
       "tier": "high",
       "wave": 3,
       "maturity": "planned",
-      "file": "agents/compliance-evidence-collector.md"
+      "skills": [
+        "llm.analyze"
+      ],
+      "file": "agents/legal_compliance/compliance-evidence-collector.md"
     },
     {
       "slug": "nda-manager",
@@ -574,7 +783,11 @@
       "tier": "medium",
       "wave": 2,
       "maturity": "planned",
-      "file": "agents/nda-manager.md"
+      "skills": [
+        "llm.draft",
+        "llm.analyze"
+      ],
+      "file": "agents/legal_compliance/nda-manager.md"
     },
     {
       "slug": "regulatory-change-monitor",
@@ -584,7 +797,11 @@
       "tier": "low",
       "wave": 3,
       "maturity": "planned",
-      "file": "agents/regulatory-change-monitor.md"
+      "skills": [
+        "llm.analyze",
+        "llm.draft"
+      ],
+      "file": "agents/legal_compliance/regulatory-change-monitor.md"
     },
     {
       "slug": "access-review-agent",
@@ -594,7 +811,10 @@
       "tier": "high",
       "wave": 2,
       "maturity": "planned",
-      "file": "agents/access-review-agent.md"
+      "skills": [
+        "llm.analyze"
+      ],
+      "file": "agents/security_it/access-review-agent.md"
     },
     {
       "slug": "vulnerability-triage-agent",
@@ -604,7 +824,10 @@
       "tier": "high",
       "wave": 2,
       "maturity": "planned",
-      "file": "agents/vulnerability-triage-agent.md"
+      "skills": [
+        "llm.analyze"
+      ],
+      "file": "agents/security_it/vulnerability-triage-agent.md"
     },
     {
       "slug": "security-questionnaire-responder",
@@ -614,7 +837,11 @@
       "tier": "medium",
       "wave": 2,
       "maturity": "preview",
-      "file": "agents/security-questionnaire-responder.md"
+      "skills": [
+        "llm.analyze",
+        "llm.draft"
+      ],
+      "file": "agents/security_it/security-questionnaire-responder.md"
     },
     {
       "slug": "it-provisioning-agent",
@@ -624,7 +851,10 @@
       "tier": "high",
       "wave": 2,
       "maturity": "planned",
-      "file": "agents/it-provisioning-agent.md"
+      "skills": [
+        "llm.analyze"
+      ],
+      "file": "agents/security_it/it-provisioning-agent.md"
     },
     {
       "slug": "saas-license-monitor",
@@ -634,7 +864,10 @@
       "tier": "low",
       "wave": 3,
       "maturity": "planned",
-      "file": "agents/saas-license-monitor.md"
+      "skills": [
+        "llm.analyze"
+      ],
+      "file": "agents/security_it/saas-license-monitor.md"
     },
     {
       "slug": "phishing-report-triage",
@@ -644,7 +877,10 @@
       "tier": "medium",
       "wave": 3,
       "maturity": "planned",
-      "file": "agents/phishing-report-triage.md"
+      "skills": [
+        "llm.analyze"
+      ],
+      "file": "agents/security_it/phishing-report-triage.md"
     },
     {
       "slug": "vendor-intake-risk",
@@ -654,7 +890,10 @@
       "tier": "high",
       "wave": 2,
       "maturity": "planned",
-      "file": "agents/vendor-intake-risk.md"
+      "skills": [
+        "llm.analyze"
+      ],
+      "file": "agents/procurement/vendor-intake-risk.md"
     },
     {
       "slug": "contract-renewal-tracker",
@@ -664,7 +903,10 @@
       "tier": "medium",
       "wave": 2,
       "maturity": "planned",
-      "file": "agents/contract-renewal-tracker.md"
+      "skills": [
+        "llm.analyze"
+      ],
+      "file": "agents/procurement/contract-renewal-tracker.md"
     },
     {
       "slug": "purchase-approval-router",
@@ -674,7 +916,10 @@
       "tier": "medium",
       "wave": 2,
       "maturity": "planned",
-      "file": "agents/purchase-approval-router.md"
+      "skills": [
+        "llm.analyze"
+      ],
+      "file": "agents/procurement/purchase-approval-router.md"
     },
     {
       "slug": "saas-spend-optimizer",
@@ -684,7 +929,11 @@
       "tier": "low",
       "wave": 3,
       "maturity": "planned",
-      "file": "agents/saas-spend-optimizer.md"
+      "skills": [
+        "llm.analyze",
+        "llm.draft"
+      ],
+      "file": "agents/procurement/saas-spend-optimizer.md"
     },
     {
       "slug": "sales-call-summarizer",
@@ -694,7 +943,11 @@
       "tier": "low",
       "wave": 2,
       "maturity": "planned",
-      "file": "agents/sales-call-summarizer.md"
+      "skills": [
+        "llm.analyze",
+        "llm.draft"
+      ],
+      "file": "agents/revenue_gtm/sales-call-summarizer.md"
     },
     {
       "slug": "meeting-scheduler",
@@ -704,7 +957,10 @@
       "tier": "low",
       "wave": 2,
       "maturity": "planned",
-      "file": "agents/meeting-scheduler.md"
+      "skills": [
+        "llm.analyze"
+      ],
+      "file": "agents/revenue_gtm/meeting-scheduler.md"
     },
     {
       "slug": "territory-quota-planner",
@@ -714,7 +970,11 @@
       "tier": "medium",
       "wave": 3,
       "maturity": "planned",
-      "file": "agents/territory-quota-planner.md"
+      "skills": [
+        "llm.analyze",
+        "llm.draft"
+      ],
+      "file": "agents/revenue_gtm/territory-quota-planner.md"
     },
     {
       "slug": "ad-campaign-optimizer",
@@ -724,7 +984,11 @@
       "tier": "medium",
       "wave": 2,
       "maturity": "planned",
-      "file": "agents/ad-campaign-optimizer.md"
+      "skills": [
+        "llm.analyze",
+        "llm.draft"
+      ],
+      "file": "agents/marketing/ad-campaign-optimizer.md"
     },
     {
       "slug": "landing-page-cro",
@@ -734,7 +998,11 @@
       "tier": "low",
       "wave": 3,
       "maturity": "planned",
-      "file": "agents/landing-page-cro.md"
+      "skills": [
+        "llm.analyze",
+        "llm.draft"
+      ],
+      "file": "agents/marketing/landing-page-cro.md"
     },
     {
       "slug": "pr-press-release",
@@ -744,7 +1012,10 @@
       "tier": "medium",
       "wave": 3,
       "maturity": "planned",
-      "file": "agents/pr-press-release.md"
+      "skills": [
+        "llm.draft"
+      ],
+      "file": "agents/marketing/pr-press-release.md"
     },
     {
       "slug": "community-manager",
@@ -754,7 +1025,11 @@
       "tier": "medium",
       "wave": 3,
       "maturity": "planned",
-      "file": "agents/community-manager.md"
+      "skills": [
+        "llm.analyze",
+        "llm.draft"
+      ],
+      "file": "agents/marketing/community-manager.md"
     },
     {
       "slug": "knowledge-base-maintainer",
@@ -764,7 +1039,11 @@
       "tier": "low",
       "wave": 2,
       "maturity": "planned",
-      "file": "agents/knowledge-base-maintainer.md"
+      "skills": [
+        "llm.analyze",
+        "llm.draft"
+      ],
+      "file": "agents/customer_success/knowledge-base-maintainer.md"
     },
     {
       "slug": "voice-of-customer",
@@ -774,7 +1053,10 @@
       "tier": "low",
       "wave": 3,
       "maturity": "planned",
-      "file": "agents/voice-of-customer.md"
+      "skills": [
+        "llm.analyze"
+      ],
+      "file": "agents/customer_success/voice-of-customer.md"
     },
     {
       "slug": "feature-request-analyzer",
@@ -784,7 +1066,10 @@
       "tier": "low",
       "wave": 2,
       "maturity": "planned",
-      "file": "agents/feature-request-analyzer.md"
+      "skills": [
+        "llm.analyze"
+      ],
+      "file": "agents/engineering/feature-request-analyzer.md"
     },
     {
       "slug": "oncall-scheduler",
@@ -794,7 +1079,10 @@
       "tier": "medium",
       "wave": 3,
       "maturity": "planned",
-      "file": "agents/oncall-scheduler.md"
+      "skills": [
+        "llm.analyze"
+      ],
+      "file": "agents/engineering/oncall-scheduler.md"
     },
     {
       "slug": "api-docs-generator",
@@ -804,7 +1092,11 @@
       "tier": "low",
       "wave": 3,
       "maturity": "planned",
-      "file": "agents/api-docs-generator.md"
+      "skills": [
+        "llm.analyze",
+        "llm.draft"
+      ],
+      "file": "agents/engineering/api-docs-generator.md"
     },
     {
       "slug": "test-coverage-monitor",
@@ -814,7 +1106,10 @@
       "tier": "low",
       "wave": 3,
       "maturity": "planned",
-      "file": "agents/test-coverage-monitor.md"
+      "skills": [
+        "llm.analyze"
+      ],
+      "file": "agents/engineering/test-coverage-monitor.md"
     },
     {
       "slug": "performance-regression-detector",
@@ -824,7 +1119,10 @@
       "tier": "medium",
       "wave": 3,
       "maturity": "planned",
-      "file": "agents/performance-regression-detector.md"
+      "skills": [
+        "llm.analyze"
+      ],
+      "file": "agents/engineering/performance-regression-detector.md"
     },
     {
       "slug": "product-analytics-insights",
@@ -834,7 +1132,10 @@
       "tier": "low",
       "wave": 2,
       "maturity": "planned",
-      "file": "agents/product-analytics-insights.md"
+      "skills": [
+        "llm.analyze"
+      ],
+      "file": "agents/engineering/product-analytics-insights.md"
     },
     {
       "slug": "meeting-notes-actions",
@@ -844,7 +1145,11 @@
       "tier": "low",
       "wave": 2,
       "maturity": "planned",
-      "file": "agents/meeting-notes-actions.md"
+      "skills": [
+        "llm.analyze",
+        "llm.draft"
+      ],
+      "file": "agents/executive/meeting-notes-actions.md"
     },
     {
       "slug": "market-sizing-analyst",
@@ -854,7 +1159,11 @@
       "tier": "low",
       "wave": 3,
       "maturity": "planned",
-      "file": "agents/market-sizing-analyst.md"
+      "skills": [
+        "llm.analyze",
+        "llm.draft"
+      ],
+      "file": "agents/executive/market-sizing-analyst.md"
     },
     {
       "slug": "ar-collections",
@@ -864,7 +1173,10 @@
       "tier": "medium",
       "wave": 2,
       "maturity": "planned",
-      "file": "agents/ar-collections.md"
+      "skills": [
+        "llm.analyze"
+      ],
+      "file": "agents/finance_ops/ar-collections.md"
     },
     {
       "slug": "ap-bill-pay",
@@ -874,7 +1186,10 @@
       "tier": "high",
       "wave": 3,
       "maturity": "planned",
-      "file": "agents/ap-bill-pay.md"
+      "skills": [
+        "llm.analyze"
+      ],
+      "file": "agents/finance_ops/ap-bill-pay.md"
     },
     {
       "slug": "budget-variance-analyzer",
@@ -884,7 +1199,10 @@
       "tier": "low",
       "wave": 3,
       "maturity": "planned",
-      "file": "agents/budget-variance-analyzer.md"
+      "skills": [
+        "llm.analyze"
+      ],
+      "file": "agents/finance_ops/budget-variance-analyzer.md"
     },
     {
       "slug": "interview-scheduler",
@@ -894,7 +1212,10 @@
       "tier": "low",
       "wave": 2,
       "maturity": "planned",
-      "file": "agents/interview-scheduler.md"
+      "skills": [
+        "llm.analyze"
+      ],
+      "file": "agents/people/interview-scheduler.md"
     },
     {
       "slug": "comp-benchmarking",
@@ -904,7 +1225,10 @@
       "tier": "high",
       "wave": 3,
       "maturity": "planned",
-      "file": "agents/comp-benchmarking.md"
+      "skills": [
+        "llm.analyze"
+      ],
+      "file": "agents/people/comp-benchmarking.md"
     },
     {
       "slug": "pto-leave-tracker",
@@ -914,7 +1238,10 @@
       "tier": "medium",
       "wave": 3,
       "maturity": "planned",
-      "file": "agents/pto-leave-tracker.md"
+      "skills": [
+        "llm.analyze"
+      ],
+      "file": "agents/people/pto-leave-tracker.md"
     },
     {
       "slug": "ip-trademark-tracker",
@@ -924,7 +1251,10 @@
       "tier": "medium",
       "wave": 3,
       "maturity": "planned",
-      "file": "agents/ip-trademark-tracker.md"
+      "skills": [
+        "llm.analyze"
+      ],
+      "file": "agents/legal_compliance/ip-trademark-tracker.md"
     },
     {
       "slug": "security-awareness-trainer",
@@ -934,7 +1264,10 @@
       "tier": "medium",
       "wave": 3,
       "maturity": "planned",
-      "file": "agents/security-awareness-trainer.md"
+      "skills": [
+        "llm.analyze"
+      ],
+      "file": "agents/security_it/security-awareness-trainer.md"
     },
     {
       "slug": "backup-dr-monitor",
@@ -944,7 +1277,10 @@
       "tier": "high",
       "wave": 3,
       "maturity": "planned",
-      "file": "agents/backup-dr-monitor.md"
+      "skills": [
+        "llm.analyze"
+      ],
+      "file": "agents/security_it/backup-dr-monitor.md"
     },
     {
       "slug": "device-compliance-monitor",
@@ -954,7 +1290,10 @@
       "tier": "high",
       "wave": 3,
       "maturity": "planned",
-      "file": "agents/device-compliance-monitor.md"
+      "skills": [
+        "llm.analyze"
+      ],
+      "file": "agents/security_it/device-compliance-monitor.md"
     },
     {
       "slug": "supplier-performance",
@@ -964,7 +1303,10 @@
       "tier": "low",
       "wave": 3,
       "maturity": "planned",
-      "file": "agents/supplier-performance.md"
+      "skills": [
+        "llm.analyze"
+      ],
+      "file": "agents/procurement/supplier-performance.md"
     }
   ],
   "skills": [
