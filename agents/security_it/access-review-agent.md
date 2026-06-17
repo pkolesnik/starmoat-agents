@@ -1,6 +1,6 @@
 # Access Review Agent
 
-> Security & IT · mode: `supervise` · governance: `high` · wave 2 · maturity: `planned`
+> Security & IT · mode: `supervise` · governance: `high` · wave 2 · maturity: `ga`
 
 Runs periodic least-privilege access reviews across connected systems, flags dormant accounts and over-broad grants, and prepares the review pack for an owner to approve.
 
@@ -10,6 +10,7 @@ You are "Access Review Agent", an AI agent in the Aiformia operating system. Run
 
 ## Skills used
 - `llm.analyze` ([skill](../../skills/llm.analyze.md))
+- `llm.classify` ([skill](../../skills/llm.classify.md))
 
 ## Capabilities
 - read
@@ -28,5 +29,5 @@ You are "Access Review Agent", an AI agent in the Aiformia operating system. Run
 - Default automation mode: `supervise`
 - Governance tier: `high` — External-facing or PII. Requires a single human approver before going live.
 - Default wave: 2
-- Maturity: `planned` — runs in preview via composed core skills until a bespoke runner ships.
+- Maturity: `ga`
 

@@ -812,9 +812,10 @@
       "mode": "supervise",
       "tier": "high",
       "wave": 2,
-      "maturity": "planned",
+      "maturity": "ga",
       "skills": [
-        "llm.analyze"
+        "llm.analyze",
+        "llm.classify"
       ],
       "file": "agents/security_it/access-review-agent.md"
     },
@@ -825,9 +826,10 @@
       "mode": "supervise",
       "tier": "high",
       "wave": 2,
-      "maturity": "planned",
+      "maturity": "ga",
       "skills": [
-        "llm.analyze"
+        "llm.analyze",
+        "llm.classify"
       ],
       "file": "agents/security_it/vulnerability-triage-agent.md"
     },
@@ -852,9 +854,10 @@
       "mode": "supervise",
       "tier": "high",
       "wave": 2,
-      "maturity": "planned",
+      "maturity": "ga",
       "skills": [
-        "llm.analyze"
+        "llm.analyze",
+        "llm.classify"
       ],
       "file": "agents/security_it/it-provisioning-agent.md"
     },
@@ -865,9 +868,10 @@
       "mode": "advise",
       "tier": "low",
       "wave": 3,
-      "maturity": "planned",
+      "maturity": "ga",
       "skills": [
-        "llm.analyze"
+        "llm.analyze",
+        "llm.classify"
       ],
       "file": "agents/security_it/saas-license-monitor.md"
     },
@@ -878,9 +882,10 @@
       "mode": "supervise",
       "tier": "medium",
       "wave": 3,
-      "maturity": "planned",
+      "maturity": "ga",
       "skills": [
-        "llm.analyze"
+        "llm.analyze",
+        "llm.classify"
       ],
       "file": "agents/security_it/phishing-report-triage.md"
     },
@@ -1266,9 +1271,10 @@
       "mode": "automate",
       "tier": "medium",
       "wave": 3,
-      "maturity": "planned",
+      "maturity": "ga",
       "skills": [
-        "llm.analyze"
+        "llm.analyze",
+        "llm.classify"
       ],
       "file": "agents/security_it/security-awareness-trainer.md"
     },
@@ -1279,9 +1285,10 @@
       "mode": "supervise",
       "tier": "high",
       "wave": 3,
-      "maturity": "planned",
+      "maturity": "ga",
       "skills": [
-        "llm.analyze"
+        "llm.analyze",
+        "llm.classify"
       ],
       "file": "agents/security_it/backup-dr-monitor.md"
     },
@@ -1292,9 +1299,10 @@
       "mode": "supervise",
       "tier": "high",
       "wave": 3,
-      "maturity": "planned",
+      "maturity": "ga",
       "skills": [
-        "llm.analyze"
+        "llm.analyze",
+        "llm.classify"
       ],
       "file": "agents/security_it/device-compliance-monitor.md"
     },

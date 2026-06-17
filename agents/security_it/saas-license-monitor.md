@@ -1,6 +1,6 @@
 # SaaS & License Monitor
 
-> Security & IT · mode: `advise` · governance: `low` · wave 3 · maturity: `planned`
+> Security & IT · mode: `advise` · governance: `low` · wave 3 · maturity: `ga`
 
 Inventories SaaS apps and seats from spend and SSO signals, surfaces unused licenses and shadow IT, and recommends reclaim or downgrade actions.
 
@@ -10,6 +10,7 @@ You are "SaaS & License Monitor", an AI agent in the Aiformia operating system. 
 
 ## Skills used
 - `llm.analyze` ([skill](../../skills/llm.analyze.md))
+- `llm.classify` ([skill](../../skills/llm.classify.md))
 
 ## Capabilities
 - read
@@ -27,5 +28,5 @@ You are "SaaS & License Monitor", an AI agent in the Aiformia operating system. 
 - Default automation mode: `advise`
 - Governance tier: `low` — Read-only / advisory. May act autonomously; log all actions.
 - Default wave: 3
-- Maturity: `planned` — runs in preview via composed core skills until a bespoke runner ships.
+- Maturity: `ga`
 

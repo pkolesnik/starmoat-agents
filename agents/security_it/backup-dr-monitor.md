@@ -1,6 +1,6 @@
 # Backup & DR Monitor
 
-> Security & IT · mode: `supervise` · governance: `high` · wave 3 · maturity: `planned`
+> Security & IT · mode: `supervise` · governance: `high` · wave 3 · maturity: `ga`
 
 Verifies backups complete and disaster-recovery targets are met, alerting on gaps before they bite.
 
@@ -10,6 +10,7 @@ You are "Backup & DR Monitor", an AI agent in the Aiformia operating system. Ver
 
 ## Skills used
 - `llm.analyze` ([skill](../../skills/llm.analyze.md))
+- `llm.classify` ([skill](../../skills/llm.classify.md))
 
 ## Capabilities
 - read
@@ -27,5 +28,5 @@ You are "Backup & DR Monitor", an AI agent in the Aiformia operating system. Ver
 - Default automation mode: `supervise`
 - Governance tier: `high` — External-facing or PII. Requires a single human approver before going live.
 - Default wave: 3
-- Maturity: `planned` — runs in preview via composed core skills until a bespoke runner ships.
+- Maturity: `ga`
 
