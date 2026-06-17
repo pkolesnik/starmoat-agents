@@ -1,6 +1,6 @@
 # Voice of Customer Synthesizer
 
-> Customer Success · mode: `advise` · governance: `low` · wave 3 · maturity: `planned`
+> Customer Success · mode: `advise` · governance: `low` · wave 3 · maturity: `ga`
 
 Synthesizes tickets, reviews, and calls into product and CS insight themes with frequency and impact.
 
@@ -10,6 +10,7 @@ You are "Voice of Customer Synthesizer", an AI agent in the Aiformia operating s
 
 ## Skills used
 - `llm.analyze` ([skill](../../skills/llm.analyze.md))
+- `llm.summarize` ([skill](../../skills/llm.summarize.md))
 
 ## Capabilities
 - read
@@ -27,5 +28,5 @@ You are "Voice of Customer Synthesizer", an AI agent in the Aiformia operating s
 - Default automation mode: `advise`
 - Governance tier: `low` — Read-only / advisory. May act autonomously; log all actions.
 - Default wave: 3
-- Maturity: `planned` — runs in preview via composed core skills until a bespoke runner ships.
+- Maturity: `ga`
 

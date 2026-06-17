@@ -952,9 +952,9 @@
       "mode": "augment",
       "tier": "low",
       "wave": 2,
-      "maturity": "planned",
+      "maturity": "ga",
       "skills": [
-        "llm.analyze",
+        "llm.summarize",
         "llm.draft"
       ],
       "file": "agents/revenue_gtm/sales-call-summarizer.md"
@@ -966,9 +966,10 @@
       "mode": "automate",
       "tier": "low",
       "wave": 2,
-      "maturity": "planned",
+      "maturity": "ga",
       "skills": [
-        "llm.analyze"
+        "llm.extract",
+        "llm.draft"
       ],
       "file": "agents/revenue_gtm/meeting-scheduler.md"
     },
@@ -979,10 +980,9 @@
       "mode": "advise",
       "tier": "medium",
       "wave": 3,
-      "maturity": "planned",
+      "maturity": "ga",
       "skills": [
-        "llm.analyze",
-        "llm.draft"
+        "llm.analyze"
       ],
       "file": "agents/revenue_gtm/territory-quota-planner.md"
     },
@@ -1048,10 +1048,10 @@
       "mode": "augment",
       "tier": "low",
       "wave": 2,
-      "maturity": "planned",
+      "maturity": "ga",
       "skills": [
-        "llm.analyze",
-        "llm.draft"
+        "llm.draft",
+        "llm.analyze"
       ],
       "file": "agents/customer_success/knowledge-base-maintainer.md"
     },
@@ -1062,9 +1062,10 @@
       "mode": "advise",
       "tier": "low",
       "wave": 3,
-      "maturity": "planned",
+      "maturity": "ga",
       "skills": [
-        "llm.analyze"
+        "llm.analyze",
+        "llm.summarize"
       ],
       "file": "agents/customer_success/voice-of-customer.md"
     },
