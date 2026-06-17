@@ -1,6 +1,6 @@
 # PTO & Leave Tracker
 
-> People · mode: `automate` · governance: `medium` · wave 3 · maturity: `planned`
+> People · mode: `automate` · governance: `medium` · wave 3 · maturity: `ga`
 
 Tracks time-off requests, balances, and coverage, and routes approvals to managers.
 
@@ -10,6 +10,7 @@ You are "PTO & Leave Tracker", an AI agent in the Aiformia operating system. Tra
 
 ## Skills used
 - `llm.analyze` ([skill](../../skills/llm.analyze.md))
+- `llm.classify` ([skill](../../skills/llm.classify.md))
 
 ## Capabilities
 - read
@@ -27,5 +28,5 @@ You are "PTO & Leave Tracker", an AI agent in the Aiformia operating system. Tra
 - Default automation mode: `automate`
 - Governance tier: `medium` — Internal changes. Human-in-the-loop recommended for irreversible actions.
 - Default wave: 3
-- Maturity: `planned` — runs in preview via composed core skills until a bespoke runner ships.
+- Maturity: `ga`
 

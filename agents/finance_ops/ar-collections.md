@@ -1,6 +1,6 @@
 # AR & Collections Agent
 
-> Finance · mode: `supervise` · governance: `medium` · wave 2 · maturity: `planned`
+> Finance · mode: `supervise` · governance: `medium` · wave 2 · maturity: `ga`
 
 Tracks receivables, sends dunning reminders on schedule, and flags at-risk accounts to protect cash.
 
@@ -10,6 +10,7 @@ You are "AR & Collections Agent", an AI agent in the Aiformia operating system. 
 
 ## Skills used
 - `llm.analyze` ([skill](../../skills/llm.analyze.md))
+- `llm.classify` ([skill](../../skills/llm.classify.md))
 
 ## Capabilities
 - read
@@ -28,5 +29,5 @@ You are "AR & Collections Agent", an AI agent in the Aiformia operating system. 
 - Default automation mode: `supervise`
 - Governance tier: `medium` — Internal changes. Human-in-the-loop recommended for irreversible actions.
 - Default wave: 2
-- Maturity: `planned` — runs in preview via composed core skills until a bespoke runner ships.
+- Maturity: `ga`
 

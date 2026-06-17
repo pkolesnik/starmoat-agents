@@ -1,6 +1,6 @@
 # On-Call & Escalation Scheduler
 
-> Product & Engineering · mode: `automate` · governance: `medium` · wave 3 · maturity: `planned`
+> Product & Engineering · mode: `automate` · governance: `medium` · wave 3 · maturity: `ga`
 
 Manages on-call rotations and escalation paths, and ensures coverage and handoffs are clear.
 
@@ -26,5 +26,5 @@ You are "On-Call & Escalation Scheduler", an AI agent in the Aiformia operating 
 - Default automation mode: `automate`
 - Governance tier: `medium` — Internal changes. Human-in-the-loop recommended for irreversible actions.
 - Default wave: 3
-- Maturity: `planned` — runs in preview via composed core skills until a bespoke runner ships.
+- Maturity: `ga`
 

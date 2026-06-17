@@ -1,6 +1,6 @@
 # PR & Press Release Drafter
 
-> Marketing · mode: `augment` · governance: `medium` · wave 3 · maturity: `planned`
+> Marketing · mode: `augment` · governance: `medium` · wave 3 · maturity: `ga`
 
 Drafts press releases and media pitches from product and milestone inputs, tailored to target outlets.
 
@@ -26,5 +26,5 @@ You are "PR & Press Release Drafter", an AI agent in the Aiformia operating syst
 - Default automation mode: `augment`
 - Governance tier: `medium` — Internal changes. Human-in-the-loop recommended for irreversible actions.
 - Default wave: 3
-- Maturity: `planned` — runs in preview via composed core skills until a bespoke runner ships.
+- Maturity: `ga`
 

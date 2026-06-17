@@ -993,10 +993,10 @@
       "mode": "advise",
       "tier": "medium",
       "wave": 2,
-      "maturity": "planned",
+      "maturity": "ga",
       "skills": [
         "llm.analyze",
-        "llm.draft"
+        "llm.classify"
       ],
       "file": "agents/marketing/ad-campaign-optimizer.md"
     },
@@ -1007,10 +1007,10 @@
       "mode": "advise",
       "tier": "low",
       "wave": 3,
-      "maturity": "planned",
+      "maturity": "ga",
       "skills": [
-        "llm.analyze",
-        "llm.draft"
+        "llm.draft",
+        "llm.analyze"
       ],
       "file": "agents/marketing/landing-page-cro.md"
     },
@@ -1021,7 +1021,7 @@
       "mode": "augment",
       "tier": "medium",
       "wave": 3,
-      "maturity": "planned",
+      "maturity": "ga",
       "skills": [
         "llm.draft"
       ],
@@ -1034,10 +1034,10 @@
       "mode": "augment",
       "tier": "medium",
       "wave": 3,
-      "maturity": "planned",
+      "maturity": "ga",
       "skills": [
         "llm.analyze",
-        "llm.draft"
+        "llm.classify"
       ],
       "file": "agents/marketing/community-manager.md"
     },
@@ -1076,9 +1076,10 @@
       "mode": "advise",
       "tier": "low",
       "wave": 2,
-      "maturity": "planned",
+      "maturity": "ga",
       "skills": [
-        "llm.analyze"
+        "llm.analyze",
+        "llm.classify"
       ],
       "file": "agents/engineering/feature-request-analyzer.md"
     },
@@ -1089,7 +1090,7 @@
       "mode": "automate",
       "tier": "medium",
       "wave": 3,
-      "maturity": "planned",
+      "maturity": "ga",
       "skills": [
         "llm.analyze"
       ],
@@ -1102,9 +1103,8 @@
       "mode": "augment",
       "tier": "low",
       "wave": 3,
-      "maturity": "planned",
+      "maturity": "ga",
       "skills": [
-        "llm.analyze",
         "llm.draft"
       ],
       "file": "agents/engineering/api-docs-generator.md"
@@ -1116,7 +1116,7 @@
       "mode": "advise",
       "tier": "low",
       "wave": 3,
-      "maturity": "planned",
+      "maturity": "ga",
       "skills": [
         "llm.analyze"
       ],
@@ -1129,7 +1129,7 @@
       "mode": "supervise",
       "tier": "medium",
       "wave": 3,
-      "maturity": "planned",
+      "maturity": "ga",
       "skills": [
         "llm.analyze"
       ],
@@ -1142,7 +1142,7 @@
       "mode": "advise",
       "tier": "low",
       "wave": 2,
-      "maturity": "planned",
+      "maturity": "ga",
       "skills": [
         "llm.analyze"
       ],
@@ -1155,10 +1155,10 @@
       "mode": "augment",
       "tier": "low",
       "wave": 2,
-      "maturity": "planned",
+      "maturity": "ga",
       "skills": [
         "llm.analyze",
-        "llm.draft"
+        "llm.summarize"
       ],
       "file": "agents/executive/meeting-notes-actions.md"
     },
@@ -1169,10 +1169,9 @@
       "mode": "advise",
       "tier": "low",
       "wave": 3,
-      "maturity": "planned",
+      "maturity": "ga",
       "skills": [
-        "llm.analyze",
-        "llm.draft"
+        "llm.analyze"
       ],
       "file": "agents/executive/market-sizing-analyst.md"
     },
@@ -1183,9 +1182,10 @@
       "mode": "supervise",
       "tier": "medium",
       "wave": 2,
-      "maturity": "planned",
+      "maturity": "ga",
       "skills": [
-        "llm.analyze"
+        "llm.analyze",
+        "llm.classify"
       ],
       "file": "agents/finance_ops/ar-collections.md"
     },
@@ -1196,9 +1196,10 @@
       "mode": "supervise",
       "tier": "high",
       "wave": 3,
-      "maturity": "planned",
+      "maturity": "ga",
       "skills": [
-        "llm.analyze"
+        "llm.analyze",
+        "llm.classify"
       ],
       "file": "agents/finance_ops/ap-bill-pay.md"
     },
@@ -1209,7 +1210,7 @@
       "mode": "advise",
       "tier": "low",
       "wave": 3,
-      "maturity": "planned",
+      "maturity": "ga",
       "skills": [
         "llm.analyze"
       ],
@@ -1222,9 +1223,10 @@
       "mode": "automate",
       "tier": "low",
       "wave": 2,
-      "maturity": "planned",
+      "maturity": "ga",
       "skills": [
-        "llm.analyze"
+        "llm.extract",
+        "llm.draft"
       ],
       "file": "agents/people/interview-scheduler.md"
     },
@@ -1235,7 +1237,7 @@
       "mode": "advise",
       "tier": "high",
       "wave": 3,
-      "maturity": "planned",
+      "maturity": "ga",
       "skills": [
         "llm.analyze"
       ],
@@ -1248,9 +1250,10 @@
       "mode": "automate",
       "tier": "medium",
       "wave": 3,
-      "maturity": "planned",
+      "maturity": "ga",
       "skills": [
-        "llm.analyze"
+        "llm.analyze",
+        "llm.classify"
       ],
       "file": "agents/people/pto-leave-tracker.md"
     },

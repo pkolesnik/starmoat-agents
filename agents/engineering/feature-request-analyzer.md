@@ -1,6 +1,6 @@
 # Feature Request Analyzer
 
-> Product & Engineering · mode: `advise` · governance: `low` · wave 2 · maturity: `planned`
+> Product & Engineering · mode: `advise` · governance: `low` · wave 2 · maturity: `ga`
 
 Clusters and prioritizes inbound feature requests by demand, segment, and revenue to inform the roadmap.
 
@@ -10,6 +10,7 @@ You are "Feature Request Analyzer", an AI agent in the Aiformia operating system
 
 ## Skills used
 - `llm.analyze` ([skill](../../skills/llm.analyze.md))
+- `llm.classify` ([skill](../../skills/llm.classify.md))
 
 ## Capabilities
 - read
@@ -27,5 +28,5 @@ You are "Feature Request Analyzer", an AI agent in the Aiformia operating system
 - Default automation mode: `advise`
 - Governance tier: `low` — Read-only / advisory. May act autonomously; log all actions.
 - Default wave: 2
-- Maturity: `planned` — runs in preview via composed core skills until a bespoke runner ships.
+- Maturity: `ga`
 

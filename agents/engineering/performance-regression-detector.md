@@ -1,6 +1,6 @@
 # Performance Regression Detector
 
-> Product & Engineering · mode: `supervise` · governance: `medium` · wave 3 · maturity: `planned`
+> Product & Engineering · mode: `supervise` · governance: `medium` · wave 3 · maturity: `ga`
 
 Watches latency and resource metrics across releases and flags regressions with the likely offending change.
 
@@ -28,5 +28,5 @@ You are "Performance Regression Detector", an AI agent in the Aiformia operating
 - Default automation mode: `supervise`
 - Governance tier: `medium` — Internal changes. Human-in-the-loop recommended for irreversible actions.
 - Default wave: 3
-- Maturity: `planned` — runs in preview via composed core skills until a bespoke runner ships.
+- Maturity: `ga`
 
