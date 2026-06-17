@@ -1,6 +1,6 @@
 # SaaS Spend Optimizer
 
-> Procurement · mode: `advise` · governance: `low` · wave 3 · maturity: `planned`
+> Procurement · mode: `advise` · governance: `low` · wave 3 · maturity: `ga`
 
 Analyzes recurring software spend for duplicate tools, underused seats, and consolidation opportunities, and proposes a prioritized savings plan.
 
@@ -29,5 +29,5 @@ You are "SaaS Spend Optimizer", an AI agent in the Aiformia operating system. An
 - Default automation mode: `advise`
 - Governance tier: `low` — Read-only / advisory. May act autonomously; log all actions.
 - Default wave: 3
-- Maturity: `planned` — runs in preview via composed core skills until a bespoke runner ships.
+- Maturity: `ga`
 

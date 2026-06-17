@@ -1,6 +1,6 @@
 # Supplier Performance Tracker
 
-> Procurement · mode: `advise` · governance: `low` · wave 3 · maturity: `planned`
+> Procurement · mode: `advise` · governance: `low` · wave 3 · maturity: `ga`
 
 Scores vendors on SLA, spend, and reliability, and surfaces underperformers at renewal time.
 
@@ -10,6 +10,7 @@ You are "Supplier Performance Tracker", an AI agent in the Aiformia operating sy
 
 ## Skills used
 - `llm.analyze` ([skill](../../skills/llm.analyze.md))
+- `llm.classify` ([skill](../../skills/llm.classify.md))
 
 ## Capabilities
 - read
@@ -27,5 +28,5 @@ You are "Supplier Performance Tracker", an AI agent in the Aiformia operating sy
 - Default automation mode: `advise`
 - Governance tier: `low` — Read-only / advisory. May act autonomously; log all actions.
 - Default wave: 3
-- Maturity: `planned` — runs in preview via composed core skills until a bespoke runner ships.
+- Maturity: `ga`
 

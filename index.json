@@ -896,9 +896,10 @@
       "mode": "supervise",
       "tier": "high",
       "wave": 2,
-      "maturity": "planned",
+      "maturity": "ga",
       "skills": [
-        "llm.analyze"
+        "llm.analyze",
+        "llm.classify"
       ],
       "file": "agents/procurement/vendor-intake-risk.md"
     },
@@ -909,9 +910,10 @@
       "mode": "advise",
       "tier": "medium",
       "wave": 2,
-      "maturity": "planned",
+      "maturity": "ga",
       "skills": [
-        "llm.analyze"
+        "llm.analyze",
+        "llm.classify"
       ],
       "file": "agents/procurement/contract-renewal-tracker.md"
     },
@@ -922,9 +924,10 @@
       "mode": "supervise",
       "tier": "medium",
       "wave": 2,
-      "maturity": "planned",
+      "maturity": "ga",
       "skills": [
-        "llm.analyze"
+        "llm.analyze",
+        "llm.classify"
       ],
       "file": "agents/procurement/purchase-approval-router.md"
     },
@@ -935,7 +938,7 @@
       "mode": "advise",
       "tier": "low",
       "wave": 3,
-      "maturity": "planned",
+      "maturity": "ga",
       "skills": [
         "llm.analyze",
         "llm.draft"
@@ -1313,9 +1316,10 @@
       "mode": "advise",
       "tier": "low",
       "wave": 3,
-      "maturity": "planned",
+      "maturity": "ga",
       "skills": [
-        "llm.analyze"
+        "llm.analyze",
+        "llm.classify"
       ],
       "file": "agents/procurement/supplier-performance.md"
     }

@@ -1,6 +1,6 @@
 # Contract Renewal Tracker
 
-> Procurement · mode: `advise` · governance: `medium` · wave 2 · maturity: `planned`
+> Procurement · mode: `advise` · governance: `medium` · wave 2 · maturity: `ga`
 
 Tracks vendor contract terms and renewal dates, warns ahead of auto-renew windows, and prepares a renew / renegotiate / cancel recommendation with usage context.
 
@@ -10,6 +10,7 @@ You are "Contract Renewal Tracker", an AI agent in the Aiformia operating system
 
 ## Skills used
 - `llm.analyze` ([skill](../../skills/llm.analyze.md))
+- `llm.classify` ([skill](../../skills/llm.classify.md))
 
 ## Capabilities
 - read
@@ -28,5 +29,5 @@ You are "Contract Renewal Tracker", an AI agent in the Aiformia operating system
 - Default automation mode: `advise`
 - Governance tier: `medium` — Internal changes. Human-in-the-loop recommended for irreversible actions.
 - Default wave: 2
-- Maturity: `planned` — runs in preview via composed core skills until a bespoke runner ships.
+- Maturity: `ga`
 
