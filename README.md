@@ -12,27 +12,27 @@ run the generator in the app repo: `node --experimental-strip-types gen-agents-r
 
 ## Structure
 
-- `agents/{function}/{slug}.md` — 96 agent identities, **grouped by function**, each listing the skills it composes
-- `skills/{slug}.md` — 5 composable skill manifests (prompt-as-data), flat (skills are cross-cutting)
-- `workflows/{key}.md` — 48 canonical operating-model workflows (purpose, KPIs, handoffs, powering agents)
+- `agents/{function}/{slug}.md` — 176 agent identities, **grouped by function**, each listing the skills it composes
+- `skills/{slug}.md` — 34 composable skill manifests (prompt-as-data), flat (skills are cross-cutting)
+- `workflows/{key}.md` — 204 canonical operating-model workflows (purpose, KPIs, handoffs, powering agents)
 - `pipelines/` — how workflows chain into runnable, scheduled pipelines
 - `index.json` — machine-readable catalog (agents ↔ skills ↔ functions)
 
 ## Counts
 
-- **Agents:** 96 (96 GA, 0 preview, 0 planned), by function:
-  - `customer_success` Customer Success: 11
-  - `engineering` Product & Engineering: 13
-  - `executive` Executive & Strategy: 7
-  - `finance_ops` Finance: 11
-  - `legal_compliance` Legal & Compliance: 7
-  - `marketing` Marketing: 11
-  - `people` People: 9
-  - `procurement` Procurement: 5
-  - `revenue_gtm` Revenue & GTM: 13
-  - `security_it` Security & IT: 9
-- **Skills:** 5
-- **Workflows:** 48 (30 essential)
+- **Agents:** 176 (176 GA, 0 preview, 0 planned), by function:
+  - `customer_success` Customer Success: 17
+  - `engineering` Product & Engineering: 22
+  - `executive` Executive & Strategy: 18
+  - `finance_ops` Finance: 20
+  - `legal_compliance` Legal & Compliance: 13
+  - `marketing` Marketing: 19
+  - `people` People: 19
+  - `procurement` Procurement: 10
+  - `revenue_gtm` Revenue & GTM: 20
+  - `security_it` Security & IT: 18
+- **Skills:** 34
+- **Workflows:** 204 (75 essential)
 
 ## Generic library vs. per-organization model
 

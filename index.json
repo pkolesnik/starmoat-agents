@@ -1,11 +1,27 @@
 {
   "generatedFrom": "pkolesnik/starmoat (lib/agent-catalog, lib/operating-model-blueprint, lib/skills)",
   "counts": {
-    "agents": 96,
-    "skills": 5,
-    "workflows": 48
+    "agents": 176,
+    "skills": 34,
+    "workflows": 204
   },
   "agents": [
+    {
+      "slug": "company-researcher",
+      "name": "Company Researcher",
+      "function": "executive",
+      "mode": "advise",
+      "tier": "low",
+      "wave": 1,
+      "maturity": "ga",
+      "skills": [
+        "search.web",
+        "extract.entities",
+        "reason.benchmark",
+        "gen.summary"
+      ],
+      "file": "agents/executive/company-researcher.md"
+    },
     {
       "slug": "icp-lead-scorer",
       "name": "ICP Lead Scorer",
@@ -15,8 +31,10 @@
       "wave": 1,
       "maturity": "ga",
       "skills": [
-        "llm.analyze",
-        "llm.draft"
+        "extract.enrich",
+        "classify.priority",
+        "reason.recommend",
+        "orch.handoff"
       ],
       "file": "agents/revenue_gtm/icp-lead-scorer.md"
     },
@@ -29,8 +47,10 @@
       "wave": 1,
       "maturity": "ga",
       "skills": [
-        "llm.analyze",
-        "llm.draft"
+        "search.web",
+        "extract.enrich",
+        "gen.draft",
+        "reason.recommend"
       ],
       "file": "agents/revenue_gtm/outbound-personalization.md"
     },
@@ -43,8 +63,9 @@
       "wave": 1,
       "maturity": "ga",
       "skills": [
-        "llm.analyze",
-        "llm.draft"
+        "gen.summary",
+        "gen.draft",
+        "extract.fields"
       ],
       "file": "agents/revenue_gtm/demo-followup.md"
     },
@@ -57,8 +78,10 @@
       "wave": 2,
       "maturity": "ga",
       "skills": [
-        "llm.analyze",
-        "llm.draft"
+        "xform.normalize",
+        "xform.reconcile",
+        "extract.enrich",
+        "classify.risk"
       ],
       "file": "agents/revenue_gtm/crm-hygiene.md"
     },
@@ -71,7 +94,10 @@
       "wave": 2,
       "maturity": "ga",
       "skills": [
-        "llm.draft"
+        "search.competitor",
+        "gen.draft",
+        "reason.benchmark",
+        "orch.handoff"
       ],
       "file": "agents/revenue_gtm/competitive-battlecard.md"
     },
@@ -84,8 +110,9 @@
       "wave": 2,
       "maturity": "ga",
       "skills": [
-        "llm.analyze",
-        "llm.draft"
+        "extract.fields",
+        "gen.doc",
+        "orch.approval"
       ],
       "file": "agents/revenue_gtm/proposal-quote-assistant.md"
     },
@@ -98,8 +125,10 @@
       "wave": 2,
       "maturity": "ga",
       "skills": [
-        "llm.analyze",
-        "llm.classify"
+        "classify.triage",
+        "classify.risk",
+        "orch.approval",
+        "orch.handoff"
       ],
       "file": "agents/revenue_gtm/deal-desk-router.md"
     },
@@ -112,8 +141,9 @@
       "wave": 3,
       "maturity": "ga",
       "skills": [
-        "llm.analyze",
-        "llm.draft"
+        "reason.rootcause",
+        "reason.benchmark",
+        "gen.summary"
       ],
       "file": "agents/revenue_gtm/win-loss-analysis.md"
     },
@@ -126,8 +156,10 @@
       "wave": 2,
       "maturity": "ga",
       "skills": [
-        "llm.analyze",
-        "llm.draft"
+        "reason.forecast",
+        "classify.risk",
+        "reason.recommend",
+        "calc.kpi"
       ],
       "file": "agents/revenue_gtm/pipeline-forecast.md"
     },
@@ -140,7 +172,9 @@
       "wave": 3,
       "maturity": "ga",
       "skills": [
-        "llm.analyze"
+        "calc.kpi",
+        "reason.benchmark",
+        "gen.summary"
       ],
       "file": "agents/revenue_gtm/partner-channel.md"
     },
@@ -153,7 +187,9 @@
       "wave": 1,
       "maturity": "ga",
       "skills": [
-        "llm.analyze"
+        "calc.kpi",
+        "classify.risk",
+        "reason.anomaly"
       ],
       "file": "agents/customer_success/health-score-monitor.md"
     },
@@ -166,8 +202,9 @@
       "wave": 2,
       "maturity": "ga",
       "skills": [
-        "llm.analyze",
-        "llm.draft"
+        "calc.kpi",
+        "reason.benchmark",
+        "gen.doc"
       ],
       "file": "agents/customer_success/qbr-prep.md"
     },
@@ -180,8 +217,9 @@
       "wave": 1,
       "maturity": "ga",
       "skills": [
-        "llm.analyze",
-        "llm.draft"
+        "orch.schedule",
+        "classify.risk",
+        "gen.reply"
       ],
       "file": "agents/customer_success/onboarding-milestone-tracker.md"
     },
@@ -194,9 +232,10 @@
       "wave": 1,
       "maturity": "ga",
       "skills": [
-        "llm.analyze",
-        "llm.draft",
-        "llm.classify"
+        "classify.triage",
+        "classify.priority",
+        "classify.sentiment",
+        "gen.reply"
       ],
       "file": "agents/customer_success/support-ticket-triage.md"
     },
@@ -209,7 +248,9 @@
       "wave": 1,
       "maturity": "ga",
       "skills": [
-        "llm.analyze"
+        "classify.risk",
+        "reason.recommend",
+        "orch.schedule"
       ],
       "file": "agents/customer_success/renewal-risk-alert.md"
     },
@@ -222,8 +263,9 @@
       "wave": 2,
       "maturity": "ga",
       "skills": [
-        "llm.analyze",
-        "llm.draft"
+        "classify.sentiment",
+        "reason.benchmark",
+        "gen.summary"
       ],
       "file": "agents/customer_success/csat-analysis.md"
     },
@@ -236,7 +278,9 @@
       "wave": 2,
       "maturity": "ga",
       "skills": [
-        "llm.analyze"
+        "reason.anomaly",
+        "classify.priority",
+        "reason.recommend"
       ],
       "file": "agents/customer_success/expansion-signal-detector.md"
     },
@@ -249,7 +293,9 @@
       "wave": 3,
       "maturity": "ga",
       "skills": [
-        "llm.analyze"
+        "reason.recommend",
+        "reason.plan",
+        "calc.kpi"
       ],
       "file": "agents/customer_success/success-playbook.md"
     },
@@ -262,8 +308,10 @@
       "wave": 1,
       "maturity": "ga",
       "skills": [
-        "llm.analyze",
-        "llm.classify"
+        "xform.reconcile",
+        "reason.anomaly",
+        "classify.risk",
+        "xform.map"
       ],
       "file": "agents/finance_ops/revenue-reconciliation.md"
     },
@@ -276,7 +324,9 @@
       "wave": 1,
       "maturity": "ga",
       "skills": [
-        "llm.analyze"
+        "calc.kpi",
+        "reason.forecast",
+        "gen.summary"
       ],
       "file": "agents/finance_ops/burn-rate-monitor.md"
     },
@@ -289,8 +339,10 @@
       "wave": 2,
       "maturity": "ga",
       "skills": [
-        "llm.analyze",
-        "llm.classify"
+        "extract.fields",
+        "xform.map",
+        "reason.anomaly",
+        "orch.approval"
       ],
       "file": "agents/finance_ops/vendor-invoice-review.md"
     },
@@ -303,8 +355,9 @@
       "wave": 2,
       "maturity": "ga",
       "skills": [
-        "llm.analyze",
-        "llm.classify"
+        "reason.anomaly",
+        "classify.risk",
+        "calc.kpi"
       ],
       "file": "agents/finance_ops/payroll-anomaly-detector.md"
     },
@@ -317,7 +370,9 @@
       "wave": 2,
       "maturity": "ga",
       "skills": [
-        "llm.analyze"
+        "reason.forecast",
+        "calc.kpi",
+        "reason.recommend"
       ],
       "file": "agents/finance_ops/cash-flow-forecaster.md"
     },
@@ -330,8 +385,10 @@
       "wave": 3,
       "maturity": "ga",
       "skills": [
-        "llm.analyze",
-        "llm.classify"
+        "extract.fields",
+        "classify.risk",
+        "reason.recommend",
+        "orch.approval"
       ],
       "file": "agents/finance_ops/expense-policy-enforcer.md"
     },
@@ -344,7 +401,10 @@
       "wave": 3,
       "maturity": "ga",
       "skills": [
-        "llm.analyze"
+        "extract.fields",
+        "reason.forecast",
+        "orch.approval",
+        "calc.kpi"
       ],
       "file": "agents/finance_ops/cap-table-manager.md"
     },
@@ -357,8 +417,9 @@
       "wave": 1,
       "maturity": "ga",
       "skills": [
-        "llm.analyze",
-        "llm.draft"
+        "gen.code",
+        "gen.summary",
+        "classify.triage"
       ],
       "file": "agents/engineering/changelog-generator.md"
     },
@@ -371,8 +432,10 @@
       "wave": 2,
       "maturity": "ga",
       "skills": [
-        "llm.analyze",
-        "llm.draft"
+        "reason.plan",
+        "calc.kpi",
+        "classify.priority",
+        "gen.draft"
       ],
       "file": "agents/engineering/sprint-planning-assistant.md"
     },
@@ -385,8 +448,11 @@
       "wave": 1,
       "maturity": "ga",
       "skills": [
-        "llm.analyze",
-        "llm.draft"
+        "classify.triage",
+        "classify.priority",
+        "extract.entities",
+        "orch.handoff",
+        "reason.rootcause"
       ],
       "file": "agents/engineering/bug-triage.md"
     },
@@ -399,7 +465,9 @@
       "wave": 2,
       "maturity": "ga",
       "skills": [
-        "llm.analyze"
+        "gen.code",
+        "gen.summary",
+        "classify.risk"
       ],
       "file": "agents/engineering/code-review-summary.md"
     },
@@ -412,8 +480,10 @@
       "wave": 2,
       "maturity": "ga",
       "skills": [
-        "llm.analyze",
-        "llm.draft"
+        "reason.rootcause",
+        "classify.priority",
+        "gen.draft",
+        "orch.handoff"
       ],
       "file": "agents/engineering/incident-response.md"
     },
@@ -426,8 +496,10 @@
       "wave": 3,
       "maturity": "ga",
       "skills": [
-        "llm.analyze",
-        "llm.draft"
+        "extract.fields",
+        "reason.benchmark",
+        "classify.priority",
+        "gen.summary"
       ],
       "file": "agents/engineering/technical-debt-tracker.md"
     },
@@ -440,7 +512,9 @@
       "wave": 2,
       "maturity": "ga",
       "skills": [
-        "llm.analyze"
+        "reason.anomaly",
+        "calc.kpi",
+        "classify.risk"
       ],
       "file": "agents/engineering/deployment-monitor.md"
     },
@@ -453,7 +527,10 @@
       "wave": 2,
       "maturity": "ga",
       "skills": [
-        "llm.analyze"
+        "extract.fields",
+        "classify.priority",
+        "reason.benchmark",
+        "reason.recommend"
       ],
       "file": "agents/people/resume-screener.md"
     },
@@ -466,8 +543,9 @@
       "wave": 2,
       "maturity": "ga",
       "skills": [
-        "llm.analyze",
-        "llm.draft"
+        "gen.draft",
+        "search.web",
+        "safe.redact"
       ],
       "file": "agents/people/job-description-generator.md"
     },
@@ -480,8 +558,9 @@
       "wave": 2,
       "maturity": "ga",
       "skills": [
-        "llm.draft",
-        "llm.analyze"
+        "orch.schedule",
+        "orch.handoff",
+        "calc.kpi"
       ],
       "file": "agents/people/employee-onboarding.md"
     },
@@ -494,8 +573,9 @@
       "wave": 3,
       "maturity": "ga",
       "skills": [
-        "llm.analyze",
-        "llm.draft"
+        "extract.fields",
+        "gen.summary",
+        "gen.draft"
       ],
       "file": "agents/people/performance-review-synthesizer.md"
     },
@@ -508,8 +588,9 @@
       "wave": 3,
       "maturity": "ga",
       "skills": [
-        "llm.analyze",
-        "llm.draft"
+        "classify.sentiment",
+        "reason.anomaly",
+        "gen.summary"
       ],
       "file": "agents/people/employee-sentiment.md"
     },
@@ -522,8 +603,10 @@
       "wave": 3,
       "maturity": "ga",
       "skills": [
-        "llm.analyze",
-        "llm.draft"
+        "reason.forecast",
+        "reason.plan",
+        "calc.kpi",
+        "gen.draft"
       ],
       "file": "agents/people/headcount-planning.md"
     },
@@ -536,7 +619,9 @@
       "wave": 2,
       "maturity": "ga",
       "skills": [
-        "llm.draft"
+        "search.web",
+        "search.competitor",
+        "gen.draft"
       ],
       "file": "agents/marketing/content-brief-generator.md"
     },
@@ -549,8 +634,9 @@
       "wave": 2,
       "maturity": "ga",
       "skills": [
-        "llm.analyze",
-        "llm.draft"
+        "search.competitor",
+        "reason.benchmark",
+        "reason.recommend"
       ],
       "file": "agents/marketing/seo-competitive-analyzer.md"
     },
@@ -563,8 +649,10 @@
       "wave": 2,
       "maturity": "ga",
       "skills": [
-        "llm.analyze",
-        "llm.draft"
+        "calc.kpi",
+        "reason.benchmark",
+        "gen.summary",
+        "reason.recommend"
       ],
       "file": "agents/marketing/campaign-performance.md"
     },
@@ -577,8 +665,9 @@
       "wave": 3,
       "maturity": "ga",
       "skills": [
-        "llm.analyze",
-        "llm.draft"
+        "search.kb",
+        "gen.draft",
+        "gen.summary"
       ],
       "file": "agents/marketing/newsletter-drafter.md"
     },
@@ -591,8 +680,9 @@
       "wave": 3,
       "maturity": "ga",
       "skills": [
-        "llm.analyze",
-        "llm.draft"
+        "gen.draft",
+        "orch.schedule",
+        "orch.approval"
       ],
       "file": "agents/marketing/social-scheduler.md"
     },
@@ -605,7 +695,9 @@
       "wave": 3,
       "maturity": "ga",
       "skills": [
-        "llm.analyze"
+        "search.web",
+        "classify.sentiment",
+        "classify.priority"
       ],
       "file": "agents/marketing/brand-mention-monitor.md"
     },
@@ -618,8 +710,9 @@
       "wave": 3,
       "maturity": "ga",
       "skills": [
-        "llm.analyze",
-        "llm.draft"
+        "orch.schedule",
+        "gen.draft",
+        "gen.reply"
       ],
       "file": "agents/marketing/event-coordinator.md"
     },
@@ -632,8 +725,9 @@
       "wave": 1,
       "maturity": "ga",
       "skills": [
-        "llm.analyze",
-        "llm.draft"
+        "classify.sentiment",
+        "reason.anomaly",
+        "gen.reply"
       ],
       "file": "agents/customer_success/app-store-monitor.md"
     },
@@ -646,8 +740,10 @@
       "wave": 1,
       "maturity": "ga",
       "skills": [
-        "llm.analyze",
-        "llm.draft"
+        "calc.kpi",
+        "reason.anomaly",
+        "reason.forecast",
+        "reason.recommend"
       ],
       "file": "agents/finance_ops/api-cost-tracker.md"
     },
@@ -660,8 +756,10 @@
       "wave": 3,
       "maturity": "ga",
       "skills": [
-        "llm.analyze",
-        "llm.draft"
+        "calc.kpi",
+        "gen.doc",
+        "gen.summary",
+        "reason.recommend"
       ],
       "file": "agents/executive/board-report-generator.md"
     },
@@ -674,8 +772,9 @@
       "wave": 2,
       "maturity": "ga",
       "skills": [
-        "llm.analyze",
-        "llm.draft"
+        "calc.kpi",
+        "classify.risk",
+        "gen.summary"
       ],
       "file": "agents/executive/okr-tracker.md"
     },
@@ -688,8 +787,10 @@
       "wave": 2,
       "maturity": "ga",
       "skills": [
-        "llm.analyze",
-        "llm.draft"
+        "search.competitor",
+        "search.web",
+        "reason.recommend",
+        "gen.summary"
       ],
       "file": "agents/executive/competitive-intelligence.md"
     },
@@ -702,8 +803,9 @@
       "wave": 2,
       "maturity": "ga",
       "skills": [
-        "llm.analyze",
-        "llm.draft"
+        "calc.kpi",
+        "gen.draft",
+        "gen.summary"
       ],
       "file": "agents/executive/investor-update.md"
     },
@@ -716,8 +818,10 @@
       "wave": 3,
       "maturity": "ga",
       "skills": [
-        "llm.analyze",
-        "llm.draft"
+        "classify.risk",
+        "reason.anomaly",
+        "reason.recommend",
+        "gen.summary"
       ],
       "file": "agents/executive/strategic-risk-scanner.md"
     },
@@ -730,8 +834,10 @@
       "wave": 2,
       "maturity": "ga",
       "skills": [
-        "llm.analyze",
-        "llm.extract"
+        "extract.entities",
+        "classify.risk",
+        "reason.benchmark",
+        "gen.summary"
       ],
       "file": "agents/legal_compliance/contract-review-assistant.md"
     },
@@ -744,8 +850,10 @@
       "wave": 3,
       "maturity": "ga",
       "skills": [
-        "llm.analyze",
-        "llm.classify"
+        "extract.fields",
+        "classify.risk",
+        "reason.recommend",
+        "search.kb"
       ],
       "file": "agents/legal_compliance/privacy-dpa-tracker.md"
     },
@@ -758,8 +866,9 @@
       "wave": 2,
       "maturity": "ga",
       "skills": [
-        "llm.draft",
-        "llm.analyze"
+        "gen.doc",
+        "search.kb",
+        "reason.recommend"
       ],
       "file": "agents/legal_compliance/policy-document-generator.md"
     },
@@ -772,8 +881,10 @@
       "wave": 3,
       "maturity": "ga",
       "skills": [
-        "llm.analyze",
-        "llm.classify"
+        "search.kb",
+        "extract.fields",
+        "calc.kpi",
+        "orch.handoff"
       ],
       "file": "agents/legal_compliance/compliance-evidence-collector.md"
     },
@@ -786,8 +897,9 @@
       "wave": 2,
       "maturity": "ga",
       "skills": [
-        "llm.draft",
-        "llm.analyze"
+        "gen.doc",
+        "orch.approval",
+        "orch.schedule"
       ],
       "file": "agents/legal_compliance/nda-manager.md"
     },
@@ -800,8 +912,10 @@
       "wave": 3,
       "maturity": "ga",
       "skills": [
-        "llm.analyze",
-        "llm.classify"
+        "search.web",
+        "reason.anomaly",
+        "classify.risk",
+        "gen.summary"
       ],
       "file": "agents/legal_compliance/regulatory-change-monitor.md"
     },
@@ -814,8 +928,10 @@
       "wave": 2,
       "maturity": "ga",
       "skills": [
-        "llm.analyze",
-        "llm.classify"
+        "classify.risk",
+        "reason.anomaly",
+        "orch.approval",
+        "safe.redact"
       ],
       "file": "agents/security_it/access-review-agent.md"
     },
@@ -828,8 +944,10 @@
       "wave": 2,
       "maturity": "ga",
       "skills": [
-        "llm.analyze",
-        "llm.classify"
+        "classify.risk",
+        "classify.priority",
+        "reason.rootcause",
+        "orch.handoff"
       ],
       "file": "agents/security_it/vulnerability-triage-agent.md"
     },
@@ -842,8 +960,9 @@
       "wave": 2,
       "maturity": "ga",
       "skills": [
-        "llm.analyze",
-        "llm.draft"
+        "search.kb",
+        "gen.doc",
+        "classify.risk"
       ],
       "file": "agents/security_it/security-questionnaire-responder.md"
     },
@@ -856,8 +975,10 @@
       "wave": 2,
       "maturity": "ga",
       "skills": [
-        "llm.analyze",
-        "llm.classify"
+        "classify.risk",
+        "orch.approval",
+        "orch.handoff",
+        "xform.map"
       ],
       "file": "agents/security_it/it-provisioning-agent.md"
     },
@@ -870,8 +991,10 @@
       "wave": 3,
       "maturity": "ga",
       "skills": [
-        "llm.analyze",
-        "llm.classify"
+        "reason.anomaly",
+        "reason.recommend",
+        "calc.kpi",
+        "search.competitor"
       ],
       "file": "agents/security_it/saas-license-monitor.md"
     },
@@ -884,8 +1007,10 @@
       "wave": 3,
       "maturity": "ga",
       "skills": [
-        "llm.analyze",
-        "llm.classify"
+        "classify.triage",
+        "classify.risk",
+        "gen.reply",
+        "reason.anomaly"
       ],
       "file": "agents/security_it/phishing-report-triage.md"
     },
@@ -898,8 +1023,10 @@
       "wave": 2,
       "maturity": "ga",
       "skills": [
-        "llm.analyze",
-        "llm.classify"
+        "extract.enrich",
+        "classify.risk",
+        "search.kb",
+        "orch.approval"
       ],
       "file": "agents/procurement/vendor-intake-risk.md"
     },
@@ -912,8 +1039,10 @@
       "wave": 2,
       "maturity": "ga",
       "skills": [
-        "llm.analyze",
-        "llm.classify"
+        "extract.fields",
+        "orch.schedule",
+        "reason.recommend",
+        "calc.kpi"
       ],
       "file": "agents/procurement/contract-renewal-tracker.md"
     },
@@ -926,8 +1055,9 @@
       "wave": 2,
       "maturity": "ga",
       "skills": [
-        "llm.analyze",
-        "llm.classify"
+        "classify.triage",
+        "orch.approval",
+        "orch.handoff"
       ],
       "file": "agents/procurement/purchase-approval-router.md"
     },
@@ -940,8 +1070,10 @@
       "wave": 3,
       "maturity": "ga",
       "skills": [
-        "llm.analyze",
-        "llm.draft"
+        "reason.anomaly",
+        "reason.recommend",
+        "calc.kpi",
+        "gen.summary"
       ],
       "file": "agents/procurement/saas-spend-optimizer.md"
     },
@@ -954,8 +1086,9 @@
       "wave": 2,
       "maturity": "ga",
       "skills": [
-        "llm.summarize",
-        "llm.draft"
+        "gen.summary",
+        "extract.fields",
+        "xform.map"
       ],
       "file": "agents/revenue_gtm/sales-call-summarizer.md"
     },
@@ -968,8 +1101,9 @@
       "wave": 2,
       "maturity": "ga",
       "skills": [
-        "llm.extract",
-        "llm.draft"
+        "orch.schedule",
+        "extract.fields",
+        "gen.reply"
       ],
       "file": "agents/revenue_gtm/meeting-scheduler.md"
     },
@@ -982,7 +1116,9 @@
       "wave": 3,
       "maturity": "ga",
       "skills": [
-        "llm.analyze"
+        "reason.plan",
+        "reason.benchmark",
+        "calc.kpi"
       ],
       "file": "agents/revenue_gtm/territory-quota-planner.md"
     },
@@ -995,8 +1131,9 @@
       "wave": 2,
       "maturity": "ga",
       "skills": [
-        "llm.analyze",
-        "llm.classify"
+        "calc.kpi",
+        "reason.anomaly",
+        "reason.recommend"
       ],
       "file": "agents/marketing/ad-campaign-optimizer.md"
     },
@@ -1009,8 +1146,9 @@
       "wave": 3,
       "maturity": "ga",
       "skills": [
-        "llm.draft",
-        "llm.analyze"
+        "reason.rootcause",
+        "reason.recommend",
+        "gen.draft"
       ],
       "file": "agents/marketing/landing-page-cro.md"
     },
@@ -1023,7 +1161,9 @@
       "wave": 3,
       "maturity": "ga",
       "skills": [
-        "llm.draft"
+        "gen.draft",
+        "gen.doc",
+        "search.web"
       ],
       "file": "agents/marketing/pr-press-release.md"
     },
@@ -1036,8 +1176,9 @@
       "wave": 3,
       "maturity": "ga",
       "skills": [
-        "llm.analyze",
-        "llm.classify"
+        "classify.triage",
+        "classify.sentiment",
+        "gen.reply"
       ],
       "file": "agents/marketing/community-manager.md"
     },
@@ -1050,8 +1191,9 @@
       "wave": 2,
       "maturity": "ga",
       "skills": [
-        "llm.draft",
-        "llm.analyze"
+        "search.kb",
+        "gen.doc",
+        "classify.triage"
       ],
       "file": "agents/customer_success/knowledge-base-maintainer.md"
     },
@@ -1064,8 +1206,9 @@
       "wave": 3,
       "maturity": "ga",
       "skills": [
-        "llm.analyze",
-        "llm.summarize"
+        "classify.sentiment",
+        "reason.benchmark",
+        "gen.summary"
       ],
       "file": "agents/customer_success/voice-of-customer.md"
     },
@@ -1078,8 +1221,10 @@
       "wave": 2,
       "maturity": "ga",
       "skills": [
-        "llm.analyze",
-        "llm.classify"
+        "classify.triage",
+        "classify.priority",
+        "reason.recommend",
+        "gen.summary"
       ],
       "file": "agents/engineering/feature-request-analyzer.md"
     },
@@ -1092,7 +1237,9 @@
       "wave": 3,
       "maturity": "ga",
       "skills": [
-        "llm.analyze"
+        "orch.schedule",
+        "orch.handoff",
+        "calc.kpi"
       ],
       "file": "agents/engineering/oncall-scheduler.md"
     },
@@ -1105,7 +1252,9 @@
       "wave": 3,
       "maturity": "ga",
       "skills": [
-        "llm.draft"
+        "gen.code",
+        "gen.doc",
+        "extract.fields"
       ],
       "file": "agents/engineering/api-docs-generator.md"
     },
@@ -1118,7 +1267,9 @@
       "wave": 3,
       "maturity": "ga",
       "skills": [
-        "llm.analyze"
+        "calc.kpi",
+        "reason.anomaly",
+        "reason.recommend"
       ],
       "file": "agents/engineering/test-coverage-monitor.md"
     },
@@ -1131,7 +1282,9 @@
       "wave": 3,
       "maturity": "ga",
       "skills": [
-        "llm.analyze"
+        "reason.anomaly",
+        "reason.rootcause",
+        "calc.kpi"
       ],
       "file": "agents/engineering/performance-regression-detector.md"
     },
@@ -1144,7 +1297,10 @@
       "wave": 2,
       "maturity": "ga",
       "skills": [
-        "llm.analyze"
+        "calc.kpi",
+        "reason.benchmark",
+        "reason.recommend",
+        "gen.summary"
       ],
       "file": "agents/engineering/product-analytics-insights.md"
     },
@@ -1157,8 +1313,9 @@
       "wave": 2,
       "maturity": "ga",
       "skills": [
-        "llm.analyze",
-        "llm.summarize"
+        "gen.summary",
+        "extract.entities",
+        "orch.handoff"
       ],
       "file": "agents/executive/meeting-notes-actions.md"
     },
@@ -1171,7 +1328,10 @@
       "wave": 3,
       "maturity": "ga",
       "skills": [
-        "llm.analyze"
+        "search.web",
+        "reason.benchmark",
+        "calc.kpi",
+        "gen.doc"
       ],
       "file": "agents/executive/market-sizing-analyst.md"
     },
@@ -1184,8 +1344,10 @@
       "wave": 2,
       "maturity": "ga",
       "skills": [
-        "llm.analyze",
-        "llm.classify"
+        "calc.kpi",
+        "classify.risk",
+        "gen.reply",
+        "orch.schedule"
       ],
       "file": "agents/finance_ops/ar-collections.md"
     },
@@ -1198,8 +1360,10 @@
       "wave": 3,
       "maturity": "ga",
       "skills": [
-        "llm.analyze",
-        "llm.classify"
+        "extract.fields",
+        "xform.map",
+        "reason.anomaly",
+        "orch.schedule"
       ],
       "file": "agents/finance_ops/ap-bill-pay.md"
     },
@@ -1212,7 +1376,10 @@
       "wave": 3,
       "maturity": "ga",
       "skills": [
-        "llm.analyze"
+        "calc.kpi",
+        "reason.benchmark",
+        "reason.rootcause",
+        "gen.summary"
       ],
       "file": "agents/finance_ops/budget-variance-analyzer.md"
     },
@@ -1225,8 +1392,9 @@
       "wave": 2,
       "maturity": "ga",
       "skills": [
-        "llm.extract",
-        "llm.draft"
+        "orch.schedule",
+        "extract.fields",
+        "gen.reply"
       ],
       "file": "agents/people/interview-scheduler.md"
     },
@@ -1239,7 +1407,9 @@
       "wave": 3,
       "maturity": "ga",
       "skills": [
-        "llm.analyze"
+        "reason.benchmark",
+        "search.web",
+        "calc.kpi"
       ],
       "file": "agents/people/comp-benchmarking.md"
     },
@@ -1252,8 +1422,9 @@
       "wave": 3,
       "maturity": "ga",
       "skills": [
-        "llm.analyze",
-        "llm.classify"
+        "extract.fields",
+        "orch.approval",
+        "orch.schedule"
       ],
       "file": "agents/people/pto-leave-tracker.md"
     },
@@ -1266,8 +1437,10 @@
       "wave": 3,
       "maturity": "ga",
       "skills": [
-        "llm.analyze",
-        "llm.classify"
+        "search.web",
+        "extract.fields",
+        "orch.schedule",
+        "classify.risk"
       ],
       "file": "agents/legal_compliance/ip-trademark-tracker.md"
     },
@@ -1280,8 +1453,9 @@
       "wave": 3,
       "maturity": "ga",
       "skills": [
-        "llm.analyze",
-        "llm.classify"
+        "orch.schedule",
+        "calc.kpi",
+        "gen.reply"
       ],
       "file": "agents/security_it/security-awareness-trainer.md"
     },
@@ -1294,8 +1468,9 @@
       "wave": 3,
       "maturity": "ga",
       "skills": [
-        "llm.analyze",
-        "llm.classify"
+        "reason.anomaly",
+        "classify.risk",
+        "calc.kpi"
       ],
       "file": "agents/security_it/backup-dr-monitor.md"
     },
@@ -1308,8 +1483,10 @@
       "wave": 3,
       "maturity": "ga",
       "skills": [
-        "llm.analyze",
-        "llm.classify"
+        "classify.risk",
+        "reason.anomaly",
+        "calc.kpi",
+        "orch.handoff"
       ],
       "file": "agents/security_it/device-compliance-monitor.md"
     },
@@ -1322,13 +1499,1421 @@
       "wave": 3,
       "maturity": "ga",
       "skills": [
-        "llm.analyze",
-        "llm.classify"
+        "calc.kpi",
+        "reason.benchmark",
+        "classify.risk",
+        "gen.summary"
       ],
       "file": "agents/procurement/supplier-performance.md"
+    },
+    {
+      "slug": "cs-channel-strategy",
+      "name": "Service Channel Strategy Agent",
+      "function": "customer_success",
+      "mode": "advise",
+      "tier": "medium",
+      "wave": 2,
+      "maturity": "ga",
+      "skills": [
+        "reason.recommend",
+        "reason.benchmark",
+        "calc.kpi",
+        "classify.triage"
+      ],
+      "file": "agents/customer_success/cs-channel-strategy.md"
+    },
+    {
+      "slug": "cs-quality-assurance",
+      "name": "Service Quality Assurance Agent",
+      "function": "customer_success",
+      "mode": "supervise",
+      "tier": "medium",
+      "wave": 2,
+      "maturity": "ga",
+      "skills": [
+        "classify.sentiment",
+        "gen.summary",
+        "reason.benchmark",
+        "calc.kpi"
+      ],
+      "file": "agents/customer_success/cs-quality-assurance.md"
+    },
+    {
+      "slug": "cs-service-analytics",
+      "name": "Service Analytics Agent",
+      "function": "customer_success",
+      "mode": "supervise",
+      "tier": "low",
+      "wave": 2,
+      "maturity": "ga",
+      "skills": [
+        "calc.kpi",
+        "reason.anomaly",
+        "reason.recommend",
+        "gen.summary"
+      ],
+      "file": "agents/customer_success/cs-service-analytics.md"
+    },
+    {
+      "slug": "cs-service-strategy",
+      "name": "Service Strategy Agent",
+      "function": "customer_success",
+      "mode": "advise",
+      "tier": "medium",
+      "wave": 2,
+      "maturity": "ga",
+      "skills": [
+        "gen.doc",
+        "reason.recommend",
+        "classify.triage",
+        "calc.kpi"
+      ],
+      "file": "agents/customer_success/cs-service-strategy.md"
+    },
+    {
+      "slug": "cs-warranty-entitlement",
+      "name": "Warranty & Entitlement Agent",
+      "function": "customer_success",
+      "mode": "augment",
+      "tier": "high",
+      "wave": 2,
+      "maturity": "ga",
+      "skills": [
+        "extract.fields",
+        "classify.risk",
+        "reason.recommend",
+        "orch.approval"
+      ],
+      "file": "agents/customer_success/cs-warranty-entitlement.md"
+    },
+    {
+      "slug": "cs-workforce-planning",
+      "name": "Support Workforce Planning Agent",
+      "function": "customer_success",
+      "mode": "augment",
+      "tier": "medium",
+      "wave": 2,
+      "maturity": "ga",
+      "skills": [
+        "reason.forecast",
+        "orch.schedule",
+        "calc.kpi",
+        "reason.recommend"
+      ],
+      "file": "agents/customer_success/cs-workforce-planning.md"
+    },
+    {
+      "slug": "eng-capacity-forecaster",
+      "name": "Capacity and Skills Forecaster Agent",
+      "function": "engineering",
+      "mode": "advise",
+      "tier": "low",
+      "wave": 2,
+      "maturity": "ga",
+      "skills": [
+        "reason.forecast",
+        "calc.kpi",
+        "reason.recommend",
+        "xform.map"
+      ],
+      "file": "agents/engineering/eng-capacity-forecaster.md"
+    },
+    {
+      "slug": "eng-change-management-review",
+      "name": "Engineering Change Management Agent",
+      "function": "engineering",
+      "mode": "advise",
+      "tier": "medium",
+      "wave": 2,
+      "maturity": "ga",
+      "skills": [
+        "classify.risk",
+        "orch.approval",
+        "reason.plan",
+        "gen.doc"
+      ],
+      "file": "agents/engineering/eng-change-management-review.md"
+    },
+    {
+      "slug": "eng-design-spec",
+      "name": "Design Specification Agent",
+      "function": "engineering",
+      "mode": "augment",
+      "tier": "low",
+      "wave": 2,
+      "maturity": "ga",
+      "skills": [
+        "gen.doc",
+        "reason.plan",
+        "reason.recommend"
+      ],
+      "file": "agents/engineering/eng-design-spec.md"
+    },
+    {
+      "slug": "eng-portfolio-governance",
+      "name": "Product Portfolio Governance Agent",
+      "function": "engineering",
+      "mode": "advise",
+      "tier": "medium",
+      "wave": 3,
+      "maturity": "ga",
+      "skills": [
+        "reason.benchmark",
+        "classify.priority",
+        "reason.recommend",
+        "gen.doc"
+      ],
+      "file": "agents/engineering/eng-portfolio-governance.md"
+    },
+    {
+      "slug": "eng-product-discovery-research",
+      "name": "Product Discovery Research Agent",
+      "function": "engineering",
+      "mode": "advise",
+      "tier": "low",
+      "wave": 2,
+      "maturity": "ga",
+      "skills": [
+        "search.web",
+        "extract.entities",
+        "reason.recommend",
+        "gen.summary"
+      ],
+      "file": "agents/engineering/eng-product-discovery-research.md"
+    },
+    {
+      "slug": "eng-product-requirements-spec",
+      "name": "Product Requirements Agent",
+      "function": "engineering",
+      "mode": "augment",
+      "tier": "low",
+      "wave": 2,
+      "maturity": "ga",
+      "skills": [
+        "gen.doc",
+        "reason.plan",
+        "extract.fields"
+      ],
+      "file": "agents/engineering/eng-product-requirements-spec.md"
+    },
+    {
+      "slug": "eng-prototype-poc-planner",
+      "name": "Prototype and PoC Planner Agent",
+      "function": "engineering",
+      "mode": "advise",
+      "tier": "low",
+      "wave": 2,
+      "maturity": "ga",
+      "skills": [
+        "reason.plan",
+        "gen.draft",
+        "reason.recommend"
+      ],
+      "file": "agents/engineering/eng-prototype-poc-planner.md"
+    },
+    {
+      "slug": "eng-roadmap-launch-planner",
+      "name": "Roadmap and Launch Planner Agent",
+      "function": "engineering",
+      "mode": "augment",
+      "tier": "low",
+      "wave": 2,
+      "maturity": "ga",
+      "skills": [
+        "classify.priority",
+        "reason.plan",
+        "gen.doc",
+        "orch.schedule"
+      ],
+      "file": "agents/engineering/eng-roadmap-launch-planner.md"
+    },
+    {
+      "slug": "eng-security-requirements-sdlc",
+      "name": "Security Requirements (SDLC) Agent",
+      "function": "engineering",
+      "mode": "advise",
+      "tier": "medium",
+      "wave": 2,
+      "maturity": "ga",
+      "skills": [
+        "classify.risk",
+        "gen.doc",
+        "reason.recommend",
+        "safe.redact"
+      ],
+      "file": "agents/engineering/eng-security-requirements-sdlc.md"
+    },
+    {
+      "slug": "exec-business-model-architect",
+      "name": "Business Model Architect",
+      "function": "executive",
+      "mode": "advise",
+      "tier": "medium",
+      "wave": 2,
+      "maturity": "ga",
+      "skills": [
+        "reason.recommend",
+        "gen.doc",
+        "xform.map",
+        "reason.benchmark"
+      ],
+      "file": "agents/executive/exec-business-model-architect.md"
+    },
+    {
+      "slug": "exec-change-management",
+      "name": "Organizational Change Management Agent",
+      "function": "executive",
+      "mode": "augment",
+      "tier": "medium",
+      "wave": 2,
+      "maturity": "ga",
+      "skills": [
+        "reason.plan",
+        "classify.sentiment",
+        "gen.draft",
+        "reason.recommend"
+      ],
+      "file": "agents/executive/exec-change-management.md"
+    },
+    {
+      "slug": "exec-initiative-portfolio",
+      "name": "Strategic Initiative Portfolio Agent",
+      "function": "executive",
+      "mode": "advise",
+      "tier": "medium",
+      "wave": 2,
+      "maturity": "ga",
+      "skills": [
+        "classify.priority",
+        "reason.recommend",
+        "reason.plan",
+        "gen.summary"
+      ],
+      "file": "agents/executive/exec-initiative-portfolio.md"
+    },
+    {
+      "slug": "exec-internal-assessment",
+      "name": "Internal Capability & Health Assessment",
+      "function": "executive",
+      "mode": "advise",
+      "tier": "medium",
+      "wave": 2,
+      "maturity": "ga",
+      "skills": [
+        "reason.benchmark",
+        "reason.recommend",
+        "calc.kpi",
+        "gen.summary"
+      ],
+      "file": "agents/executive/exec-internal-assessment.md"
+    },
+    {
+      "slug": "exec-knowledge-management",
+      "name": "Enterprise Knowledge Management Agent",
+      "function": "executive",
+      "mode": "augment",
+      "tier": "medium",
+      "wave": 3,
+      "maturity": "ga",
+      "skills": [
+        "search.kb",
+        "xform.map",
+        "gen.doc",
+        "reason.recommend"
+      ],
+      "file": "agents/executive/exec-knowledge-management.md"
+    },
+    {
+      "slug": "exec-ma-corp-dev",
+      "name": "M&A & Corporate Development Agent",
+      "function": "executive",
+      "mode": "advise",
+      "tier": "high",
+      "wave": 3,
+      "maturity": "ga",
+      "skills": [
+        "reason.recommend",
+        "classify.risk",
+        "reason.benchmark",
+        "gen.doc"
+      ],
+      "file": "agents/executive/exec-ma-corp-dev.md"
+    },
+    {
+      "slug": "exec-pmo-portfolio",
+      "name": "PMO Portfolio & Program Agent",
+      "function": "executive",
+      "mode": "augment",
+      "tier": "medium",
+      "wave": 2,
+      "maturity": "ga",
+      "skills": [
+        "classify.priority",
+        "reason.plan",
+        "calc.kpi",
+        "gen.summary"
+      ],
+      "file": "agents/executive/exec-pmo-portfolio.md"
+    },
+    {
+      "slug": "exec-process-excellence",
+      "name": "Process Excellence Agent",
+      "function": "executive",
+      "mode": "augment",
+      "tier": "medium",
+      "wave": 2,
+      "maturity": "ga",
+      "skills": [
+        "xform.map",
+        "reason.rootcause",
+        "classify.priority",
+        "calc.kpi"
+      ],
+      "file": "agents/executive/exec-process-excellence.md"
+    },
+    {
+      "slug": "exec-stakeholder-public-affairs",
+      "name": "Stakeholder & Public Affairs Agent",
+      "function": "executive",
+      "mode": "advise",
+      "tier": "high",
+      "wave": 3,
+      "maturity": "ga",
+      "skills": [
+        "search.web",
+        "reason.recommend",
+        "gen.draft",
+        "classify.priority"
+      ],
+      "file": "agents/executive/exec-stakeholder-public-affairs.md"
+    },
+    {
+      "slug": "exec-strategy-synthesizer",
+      "name": "Strategy Synthesizer",
+      "function": "executive",
+      "mode": "advise",
+      "tier": "medium",
+      "wave": 2,
+      "maturity": "ga",
+      "skills": [
+        "reason.recommend",
+        "reason.plan",
+        "gen.doc",
+        "reason.benchmark"
+      ],
+      "file": "agents/executive/exec-strategy-synthesizer.md"
+    },
+    {
+      "slug": "fin-asset-capex-accounting",
+      "name": "Fixed-Asset & Capex Accounting Agent",
+      "function": "finance_ops",
+      "mode": "supervise",
+      "tier": "high",
+      "wave": 3,
+      "maturity": "ga",
+      "skills": [
+        "extract.fields",
+        "calc.kpi",
+        "xform.reconcile",
+        "reason.recommend"
+      ],
+      "file": "agents/finance_ops/fin-asset-capex-accounting.md"
+    },
+    {
+      "slug": "fin-budgeting-forecasting",
+      "name": "Budgeting & Forecasting Agent",
+      "function": "finance_ops",
+      "mode": "advise",
+      "tier": "medium",
+      "wave": 2,
+      "maturity": "ga",
+      "skills": [
+        "reason.forecast",
+        "calc.kpi",
+        "reason.recommend",
+        "gen.summary"
+      ],
+      "file": "agents/finance_ops/fin-budgeting-forecasting.md"
+    },
+    {
+      "slug": "fin-customer-credit",
+      "name": "Customer Credit Management Agent",
+      "function": "finance_ops",
+      "mode": "supervise",
+      "tier": "high",
+      "wave": 2,
+      "maturity": "ga",
+      "skills": [
+        "classify.risk",
+        "reason.benchmark",
+        "reason.recommend",
+        "orch.approval"
+      ],
+      "file": "agents/finance_ops/fin-customer-credit.md"
+    },
+    {
+      "slug": "fin-customer-invoicing",
+      "name": "Customer Invoicing & Billing Agent",
+      "function": "finance_ops",
+      "mode": "supervise",
+      "tier": "high",
+      "wave": 2,
+      "maturity": "ga",
+      "skills": [
+        "extract.fields",
+        "xform.reconcile",
+        "gen.doc",
+        "calc.kpi"
+      ],
+      "file": "agents/finance_ops/fin-customer-invoicing.md"
+    },
+    {
+      "slug": "fin-debt-investment",
+      "name": "Debt & Investment Management Agent",
+      "function": "finance_ops",
+      "mode": "supervise",
+      "tier": "critical",
+      "wave": 3,
+      "maturity": "ga",
+      "skills": [
+        "reason.forecast",
+        "classify.risk",
+        "calc.kpi",
+        "orch.approval"
+      ],
+      "file": "agents/finance_ops/fin-debt-investment.md"
+    },
+    {
+      "slug": "fin-financial-systems",
+      "name": "Financial Systems Administration Agent",
+      "function": "finance_ops",
+      "mode": "supervise",
+      "tier": "high",
+      "wave": 3,
+      "maturity": "ga",
+      "skills": [
+        "classify.triage",
+        "xform.reconcile",
+        "classify.risk",
+        "orch.approval"
+      ],
+      "file": "agents/finance_ops/fin-financial-systems.md"
+    },
+    {
+      "slug": "fin-internal-controls",
+      "name": "Internal Controls Agent",
+      "function": "finance_ops",
+      "mode": "supervise",
+      "tier": "critical",
+      "wave": 2,
+      "maturity": "ga",
+      "skills": [
+        "classify.risk",
+        "reason.rootcause",
+        "reason.recommend",
+        "orch.approval"
+      ],
+      "file": "agents/finance_ops/fin-internal-controls.md"
+    },
+    {
+      "slug": "fin-profitability-analytics",
+      "name": "Cost & Profitability Analytics Agent",
+      "function": "finance_ops",
+      "mode": "advise",
+      "tier": "medium",
+      "wave": 2,
+      "maturity": "ga",
+      "skills": [
+        "calc.kpi",
+        "xform.map",
+        "reason.benchmark",
+        "reason.recommend"
+      ],
+      "file": "agents/finance_ops/fin-profitability-analytics.md"
+    },
+    {
+      "slug": "fin-tax-management",
+      "name": "Tax Management Agent",
+      "function": "finance_ops",
+      "mode": "supervise",
+      "tier": "critical",
+      "wave": 3,
+      "maturity": "ga",
+      "skills": [
+        "extract.fields",
+        "calc.kpi",
+        "reason.recommend",
+        "gen.summary"
+      ],
+      "file": "agents/finance_ops/fin-tax-management.md"
+    },
+    {
+      "slug": "hr-benefits-administration",
+      "name": "Benefits Administration Agent",
+      "function": "people",
+      "mode": "supervise",
+      "tier": "high",
+      "wave": 2,
+      "maturity": "ga",
+      "skills": [
+        "extract.fields",
+        "xform.reconcile",
+        "reason.recommend",
+        "orch.approval"
+      ],
+      "file": "agents/people/hr-benefits-administration.md"
+    },
+    {
+      "slug": "hr-compliance-reporting",
+      "name": "HR Compliance & Reporting Agent",
+      "function": "people",
+      "mode": "augment",
+      "tier": "high",
+      "wave": 2,
+      "maturity": "ga",
+      "skills": [
+        "xform.map",
+        "gen.doc",
+        "orch.schedule",
+        "orch.approval"
+      ],
+      "file": "agents/people/hr-compliance-reporting.md"
+    },
+    {
+      "slug": "hr-dei-program",
+      "name": "DEI Program Agent",
+      "function": "people",
+      "mode": "advise",
+      "tier": "high",
+      "wave": 3,
+      "maturity": "ga",
+      "skills": [
+        "calc.kpi",
+        "reason.benchmark",
+        "reason.recommend",
+        "gen.summary"
+      ],
+      "file": "agents/people/hr-dei-program.md"
+    },
+    {
+      "slug": "hr-employee-records",
+      "name": "Employee Records Management Agent",
+      "function": "people",
+      "mode": "supervise",
+      "tier": "high",
+      "wave": 2,
+      "maturity": "ga",
+      "skills": [
+        "extract.fields",
+        "xform.normalize",
+        "orch.approval",
+        "safe.redact"
+      ],
+      "file": "agents/people/hr-employee-records.md"
+    },
+    {
+      "slug": "hr-employee-relations",
+      "name": "Employee Relations & Labor Agent",
+      "function": "people",
+      "mode": "augment",
+      "tier": "high",
+      "wave": 3,
+      "maturity": "ga",
+      "skills": [
+        "classify.triage",
+        "reason.rootcause",
+        "gen.doc",
+        "orch.approval"
+      ],
+      "file": "agents/people/hr-employee-relations.md"
+    },
+    {
+      "slug": "hr-immigration-relocation",
+      "name": "Immigration & Relocation Agent",
+      "function": "people",
+      "mode": "augment",
+      "tier": "high",
+      "wave": 3,
+      "maturity": "ga",
+      "skills": [
+        "reason.plan",
+        "orch.schedule",
+        "gen.doc",
+        "orch.approval"
+      ],
+      "file": "agents/people/hr-immigration-relocation.md"
+    },
+    {
+      "slug": "hr-learning-career-development",
+      "name": "Learning & Career Development Agent",
+      "function": "people",
+      "mode": "augment",
+      "tier": "high",
+      "wave": 2,
+      "maturity": "ga",
+      "skills": [
+        "reason.recommend",
+        "reason.plan",
+        "gen.doc",
+        "calc.kpi"
+      ],
+      "file": "agents/people/hr-learning-career-development.md"
+    },
+    {
+      "slug": "hr-people-analytics",
+      "name": "HRIS & People Analytics Agent",
+      "function": "people",
+      "mode": "advise",
+      "tier": "high",
+      "wave": 2,
+      "maturity": "ga",
+      "skills": [
+        "calc.kpi",
+        "reason.anomaly",
+        "reason.recommend",
+        "gen.summary"
+      ],
+      "file": "agents/people/hr-people-analytics.md"
+    },
+    {
+      "slug": "hr-succession-planning",
+      "name": "Succession Planning Agent",
+      "function": "people",
+      "mode": "advise",
+      "tier": "high",
+      "wave": 3,
+      "maturity": "ga",
+      "skills": [
+        "classify.risk",
+        "reason.recommend",
+        "reason.plan",
+        "gen.summary"
+      ],
+      "file": "agents/people/hr-succession-planning.md"
+    },
+    {
+      "slug": "hr-time-attendance",
+      "name": "Time & Attendance Agent",
+      "function": "people",
+      "mode": "supervise",
+      "tier": "high",
+      "wave": 2,
+      "maturity": "ga",
+      "skills": [
+        "extract.fields",
+        "calc.kpi",
+        "classify.risk",
+        "orch.approval"
+      ],
+      "file": "agents/people/hr-time-attendance.md"
+    },
+    {
+      "slug": "it-asset-management",
+      "name": "IT Asset Management Agent",
+      "function": "security_it",
+      "mode": "automate",
+      "tier": "low",
+      "wave": 2,
+      "maturity": "ga",
+      "skills": [
+        "xform.reconcile",
+        "classify.triage",
+        "reason.recommend",
+        "calc.kpi"
+      ],
+      "file": "agents/security_it/it-asset-management.md"
+    },
+    {
+      "slug": "it-authentication-mfa",
+      "name": "Authentication & MFA Agent",
+      "function": "security_it",
+      "mode": "supervise",
+      "tier": "high",
+      "wave": 2,
+      "maturity": "ga",
+      "skills": [
+        "classify.risk",
+        "reason.recommend",
+        "orch.approval",
+        "safe.redact"
+      ],
+      "file": "agents/security_it/it-authentication-mfa.md"
+    },
+    {
+      "slug": "it-cloud-infra-operations",
+      "name": "Cloud & Infrastructure Operations Agent",
+      "function": "security_it",
+      "mode": "supervise",
+      "tier": "high",
+      "wave": 2,
+      "maturity": "ga",
+      "skills": [
+        "reason.anomaly",
+        "calc.kpi",
+        "reason.recommend",
+        "reason.rootcause"
+      ],
+      "file": "agents/security_it/it-cloud-infra-operations.md"
+    },
+    {
+      "slug": "it-config-management",
+      "name": "Infrastructure Configuration Agent",
+      "function": "security_it",
+      "mode": "supervise",
+      "tier": "high",
+      "wave": 3,
+      "maturity": "ga",
+      "skills": [
+        "reason.anomaly",
+        "classify.risk",
+        "xform.reconcile",
+        "reason.recommend"
+      ],
+      "file": "agents/security_it/it-config-management.md"
+    },
+    {
+      "slug": "it-network-management",
+      "name": "Network Management Agent",
+      "function": "security_it",
+      "mode": "supervise",
+      "tier": "medium",
+      "wave": 3,
+      "maturity": "ga",
+      "skills": [
+        "reason.anomaly",
+        "reason.forecast",
+        "reason.recommend",
+        "calc.kpi"
+      ],
+      "file": "agents/security_it/it-network-management.md"
+    },
+    {
+      "slug": "it-problem-change-control",
+      "name": "Problem & Change Control Agent",
+      "function": "security_it",
+      "mode": "supervise",
+      "tier": "high",
+      "wave": 3,
+      "maturity": "ga",
+      "skills": [
+        "reason.rootcause",
+        "classify.risk",
+        "reason.plan",
+        "orch.approval"
+      ],
+      "file": "agents/security_it/it-problem-change-control.md"
+    },
+    {
+      "slug": "it-security-operations",
+      "name": "Security Operations & Incident Response Agent",
+      "function": "security_it",
+      "mode": "supervise",
+      "tier": "critical",
+      "wave": 2,
+      "maturity": "ga",
+      "skills": [
+        "classify.triage",
+        "reason.rootcause",
+        "reason.recommend",
+        "orch.approval"
+      ],
+      "file": "agents/security_it/it-security-operations.md"
+    },
+    {
+      "slug": "it-service-desk",
+      "name": "IT Service Desk Agent",
+      "function": "security_it",
+      "mode": "supervise",
+      "tier": "medium",
+      "wave": 2,
+      "maturity": "ga",
+      "skills": [
+        "classify.triage",
+        "classify.priority",
+        "gen.reply",
+        "orch.handoff"
+      ],
+      "file": "agents/security_it/it-service-desk.md"
+    },
+    {
+      "slug": "it-vendor-management",
+      "name": "IT Vendor Management Agent",
+      "function": "security_it",
+      "mode": "advise",
+      "tier": "medium",
+      "wave": 3,
+      "maturity": "ga",
+      "skills": [
+        "reason.benchmark",
+        "calc.kpi",
+        "reason.recommend",
+        "classify.risk"
+      ],
+      "file": "agents/security_it/it-vendor-management.md"
+    },
+    {
+      "slug": "legal-business-continuity",
+      "name": "Business Continuity Agent",
+      "function": "legal_compliance",
+      "mode": "advise",
+      "tier": "high",
+      "wave": 2,
+      "maturity": "ga",
+      "skills": [
+        "reason.plan",
+        "classify.risk",
+        "gen.doc",
+        "reason.recommend"
+      ],
+      "file": "agents/legal_compliance/legal-business-continuity.md"
+    },
+    {
+      "slug": "legal-enterprise-risk",
+      "name": "Enterprise Risk Agent",
+      "function": "legal_compliance",
+      "mode": "advise",
+      "tier": "high",
+      "wave": 2,
+      "maturity": "ga",
+      "skills": [
+        "classify.risk",
+        "reason.recommend",
+        "calc.kpi",
+        "gen.summary"
+      ],
+      "file": "agents/legal_compliance/legal-enterprise-risk.md"
+    },
+    {
+      "slug": "legal-internal-audit",
+      "name": "Internal Audit Agent",
+      "function": "legal_compliance",
+      "mode": "advise",
+      "tier": "high",
+      "wave": 2,
+      "maturity": "ga",
+      "skills": [
+        "classify.risk",
+        "reason.rootcause",
+        "gen.doc",
+        "reason.recommend"
+      ],
+      "file": "agents/legal_compliance/legal-internal-audit.md"
+    },
+    {
+      "slug": "legal-litigation-management",
+      "name": "Litigation & Dispute Agent",
+      "function": "legal_compliance",
+      "mode": "advise",
+      "tier": "critical",
+      "wave": 3,
+      "maturity": "ga",
+      "skills": [
+        "classify.risk",
+        "reason.recommend",
+        "gen.summary",
+        "reason.forecast"
+      ],
+      "file": "agents/legal_compliance/legal-litigation-management.md"
+    },
+    {
+      "slug": "legal-regulatory-compliance",
+      "name": "Regulatory Compliance Agent",
+      "function": "legal_compliance",
+      "mode": "advise",
+      "tier": "high",
+      "wave": 2,
+      "maturity": "ga",
+      "skills": [
+        "classify.risk",
+        "xform.map",
+        "reason.recommend",
+        "gen.doc"
+      ],
+      "file": "agents/legal_compliance/legal-regulatory-compliance.md"
+    },
+    {
+      "slug": "legal-remediation-action",
+      "name": "Remediation & Corrective Action Agent",
+      "function": "legal_compliance",
+      "mode": "augment",
+      "tier": "high",
+      "wave": 2,
+      "maturity": "ga",
+      "skills": [
+        "reason.rootcause",
+        "reason.plan",
+        "orch.approval",
+        "gen.doc"
+      ],
+      "file": "agents/legal_compliance/legal-remediation-action.md"
+    },
+    {
+      "slug": "mkt-attribution-modeling",
+      "name": "Attribution Modeling Agent",
+      "function": "marketing",
+      "mode": "advise",
+      "tier": "low",
+      "wave": 2,
+      "maturity": "ga",
+      "skills": [
+        "calc.kpi",
+        "reason.benchmark",
+        "reason.recommend",
+        "xform.normalize"
+      ],
+      "file": "agents/marketing/mkt-attribution-modeling.md"
+    },
+    {
+      "slug": "mkt-brand-management",
+      "name": "Brand Management Agent",
+      "function": "marketing",
+      "mode": "augment",
+      "tier": "low",
+      "wave": 3,
+      "maturity": "ga",
+      "skills": [
+        "gen.doc",
+        "reason.recommend",
+        "classify.triage",
+        "gen.draft"
+      ],
+      "file": "agents/marketing/mkt-brand-management.md"
+    },
+    {
+      "slug": "mkt-market-research",
+      "name": "Customer & Market Research Agent",
+      "function": "marketing",
+      "mode": "advise",
+      "tier": "low",
+      "wave": 2,
+      "maturity": "ga",
+      "skills": [
+        "search.web",
+        "gen.summary",
+        "reason.benchmark",
+        "reason.recommend"
+      ],
+      "file": "agents/marketing/mkt-market-research.md"
+    },
+    {
+      "slug": "mkt-partner-comarketing",
+      "name": "Partner & Co-Marketing Agent",
+      "function": "marketing",
+      "mode": "augment",
+      "tier": "medium",
+      "wave": 3,
+      "maturity": "ga",
+      "skills": [
+        "reason.plan",
+        "gen.doc",
+        "orch.schedule",
+        "reason.recommend"
+      ],
+      "file": "agents/marketing/mkt-partner-comarketing.md"
+    },
+    {
+      "slug": "mkt-positioning-messaging",
+      "name": "Positioning & Messaging Agent",
+      "function": "marketing",
+      "mode": "augment",
+      "tier": "low",
+      "wave": 2,
+      "maturity": "ga",
+      "skills": [
+        "gen.doc",
+        "gen.draft",
+        "reason.recommend",
+        "search.competitor"
+      ],
+      "file": "agents/marketing/mkt-positioning-messaging.md"
+    },
+    {
+      "slug": "mkt-pricing-strategy",
+      "name": "Pricing Strategy Agent",
+      "function": "marketing",
+      "mode": "advise",
+      "tier": "medium",
+      "wave": 2,
+      "maturity": "ga",
+      "skills": [
+        "reason.recommend",
+        "calc.kpi",
+        "search.competitor",
+        "reason.benchmark"
+      ],
+      "file": "agents/marketing/mkt-pricing-strategy.md"
+    },
+    {
+      "slug": "mkt-product-launch",
+      "name": "Product Launch & GTM Agent",
+      "function": "marketing",
+      "mode": "augment",
+      "tier": "medium",
+      "wave": 2,
+      "maturity": "ga",
+      "skills": [
+        "reason.plan",
+        "gen.doc",
+        "orch.schedule",
+        "orch.handoff"
+      ],
+      "file": "agents/marketing/mkt-product-launch.md"
+    },
+    {
+      "slug": "mkt-segmentation-icp",
+      "name": "Segmentation & ICP Agent",
+      "function": "marketing",
+      "mode": "advise",
+      "tier": "low",
+      "wave": 2,
+      "maturity": "ga",
+      "skills": [
+        "classify.priority",
+        "reason.recommend",
+        "extract.enrich",
+        "gen.doc"
+      ],
+      "file": "agents/marketing/mkt-segmentation-icp.md"
+    },
+    {
+      "slug": "proc-asset-lifecycle",
+      "name": "IT Asset & Device Lifecycle Agent",
+      "function": "procurement",
+      "mode": "supervise",
+      "tier": "high",
+      "wave": 2,
+      "maturity": "ga",
+      "skills": [
+        "extract.fields",
+        "classify.triage",
+        "xform.reconcile",
+        "orch.approval"
+      ],
+      "file": "agents/procurement/proc-asset-lifecycle.md"
+    },
+    {
+      "slug": "proc-contract-negotiation",
+      "name": "Supplier Contract Negotiation Agent",
+      "function": "procurement",
+      "mode": "augment",
+      "tier": "high",
+      "wave": 2,
+      "maturity": "ga",
+      "skills": [
+        "extract.fields",
+        "classify.risk",
+        "gen.draft",
+        "reason.recommend"
+      ],
+      "file": "agents/procurement/proc-contract-negotiation.md"
+    },
+    {
+      "slug": "proc-quote-comparison",
+      "name": "Supplier Quote Comparison Agent",
+      "function": "procurement",
+      "mode": "augment",
+      "tier": "medium",
+      "wave": 2,
+      "maturity": "ga",
+      "skills": [
+        "extract.fields",
+        "xform.normalize",
+        "reason.benchmark",
+        "reason.recommend"
+      ],
+      "file": "agents/procurement/proc-quote-comparison.md"
+    },
+    {
+      "slug": "proc-sourcing-strategy",
+      "name": "Sourcing & Category Strategy Agent",
+      "function": "procurement",
+      "mode": "advise",
+      "tier": "medium",
+      "wave": 2,
+      "maturity": "ga",
+      "skills": [
+        "classify.triage",
+        "reason.benchmark",
+        "reason.recommend",
+        "reason.plan"
+      ],
+      "file": "agents/procurement/proc-sourcing-strategy.md"
+    },
+    {
+      "slug": "proc-workplace-real-estate",
+      "name": "Workplace & Real Estate Agent",
+      "function": "procurement",
+      "mode": "supervise",
+      "tier": "high",
+      "wave": 3,
+      "maturity": "ga",
+      "skills": [
+        "reason.plan",
+        "reason.forecast",
+        "calc.kpi",
+        "orch.schedule"
+      ],
+      "file": "agents/procurement/proc-workplace-real-estate.md"
+    },
+    {
+      "slug": "rev-contract-renewal-admin",
+      "name": "Contract & Renewal Admin Agent",
+      "function": "revenue_gtm",
+      "mode": "supervise",
+      "tier": "high",
+      "wave": 2,
+      "maturity": "ga",
+      "skills": [
+        "extract.fields",
+        "orch.schedule",
+        "gen.draft",
+        "orch.approval"
+      ],
+      "file": "agents/revenue_gtm/rev-contract-renewal-admin.md"
+    },
+    {
+      "slug": "rev-key-account-management",
+      "name": "Key Account Management Agent",
+      "function": "revenue_gtm",
+      "mode": "augment",
+      "tier": "medium",
+      "wave": 2,
+      "maturity": "ga",
+      "skills": [
+        "reason.plan",
+        "reason.recommend",
+        "classify.risk",
+        "gen.doc"
+      ],
+      "file": "agents/revenue_gtm/rev-key-account-management.md"
+    },
+    {
+      "slug": "rev-order-management",
+      "name": "Order Management Agent",
+      "function": "revenue_gtm",
+      "mode": "supervise",
+      "tier": "medium",
+      "wave": 2,
+      "maturity": "ga",
+      "skills": [
+        "extract.fields",
+        "classify.triage",
+        "xform.reconcile",
+        "orch.handoff"
+      ],
+      "file": "agents/revenue_gtm/rev-order-management.md"
+    },
+    {
+      "slug": "rev-sales-budget",
+      "name": "Sales Budget Agent",
+      "function": "revenue_gtm",
+      "mode": "advise",
+      "tier": "medium",
+      "wave": 2,
+      "maturity": "ga",
+      "skills": [
+        "calc.kpi",
+        "reason.forecast",
+        "reason.recommend",
+        "gen.doc"
+      ],
+      "file": "agents/revenue_gtm/rev-sales-budget.md"
+    },
+    {
+      "slug": "rev-sales-compensation",
+      "name": "Sales Compensation Agent",
+      "function": "revenue_gtm",
+      "mode": "augment",
+      "tier": "high",
+      "wave": 2,
+      "maturity": "ga",
+      "skills": [
+        "calc.kpi",
+        "reason.recommend",
+        "gen.doc",
+        "orch.approval"
+      ],
+      "file": "agents/revenue_gtm/rev-sales-compensation.md"
+    },
+    {
+      "slug": "rev-sales-enablement-training",
+      "name": "Sales Enablement & Onboarding Agent",
+      "function": "revenue_gtm",
+      "mode": "augment",
+      "tier": "medium",
+      "wave": 2,
+      "maturity": "ga",
+      "skills": [
+        "reason.plan",
+        "gen.doc",
+        "search.kb",
+        "reason.recommend"
+      ],
+      "file": "agents/revenue_gtm/rev-sales-enablement-training.md"
+    },
+    {
+      "slug": "rev-sales-strategy",
+      "name": "Sales Strategy Agent",
+      "function": "revenue_gtm",
+      "mode": "advise",
+      "tier": "medium",
+      "wave": 2,
+      "maturity": "ga",
+      "skills": [
+        "reason.plan",
+        "reason.benchmark",
+        "reason.recommend",
+        "gen.doc"
+      ],
+      "file": "agents/revenue_gtm/rev-sales-strategy.md"
     }
   ],
   "skills": [
+    {
+      "slug": "extract.fields",
+      "name": "Structured Field Extraction",
+      "file": "skills/extract.fields.md"
+    },
+    {
+      "slug": "extract.enrich",
+      "name": "Record Enrichment",
+      "file": "skills/extract.enrich.md"
+    },
+    {
+      "slug": "extract.entities",
+      "name": "Entity & Signal Extraction",
+      "file": "skills/extract.entities.md"
+    },
+    {
+      "slug": "classify.triage",
+      "name": "Triage & Routing",
+      "file": "skills/classify.triage.md"
+    },
+    {
+      "slug": "classify.priority",
+      "name": "Prioritization & Scoring",
+      "file": "skills/classify.priority.md"
+    },
+    {
+      "slug": "classify.sentiment",
+      "name": "Sentiment & Tone Analysis",
+      "file": "skills/classify.sentiment.md"
+    },
+    {
+      "slug": "classify.risk",
+      "name": "Risk & Compliance Flagging",
+      "file": "skills/classify.risk.md"
+    },
+    {
+      "slug": "gen.draft",
+      "name": "Content Drafting",
+      "file": "skills/gen.draft.md"
+    },
+    {
+      "slug": "gen.doc",
+      "name": "Document Generation",
+      "file": "skills/gen.doc.md"
+    },
+    {
+      "slug": "gen.summary",
+      "name": "Summarization & Synthesis",
+      "file": "skills/gen.summary.md"
+    },
+    {
+      "slug": "gen.reply",
+      "name": "Reply & Response Drafting",
+      "file": "skills/gen.reply.md"
+    },
+    {
+      "slug": "gen.code",
+      "name": "Code & Changelog Generation",
+      "file": "skills/gen.code.md"
+    },
+    {
+      "slug": "reason.forecast",
+      "name": "Forecasting & Modeling",
+      "file": "skills/reason.forecast.md"
+    },
+    {
+      "slug": "reason.rootcause",
+      "name": "Root-Cause Analysis",
+      "file": "skills/reason.rootcause.md"
+    },
+    {
+      "slug": "reason.anomaly",
+      "name": "Anomaly Detection",
+      "file": "skills/reason.anomaly.md"
+    },
+    {
+      "slug": "reason.benchmark",
+      "name": "Benchmarking & Comparison",
+      "file": "skills/reason.benchmark.md"
+    },
+    {
+      "slug": "reason.recommend",
+      "name": "Recommendation & Decision Support",
+      "file": "skills/reason.recommend.md"
+    },
+    {
+      "slug": "reason.plan",
+      "name": "Planning & Sequencing",
+      "file": "skills/reason.plan.md"
+    },
+    {
+      "slug": "search.web",
+      "name": "Web & Market Research",
+      "file": "skills/search.web.md"
+    },
+    {
+      "slug": "search.kb",
+      "name": "Knowledge-Base Retrieval",
+      "file": "skills/search.kb.md"
+    },
+    {
+      "slug": "search.competitor",
+      "name": "Competitive Monitoring",
+      "file": "skills/search.competitor.md"
+    },
+    {
+      "slug": "xform.normalize",
+      "name": "Data Normalization & Hygiene",
+      "file": "skills/xform.normalize.md"
+    },
+    {
+      "slug": "xform.map",
+      "name": "Field Mapping & Bridging",
+      "file": "skills/xform.map.md"
+    },
+    {
+      "slug": "xform.reconcile",
+      "name": "Reconciliation & Matching",
+      "file": "skills/xform.reconcile.md"
+    },
+    {
+      "slug": "orch.approval",
+      "name": "Approval & HITL Gating",
+      "file": "skills/orch.approval.md"
+    },
+    {
+      "slug": "orch.schedule",
+      "name": "Scheduling & Cadence",
+      "file": "skills/orch.schedule.md"
+    },
+    {
+      "slug": "orch.handoff",
+      "name": "Hand-off Coordination",
+      "file": "skills/orch.handoff.md"
+    },
+    {
+      "slug": "calc.kpi",
+      "name": "KPI & Metric Computation",
+      "file": "skills/calc.kpi.md"
+    },
+    {
+      "slug": "safe.redact",
+      "name": "PII Redaction & Guardrails",
+      "file": "skills/safe.redact.md"
+    },
     {
       "slug": "llm.summarize",
       "name": "Summarize",
@@ -1739,6 +3324,1254 @@
       "valueStage": "business_operations",
       "essential": false,
       "file": "workflows/proc.saas_optimization.md"
+    },
+    {
+      "key": "cs.service_strategy",
+      "name": "Customer Service Strategy & Policies",
+      "function": "customer_success",
+      "valueStage": "customer_intelligence",
+      "essential": false,
+      "file": "workflows/cs.service_strategy.md"
+    },
+    {
+      "key": "cs.channel_strategy",
+      "name": "Service Channel Strategy",
+      "function": "customer_success",
+      "valueStage": "customer_intelligence",
+      "essential": false,
+      "file": "workflows/cs.channel_strategy.md"
+    },
+    {
+      "key": "cs.workforce_planning",
+      "name": "Support Workforce Planning",
+      "function": "customer_success",
+      "valueStage": "customer_intelligence",
+      "essential": false,
+      "file": "workflows/cs.workforce_planning.md"
+    },
+    {
+      "key": "cs.request_intake",
+      "name": "Customer Request & Inquiry Intake",
+      "function": "customer_success",
+      "valueStage": "customer_intelligence",
+      "essential": true,
+      "file": "workflows/cs.request_intake.md"
+    },
+    {
+      "key": "cs.issue_resolution",
+      "name": "Issue Resolution & Case Handling",
+      "function": "customer_success",
+      "valueStage": "customer_intelligence",
+      "essential": true,
+      "file": "workflows/cs.issue_resolution.md"
+    },
+    {
+      "key": "cs.escalation_management",
+      "name": "Escalation Management",
+      "function": "customer_success",
+      "valueStage": "customer_intelligence",
+      "essential": false,
+      "file": "workflows/cs.escalation_management.md"
+    },
+    {
+      "key": "cs.knowledge_base",
+      "name": "Knowledge Base & Self-Service",
+      "function": "customer_success",
+      "valueStage": "customer_intelligence",
+      "essential": true,
+      "file": "workflows/cs.knowledge_base.md"
+    },
+    {
+      "key": "cs.complaint_management",
+      "name": "Complaint Handling & Redressal",
+      "function": "customer_success",
+      "valueStage": "customer_intelligence",
+      "essential": false,
+      "file": "workflows/cs.complaint_management.md"
+    },
+    {
+      "key": "cs.quality_assurance",
+      "name": "Service Quality Assurance",
+      "function": "customer_success",
+      "valueStage": "customer_intelligence",
+      "essential": false,
+      "file": "workflows/cs.quality_assurance.md"
+    },
+    {
+      "key": "cs.voice_of_customer",
+      "name": "Voice of Customer & Satisfaction",
+      "function": "customer_success",
+      "valueStage": "customer_intelligence",
+      "essential": false,
+      "file": "workflows/cs.voice_of_customer.md"
+    },
+    {
+      "key": "cs.service_analytics",
+      "name": "Service Analytics & Reporting",
+      "function": "customer_success",
+      "valueStage": "customer_intelligence",
+      "essential": false,
+      "file": "workflows/cs.service_analytics.md"
+    },
+    {
+      "key": "cs.warranty_entitlement",
+      "name": "Warranty & Entitlement Management",
+      "function": "customer_success",
+      "valueStage": "customer_intelligence",
+      "essential": false,
+      "file": "workflows/cs.warranty_entitlement.md"
+    },
+    {
+      "key": "eng.product_discovery_research",
+      "name": "Product Discovery Research",
+      "function": "engineering",
+      "valueStage": "delivery_execution",
+      "essential": true,
+      "file": "workflows/eng.product_discovery_research.md"
+    },
+    {
+      "key": "eng.idea_generation_intake",
+      "name": "Product Idea Generation and Intake",
+      "function": "engineering",
+      "valueStage": "delivery_execution",
+      "essential": false,
+      "file": "workflows/eng.idea_generation_intake.md"
+    },
+    {
+      "key": "eng.product_requirements_definition",
+      "name": "Product Requirements Definition",
+      "function": "engineering",
+      "valueStage": "delivery_execution",
+      "essential": true,
+      "file": "workflows/eng.product_requirements_definition.md"
+    },
+    {
+      "key": "eng.security_requirements",
+      "name": "Security and Compliance Requirements in SDLC",
+      "function": "engineering",
+      "valueStage": "delivery_execution",
+      "essential": false,
+      "file": "workflows/eng.security_requirements.md"
+    },
+    {
+      "key": "eng.ux_design_specs",
+      "name": "User Experience Design Specifications",
+      "function": "engineering",
+      "valueStage": "delivery_execution",
+      "essential": false,
+      "file": "workflows/eng.ux_design_specs.md"
+    },
+    {
+      "key": "eng.design_specifications",
+      "name": "Technical Design Specifications",
+      "function": "engineering",
+      "valueStage": "delivery_execution",
+      "essential": true,
+      "file": "workflows/eng.design_specifications.md"
+    },
+    {
+      "key": "eng.prototyping_poc",
+      "name": "Prototyping and Proof of Concept",
+      "function": "engineering",
+      "valueStage": "delivery_execution",
+      "essential": false,
+      "file": "workflows/eng.prototyping_poc.md"
+    },
+    {
+      "key": "eng.qa_test_automation",
+      "name": "QA and Test Automation",
+      "function": "engineering",
+      "valueStage": "delivery_execution",
+      "essential": true,
+      "file": "workflows/eng.qa_test_automation.md"
+    },
+    {
+      "key": "eng.reliability_quality_engineering",
+      "name": "Reliability and Quality Engineering",
+      "function": "engineering",
+      "valueStage": "delivery_execution",
+      "essential": false,
+      "file": "workflows/eng.reliability_quality_engineering.md"
+    },
+    {
+      "key": "eng.source_control_ci",
+      "name": "Source Control and Continuous Integration",
+      "function": "engineering",
+      "valueStage": "delivery_execution",
+      "essential": true,
+      "file": "workflows/eng.source_control_ci.md"
+    },
+    {
+      "key": "eng.engineering_change_management",
+      "name": "Engineering Change Management",
+      "function": "engineering",
+      "valueStage": "delivery_execution",
+      "essential": false,
+      "file": "workflows/eng.engineering_change_management.md"
+    },
+    {
+      "key": "eng.product_roadmap_planning",
+      "name": "Product Roadmap and Launch Planning",
+      "function": "engineering",
+      "valueStage": "delivery_execution",
+      "essential": true,
+      "file": "workflows/eng.product_roadmap_planning.md"
+    },
+    {
+      "key": "eng.portfolio_governance",
+      "name": "Product Portfolio Governance",
+      "function": "engineering",
+      "valueStage": "delivery_execution",
+      "essential": false,
+      "file": "workflows/eng.portfolio_governance.md"
+    },
+    {
+      "key": "eng.post_launch_review",
+      "name": "Post-Launch Review",
+      "function": "engineering",
+      "valueStage": "delivery_execution",
+      "essential": false,
+      "file": "workflows/eng.post_launch_review.md"
+    },
+    {
+      "key": "eng.technical_documentation",
+      "name": "Technical Documentation Management",
+      "function": "engineering",
+      "valueStage": "delivery_execution",
+      "essential": false,
+      "file": "workflows/eng.technical_documentation.md"
+    },
+    {
+      "key": "eng.service_governance",
+      "name": "Service Delivery Governance",
+      "function": "engineering",
+      "valueStage": "delivery_execution",
+      "essential": true,
+      "file": "workflows/eng.service_governance.md"
+    },
+    {
+      "key": "eng.service_capacity_forecasting",
+      "name": "Service Capacity Forecasting",
+      "function": "engineering",
+      "valueStage": "delivery_execution",
+      "essential": false,
+      "file": "workflows/eng.service_capacity_forecasting.md"
+    },
+    {
+      "key": "eng.engineering_skills_capacity",
+      "name": "Engineering Skills and Capacity Planning",
+      "function": "engineering",
+      "valueStage": "delivery_execution",
+      "essential": false,
+      "file": "workflows/eng.engineering_skills_capacity.md"
+    },
+    {
+      "key": "exec.environmental_scanning",
+      "name": "External Environment & Competitor Scan",
+      "function": "executive",
+      "valueStage": "strategy_prioritization",
+      "essential": true,
+      "file": "workflows/exec.environmental_scanning.md"
+    },
+    {
+      "key": "exec.internal_assessment",
+      "name": "Internal Capability & Health Assessment",
+      "function": "executive",
+      "valueStage": "strategy_prioritization",
+      "essential": false,
+      "file": "workflows/exec.internal_assessment.md"
+    },
+    {
+      "key": "exec.vision_mission",
+      "name": "Vision & Mission Definition",
+      "function": "executive",
+      "valueStage": "strategy_prioritization",
+      "essential": true,
+      "file": "workflows/exec.vision_mission.md"
+    },
+    {
+      "key": "exec.business_strategy",
+      "name": "Business Strategy Development",
+      "function": "executive",
+      "valueStage": "strategy_prioritization",
+      "essential": true,
+      "file": "workflows/exec.business_strategy.md"
+    },
+    {
+      "key": "exec.long_term_strategy",
+      "name": "Long-Term Enterprise Strategy",
+      "function": "executive",
+      "valueStage": "strategy_prioritization",
+      "essential": false,
+      "file": "workflows/exec.long_term_strategy.md"
+    },
+    {
+      "key": "exec.strategic_initiatives",
+      "name": "Strategic Initiative Selection",
+      "function": "executive",
+      "valueStage": "strategy_prioritization",
+      "essential": false,
+      "file": "workflows/exec.strategic_initiatives.md"
+    },
+    {
+      "key": "exec.business_model_management",
+      "name": "Business Model Development & Maintenance",
+      "function": "executive",
+      "valueStage": "strategy_prioritization",
+      "essential": false,
+      "file": "workflows/exec.business_model_management.md"
+    },
+    {
+      "key": "exec.corporate_development_ma",
+      "name": "M&A & Corporate Development",
+      "function": "executive",
+      "valueStage": "strategy_prioritization",
+      "essential": false,
+      "file": "workflows/exec.corporate_development_ma.md"
+    },
+    {
+      "key": "exec.investor_relations",
+      "name": "Investor & Shareholder Relations",
+      "function": "executive",
+      "valueStage": "strategy_prioritization",
+      "essential": true,
+      "file": "workflows/exec.investor_relations.md"
+    },
+    {
+      "key": "exec.government_relations",
+      "name": "Government Relations",
+      "function": "executive",
+      "valueStage": "strategy_prioritization",
+      "essential": false,
+      "file": "workflows/exec.government_relations.md"
+    },
+    {
+      "key": "exec.industry_group_relations",
+      "name": "Trade & Industry Group Relations",
+      "function": "executive",
+      "valueStage": "strategy_prioritization",
+      "essential": false,
+      "file": "workflows/exec.industry_group_relations.md"
+    },
+    {
+      "key": "exec.public_media_relations",
+      "name": "Public & Media Relations Program",
+      "function": "executive",
+      "valueStage": "strategy_prioritization",
+      "essential": false,
+      "file": "workflows/exec.public_media_relations.md"
+    },
+    {
+      "key": "exec.community_relations",
+      "name": "Community & Stakeholder Relations",
+      "function": "executive",
+      "valueStage": "strategy_prioritization",
+      "essential": false,
+      "file": "workflows/exec.community_relations.md"
+    },
+    {
+      "key": "exec.business_process_management",
+      "name": "Business Process Management & Governance",
+      "function": "executive",
+      "valueStage": "strategy_prioritization",
+      "essential": false,
+      "file": "workflows/exec.business_process_management.md"
+    },
+    {
+      "key": "exec.continuous_improvement",
+      "name": "Continuous Improvement Program",
+      "function": "executive",
+      "valueStage": "strategy_prioritization",
+      "essential": false,
+      "file": "workflows/exec.continuous_improvement.md"
+    },
+    {
+      "key": "exec.pmo_portfolio",
+      "name": "PMO: Portfolio, Program & Project Management",
+      "function": "executive",
+      "valueStage": "strategy_prioritization",
+      "essential": false,
+      "file": "workflows/exec.pmo_portfolio.md"
+    },
+    {
+      "key": "exec.change_management",
+      "name": "Organizational Change Management",
+      "function": "executive",
+      "valueStage": "strategy_prioritization",
+      "essential": false,
+      "file": "workflows/exec.change_management.md"
+    },
+    {
+      "key": "exec.knowledge_management",
+      "name": "Enterprise Knowledge Management",
+      "function": "executive",
+      "valueStage": "strategy_prioritization",
+      "essential": false,
+      "file": "workflows/exec.knowledge_management.md"
+    },
+    {
+      "key": "fin.budgeting_forecasting",
+      "name": "Budgeting & Forecasting",
+      "function": "finance_ops",
+      "valueStage": "business_operations",
+      "essential": true,
+      "file": "workflows/fin.budgeting_forecasting.md"
+    },
+    {
+      "key": "fin.budget_variance_analysis",
+      "name": "Budget Variance Analysis",
+      "function": "finance_ops",
+      "valueStage": "business_operations",
+      "essential": false,
+      "file": "workflows/fin.budget_variance_analysis.md"
+    },
+    {
+      "key": "fin.cost_accounting",
+      "name": "Cost & Unit Economics Accounting",
+      "function": "finance_ops",
+      "valueStage": "business_operations",
+      "essential": false,
+      "file": "workflows/fin.cost_accounting.md"
+    },
+    {
+      "key": "fin.profitability_reporting",
+      "name": "Profitability Reporting",
+      "function": "finance_ops",
+      "valueStage": "business_operations",
+      "essential": false,
+      "file": "workflows/fin.profitability_reporting.md"
+    },
+    {
+      "key": "fin.customer_credit",
+      "name": "Customer Credit Management",
+      "function": "finance_ops",
+      "valueStage": "business_operations",
+      "essential": false,
+      "file": "workflows/fin.customer_credit.md"
+    },
+    {
+      "key": "fin.customer_invoicing",
+      "name": "Customer Invoicing & Billing",
+      "function": "finance_ops",
+      "valueStage": "business_operations",
+      "essential": true,
+      "file": "workflows/fin.customer_invoicing.md"
+    },
+    {
+      "key": "fin.accounts_receivable",
+      "name": "Accounts Receivable",
+      "function": "finance_ops",
+      "valueStage": "business_operations",
+      "essential": true,
+      "file": "workflows/fin.accounts_receivable.md"
+    },
+    {
+      "key": "fin.collections",
+      "name": "Collections Management",
+      "function": "finance_ops",
+      "valueStage": "business_operations",
+      "essential": false,
+      "file": "workflows/fin.collections.md"
+    },
+    {
+      "key": "fin.accounts_payable",
+      "name": "Accounts Payable",
+      "function": "finance_ops",
+      "valueStage": "business_operations",
+      "essential": true,
+      "file": "workflows/fin.accounts_payable.md"
+    },
+    {
+      "key": "fin.expense_reimbursement",
+      "name": "Expense Reimbursement",
+      "function": "finance_ops",
+      "valueStage": "business_operations",
+      "essential": true,
+      "file": "workflows/fin.expense_reimbursement.md"
+    },
+    {
+      "key": "fin.corporate_cards",
+      "name": "Corporate Card Management",
+      "function": "finance_ops",
+      "valueStage": "business_operations",
+      "essential": false,
+      "file": "workflows/fin.corporate_cards.md"
+    },
+    {
+      "key": "fin.general_ledger_close",
+      "name": "General Accounting & Month-End Close",
+      "function": "finance_ops",
+      "valueStage": "business_operations",
+      "essential": true,
+      "file": "workflows/fin.general_ledger_close.md"
+    },
+    {
+      "key": "fin.fixed_asset_accounting",
+      "name": "Fixed-Asset Accounting",
+      "function": "finance_ops",
+      "valueStage": "business_operations",
+      "essential": false,
+      "file": "workflows/fin.fixed_asset_accounting.md"
+    },
+    {
+      "key": "fin.capital_project_accounting",
+      "name": "Capital Project Accounting",
+      "function": "finance_ops",
+      "valueStage": "business_operations",
+      "essential": false,
+      "file": "workflows/fin.capital_project_accounting.md"
+    },
+    {
+      "key": "fin.treasury_cash_management",
+      "name": "Treasury & Cash Management",
+      "function": "finance_ops",
+      "valueStage": "business_operations",
+      "essential": false,
+      "file": "workflows/fin.treasury_cash_management.md"
+    },
+    {
+      "key": "fin.debt_investment",
+      "name": "Debt & Investment Management",
+      "function": "finance_ops",
+      "valueStage": "business_operations",
+      "essential": false,
+      "file": "workflows/fin.debt_investment.md"
+    },
+    {
+      "key": "fin.internal_controls",
+      "name": "Internal Controls",
+      "function": "finance_ops",
+      "valueStage": "business_operations",
+      "essential": true,
+      "file": "workflows/fin.internal_controls.md"
+    },
+    {
+      "key": "fin.audit_support",
+      "name": "Audit Support & Compliance Reporting",
+      "function": "finance_ops",
+      "valueStage": "business_operations",
+      "essential": false,
+      "file": "workflows/fin.audit_support.md"
+    },
+    {
+      "key": "fin.tax_management",
+      "name": "Tax Management",
+      "function": "finance_ops",
+      "valueStage": "business_operations",
+      "essential": false,
+      "file": "workflows/fin.tax_management.md"
+    },
+    {
+      "key": "fin.financial_systems",
+      "name": "Financial Systems Administration",
+      "function": "finance_ops",
+      "valueStage": "business_operations",
+      "essential": false,
+      "file": "workflows/fin.financial_systems.md"
+    },
+    {
+      "key": "legal.regulatory_compliance_management",
+      "name": "Regulatory Compliance Management",
+      "function": "legal_compliance",
+      "valueStage": "business_operations",
+      "essential": true,
+      "file": "workflows/legal.regulatory_compliance_management.md"
+    },
+    {
+      "key": "legal.identify_regulatory_requirements",
+      "name": "Identify Applicable Regulatory Requirements",
+      "function": "legal_compliance",
+      "valueStage": "business_operations",
+      "essential": true,
+      "file": "workflows/legal.identify_regulatory_requirements.md"
+    },
+    {
+      "key": "legal.regulatory_monitoring",
+      "name": "Regulatory Horizon Monitoring",
+      "function": "legal_compliance",
+      "valueStage": "business_operations",
+      "essential": false,
+      "file": "workflows/legal.regulatory_monitoring.md"
+    },
+    {
+      "key": "legal.enterprise_risk_management",
+      "name": "Enterprise Risk Management",
+      "function": "legal_compliance",
+      "valueStage": "business_operations",
+      "essential": false,
+      "file": "workflows/legal.enterprise_risk_management.md"
+    },
+    {
+      "key": "legal.enterprise_risk_framework",
+      "name": "Enterprise Risk Framework & Tolerance",
+      "function": "legal_compliance",
+      "valueStage": "business_operations",
+      "essential": false,
+      "file": "workflows/legal.enterprise_risk_framework.md"
+    },
+    {
+      "key": "legal.risk_reporting",
+      "name": "Enterprise Risk Reporting to Board",
+      "function": "legal_compliance",
+      "valueStage": "business_operations",
+      "essential": false,
+      "file": "workflows/legal.risk_reporting.md"
+    },
+    {
+      "key": "legal.ethics_code_of_conduct",
+      "name": "Ethics & Code of Conduct",
+      "function": "legal_compliance",
+      "valueStage": "business_operations",
+      "essential": true,
+      "file": "workflows/legal.ethics_code_of_conduct.md"
+    },
+    {
+      "key": "legal.internal_audit",
+      "name": "Internal Audit Management",
+      "function": "legal_compliance",
+      "valueStage": "business_operations",
+      "essential": false,
+      "file": "workflows/legal.internal_audit.md"
+    },
+    {
+      "key": "legal.business_continuity",
+      "name": "Business Continuity Planning",
+      "function": "legal_compliance",
+      "valueStage": "business_operations",
+      "essential": false,
+      "file": "workflows/legal.business_continuity.md"
+    },
+    {
+      "key": "legal.continuity_testing",
+      "name": "Continuity & Disaster Recovery Testing",
+      "function": "legal_compliance",
+      "valueStage": "business_operations",
+      "essential": false,
+      "file": "workflows/legal.continuity_testing.md"
+    },
+    {
+      "key": "legal.crisis_resiliency",
+      "name": "Crisis Management & Resiliency",
+      "function": "legal_compliance",
+      "valueStage": "business_operations",
+      "essential": false,
+      "file": "workflows/legal.crisis_resiliency.md"
+    },
+    {
+      "key": "legal.remediation_corrective_action",
+      "name": "Remediation & Corrective Action",
+      "function": "legal_compliance",
+      "valueStage": "business_operations",
+      "essential": false,
+      "file": "workflows/legal.remediation_corrective_action.md"
+    },
+    {
+      "key": "legal.intellectual_property",
+      "name": "Intellectual Property Management",
+      "function": "legal_compliance",
+      "valueStage": "business_operations",
+      "essential": false,
+      "file": "workflows/legal.intellectual_property.md"
+    },
+    {
+      "key": "legal.litigation_dispute_management",
+      "name": "Litigation & Dispute Management",
+      "function": "legal_compliance",
+      "valueStage": "business_operations",
+      "essential": false,
+      "file": "workflows/legal.litigation_dispute_management.md"
+    },
+    {
+      "key": "mkt.market_research",
+      "name": "Customer & Market Research",
+      "function": "marketing",
+      "valueStage": "go_to_market",
+      "essential": true,
+      "file": "workflows/mkt.market_research.md"
+    },
+    {
+      "key": "mkt.segmentation_icp",
+      "name": "Segmentation & ICP Definition",
+      "function": "marketing",
+      "valueStage": "go_to_market",
+      "essential": true,
+      "file": "workflows/mkt.segmentation_icp.md"
+    },
+    {
+      "key": "mkt.positioning_messaging",
+      "name": "Positioning & Messaging Strategy",
+      "function": "marketing",
+      "valueStage": "go_to_market",
+      "essential": true,
+      "file": "workflows/mkt.positioning_messaging.md"
+    },
+    {
+      "key": "mkt.pricing_strategy",
+      "name": "Pricing Strategy",
+      "function": "marketing",
+      "valueStage": "go_to_market",
+      "essential": false,
+      "file": "workflows/mkt.pricing_strategy.md"
+    },
+    {
+      "key": "mkt.product_launch",
+      "name": "Product Marketing & Go-to-Market Launch",
+      "function": "marketing",
+      "valueStage": "go_to_market",
+      "essential": false,
+      "file": "workflows/mkt.product_launch.md"
+    },
+    {
+      "key": "mkt.brand_management",
+      "name": "Brand Management",
+      "function": "marketing",
+      "valueStage": "go_to_market",
+      "essential": true,
+      "file": "workflows/mkt.brand_management.md"
+    },
+    {
+      "key": "mkt.marketing_analytics",
+      "name": "Marketing Analytics & Reporting",
+      "function": "marketing",
+      "valueStage": "go_to_market",
+      "essential": true,
+      "file": "workflows/mkt.marketing_analytics.md"
+    },
+    {
+      "key": "mkt.attribution_modeling",
+      "name": "Attribution Modeling",
+      "function": "marketing",
+      "valueStage": "go_to_market",
+      "essential": false,
+      "file": "workflows/mkt.attribution_modeling.md"
+    },
+    {
+      "key": "mkt.competitive_intelligence",
+      "name": "Competitive Intelligence",
+      "function": "marketing",
+      "valueStage": "go_to_market",
+      "essential": false,
+      "file": "workflows/mkt.competitive_intelligence.md"
+    },
+    {
+      "key": "mkt.partner_comarketing",
+      "name": "Partner & Co-Marketing",
+      "function": "marketing",
+      "valueStage": "go_to_market",
+      "essential": false,
+      "file": "workflows/mkt.partner_comarketing.md"
+    },
+    {
+      "key": "mkt.customer_advocacy",
+      "name": "Customer Advocacy & Reviews",
+      "function": "marketing",
+      "valueStage": "go_to_market",
+      "essential": false,
+      "file": "workflows/mkt.customer_advocacy.md"
+    },
+    {
+      "key": "mkt.social_media",
+      "name": "Social Media Management",
+      "function": "marketing",
+      "valueStage": "go_to_market",
+      "essential": false,
+      "file": "workflows/mkt.social_media.md"
+    },
+    {
+      "key": "ppl.payroll_administration",
+      "name": "Payroll Administration",
+      "function": "people",
+      "valueStage": "business_operations",
+      "essential": true,
+      "file": "workflows/ppl.payroll_administration.md"
+    },
+    {
+      "key": "ppl.benefits_administration",
+      "name": "Benefits Administration",
+      "function": "people",
+      "valueStage": "business_operations",
+      "essential": true,
+      "file": "workflows/ppl.benefits_administration.md"
+    },
+    {
+      "key": "ppl.employee_records",
+      "name": "Employee Records Management",
+      "function": "people",
+      "valueStage": "business_operations",
+      "essential": true,
+      "file": "workflows/ppl.employee_records.md"
+    },
+    {
+      "key": "ppl.hr_compliance_reporting",
+      "name": "HR Compliance & Regulatory Reporting",
+      "function": "people",
+      "valueStage": "business_operations",
+      "essential": true,
+      "file": "workflows/ppl.hr_compliance_reporting.md"
+    },
+    {
+      "key": "ppl.time_attendance",
+      "name": "Time & Attendance",
+      "function": "people",
+      "valueStage": "business_operations",
+      "essential": false,
+      "file": "workflows/ppl.time_attendance.md"
+    },
+    {
+      "key": "ppl.leave_management",
+      "name": "Leave & Absence Management",
+      "function": "people",
+      "valueStage": "business_operations",
+      "essential": false,
+      "file": "workflows/ppl.leave_management.md"
+    },
+    {
+      "key": "ppl.compensation_planning",
+      "name": "Compensation Structure & Planning",
+      "function": "people",
+      "valueStage": "business_operations",
+      "essential": false,
+      "file": "workflows/ppl.compensation_planning.md"
+    },
+    {
+      "key": "ppl.learning_development",
+      "name": "Learning & Development",
+      "function": "people",
+      "valueStage": "business_operations",
+      "essential": false,
+      "file": "workflows/ppl.learning_development.md"
+    },
+    {
+      "key": "ppl.career_development",
+      "name": "Career Development & Pathing",
+      "function": "people",
+      "valueStage": "business_operations",
+      "essential": false,
+      "file": "workflows/ppl.career_development.md"
+    },
+    {
+      "key": "ppl.employee_relations_cases",
+      "name": "Employee Relations & Case Management",
+      "function": "people",
+      "valueStage": "business_operations",
+      "essential": false,
+      "file": "workflows/ppl.employee_relations_cases.md"
+    },
+    {
+      "key": "ppl.labor_relations",
+      "name": "Labor Relations & Regulatory Monitoring",
+      "function": "people",
+      "valueStage": "business_operations",
+      "essential": false,
+      "file": "workflows/ppl.labor_relations.md"
+    },
+    {
+      "key": "ppl.workforce_planning",
+      "name": "Strategic Workforce Planning",
+      "function": "people",
+      "valueStage": "business_operations",
+      "essential": false,
+      "file": "workflows/ppl.workforce_planning.md"
+    },
+    {
+      "key": "ppl.dei_program",
+      "name": "Diversity, Equity & Inclusion Program",
+      "function": "people",
+      "valueStage": "business_operations",
+      "essential": false,
+      "file": "workflows/ppl.dei_program.md"
+    },
+    {
+      "key": "ppl.succession_planning",
+      "name": "Succession Planning",
+      "function": "people",
+      "valueStage": "business_operations",
+      "essential": false,
+      "file": "workflows/ppl.succession_planning.md"
+    },
+    {
+      "key": "ppl.people_analytics",
+      "name": "HRIS & People Analytics",
+      "function": "people",
+      "valueStage": "business_operations",
+      "essential": false,
+      "file": "workflows/ppl.people_analytics.md"
+    },
+    {
+      "key": "ppl.immigration_relocation",
+      "name": "Immigration & Relocation",
+      "function": "people",
+      "valueStage": "business_operations",
+      "essential": false,
+      "file": "workflows/ppl.immigration_relocation.md"
+    },
+    {
+      "key": "proc.sourcing_strategy",
+      "name": "Develop Sourcing & Category Strategy",
+      "function": "procurement",
+      "valueStage": "business_operations",
+      "essential": false,
+      "file": "workflows/proc.sourcing_strategy.md"
+    },
+    {
+      "key": "proc.spend_profile_analysis",
+      "name": "Analyze Spend Profile & Sourcing Opportunities",
+      "function": "procurement",
+      "valueStage": "business_operations",
+      "essential": false,
+      "file": "workflows/proc.spend_profile_analysis.md"
+    },
+    {
+      "key": "proc.supplier_selection",
+      "name": "Strategic Sourcing & Supplier Selection",
+      "function": "procurement",
+      "valueStage": "business_operations",
+      "essential": false,
+      "file": "workflows/proc.supplier_selection.md"
+    },
+    {
+      "key": "proc.supplier_qualification",
+      "name": "Supplier Qualification & Risk Assessment",
+      "function": "procurement",
+      "valueStage": "business_operations",
+      "essential": true,
+      "file": "workflows/proc.supplier_qualification.md"
+    },
+    {
+      "key": "proc.contract_negotiation",
+      "name": "Negotiate & Establish Supplier Contracts",
+      "function": "procurement",
+      "valueStage": "business_operations",
+      "essential": false,
+      "file": "workflows/proc.contract_negotiation.md"
+    },
+    {
+      "key": "proc.contract_lifecycle",
+      "name": "Manage Supplier Contract Lifecycle",
+      "function": "procurement",
+      "valueStage": "business_operations",
+      "essential": false,
+      "file": "workflows/proc.contract_lifecycle.md"
+    },
+    {
+      "key": "proc.purchase_requisition",
+      "name": "Purchase Requisition & PO Management",
+      "function": "procurement",
+      "valueStage": "business_operations",
+      "essential": true,
+      "file": "workflows/proc.purchase_requisition.md"
+    },
+    {
+      "key": "proc.requisition_solicit_quotes",
+      "name": "Solicit & Compare Supplier Quotes",
+      "function": "procurement",
+      "valueStage": "business_operations",
+      "essential": false,
+      "file": "workflows/proc.requisition_solicit_quotes.md"
+    },
+    {
+      "key": "proc.invoice_three_way_match",
+      "name": "Invoice & 3-Way Match Reconciliation",
+      "function": "procurement",
+      "valueStage": "business_operations",
+      "essential": true,
+      "file": "workflows/proc.invoice_three_way_match.md"
+    },
+    {
+      "key": "proc.supplier_performance",
+      "name": "Supplier Performance Management",
+      "function": "procurement",
+      "valueStage": "business_operations",
+      "essential": false,
+      "file": "workflows/proc.supplier_performance.md"
+    },
+    {
+      "key": "proc.property_strategy",
+      "name": "Develop Property & Workplace Strategy",
+      "function": "procurement",
+      "valueStage": "business_operations",
+      "essential": false,
+      "file": "workflows/proc.property_strategy.md"
+    },
+    {
+      "key": "proc.lease_management",
+      "name": "Real Estate & Lease Management",
+      "function": "procurement",
+      "valueStage": "business_operations",
+      "essential": false,
+      "file": "workflows/proc.lease_management.md"
+    },
+    {
+      "key": "proc.workspace_provisioning",
+      "name": "Workspace & Facilities Provisioning",
+      "function": "procurement",
+      "valueStage": "business_operations",
+      "essential": false,
+      "file": "workflows/proc.workspace_provisioning.md"
+    },
+    {
+      "key": "proc.asset_lifecycle",
+      "name": "IT Asset & Device Lifecycle Management",
+      "function": "procurement",
+      "valueStage": "business_operations",
+      "essential": true,
+      "file": "workflows/proc.asset_lifecycle.md"
+    },
+    {
+      "key": "rev.sales_strategy",
+      "name": "Develop Sales Strategy",
+      "function": "revenue_gtm",
+      "valueStage": "go_to_market",
+      "essential": false,
+      "file": "workflows/rev.sales_strategy.md"
+    },
+    {
+      "key": "rev.sales_forecast_planning",
+      "name": "Develop Sales Forecast",
+      "function": "revenue_gtm",
+      "valueStage": "go_to_market",
+      "essential": false,
+      "file": "workflows/rev.sales_forecast_planning.md"
+    },
+    {
+      "key": "rev.sales_budget",
+      "name": "Establish Sales Budgets",
+      "function": "revenue_gtm",
+      "valueStage": "go_to_market",
+      "essential": false,
+      "file": "workflows/rev.sales_budget.md"
+    },
+    {
+      "key": "rev.territory_quota_management",
+      "name": "Sales Territory & Quota Management",
+      "function": "revenue_gtm",
+      "valueStage": "go_to_market",
+      "essential": false,
+      "file": "workflows/rev.territory_quota_management.md"
+    },
+    {
+      "key": "rev.sales_compensation",
+      "name": "Sales Compensation & Commissions",
+      "function": "revenue_gtm",
+      "valueStage": "go_to_market",
+      "essential": false,
+      "file": "workflows/rev.sales_compensation.md"
+    },
+    {
+      "key": "rev.opportunity_pipeline_management",
+      "name": "Manage Sales Opportunities & Pipeline",
+      "function": "revenue_gtm",
+      "valueStage": "go_to_market",
+      "essential": true,
+      "file": "workflows/rev.opportunity_pipeline_management.md"
+    },
+    {
+      "key": "rev.key_account_management",
+      "name": "Manage Customers & Key Accounts",
+      "function": "revenue_gtm",
+      "valueStage": "go_to_market",
+      "essential": false,
+      "file": "workflows/rev.key_account_management.md"
+    },
+    {
+      "key": "rev.proposal_development",
+      "name": "Develop Sales Proposals & Bids",
+      "function": "revenue_gtm",
+      "valueStage": "go_to_market",
+      "essential": false,
+      "file": "workflows/rev.proposal_development.md"
+    },
+    {
+      "key": "rev.rfp_response",
+      "name": "RFP / RFQ Response",
+      "function": "revenue_gtm",
+      "valueStage": "go_to_market",
+      "essential": false,
+      "file": "workflows/rev.rfp_response.md"
+    },
+    {
+      "key": "rev.order_management",
+      "name": "Manage Sales Orders & Fulfillment Handoff",
+      "function": "revenue_gtm",
+      "valueStage": "go_to_market",
+      "essential": true,
+      "file": "workflows/rev.order_management.md"
+    },
+    {
+      "key": "rev.contract_renewal_admin",
+      "name": "Contract & Renewal Administration",
+      "function": "revenue_gtm",
+      "valueStage": "go_to_market",
+      "essential": false,
+      "file": "workflows/rev.contract_renewal_admin.md"
+    },
+    {
+      "key": "rev.customer_master_data",
+      "name": "CRM Customer Data Governance",
+      "function": "revenue_gtm",
+      "valueStage": "go_to_market",
+      "essential": false,
+      "file": "workflows/rev.customer_master_data.md"
+    },
+    {
+      "key": "rev.channel_partner_management",
+      "name": "Manage Channel & Reseller Partners",
+      "function": "revenue_gtm",
+      "valueStage": "go_to_market",
+      "essential": false,
+      "file": "workflows/rev.channel_partner_management.md"
+    },
+    {
+      "key": "rev.sales_enablement_training",
+      "name": "Sales Enablement & Rep Onboarding",
+      "function": "revenue_gtm",
+      "valueStage": "go_to_market",
+      "essential": false,
+      "file": "workflows/rev.sales_enablement_training.md"
+    },
+    {
+      "key": "secit.service_desk",
+      "name": "IT Service Desk & Support",
+      "function": "security_it",
+      "valueStage": "business_operations",
+      "essential": true,
+      "file": "workflows/secit.service_desk.md"
+    },
+    {
+      "key": "secit.triage_escalation",
+      "name": "IT Issue Triage & Escalation",
+      "function": "security_it",
+      "valueStage": "business_operations",
+      "essential": true,
+      "file": "workflows/secit.triage_escalation.md"
+    },
+    {
+      "key": "secit.endpoint_management",
+      "name": "Endpoint & Device Management",
+      "function": "security_it",
+      "valueStage": "business_operations",
+      "essential": true,
+      "file": "workflows/secit.endpoint_management.md"
+    },
+    {
+      "key": "secit.backup_recovery",
+      "name": "Data Backup & Recovery",
+      "function": "security_it",
+      "valueStage": "business_operations",
+      "essential": true,
+      "file": "workflows/secit.backup_recovery.md"
+    },
+    {
+      "key": "secit.iam_lifecycle",
+      "name": "Identity & Access Lifecycle",
+      "function": "security_it",
+      "valueStage": "business_operations",
+      "essential": true,
+      "file": "workflows/secit.iam_lifecycle.md"
+    },
+    {
+      "key": "secit.authentication_mechanisms",
+      "name": "Authentication & MFA Management",
+      "function": "security_it",
+      "valueStage": "business_operations",
+      "essential": true,
+      "file": "workflows/secit.authentication_mechanisms.md"
+    },
+    {
+      "key": "secit.saas_provisioning",
+      "name": "SaaS Provisioning & Deprovisioning",
+      "function": "security_it",
+      "valueStage": "business_operations",
+      "essential": false,
+      "file": "workflows/secit.saas_provisioning.md"
+    },
+    {
+      "key": "secit.network_management",
+      "name": "Network Management",
+      "function": "security_it",
+      "valueStage": "business_operations",
+      "essential": false,
+      "file": "workflows/secit.network_management.md"
+    },
+    {
+      "key": "secit.cloud_infra_operations",
+      "name": "Cloud & Infrastructure Operations",
+      "function": "security_it",
+      "valueStage": "business_operations",
+      "essential": false,
+      "file": "workflows/secit.cloud_infra_operations.md"
+    },
+    {
+      "key": "secit.infra_configuration",
+      "name": "Infrastructure Configuration Management",
+      "function": "security_it",
+      "valueStage": "business_operations",
+      "essential": false,
+      "file": "workflows/secit.infra_configuration.md"
+    },
+    {
+      "key": "secit.it_asset_management",
+      "name": "IT Asset Management",
+      "function": "security_it",
+      "valueStage": "business_operations",
+      "essential": false,
+      "file": "workflows/secit.it_asset_management.md"
+    },
+    {
+      "key": "secit.license_management",
+      "name": "Software License Management",
+      "function": "security_it",
+      "valueStage": "business_operations",
+      "essential": false,
+      "file": "workflows/secit.license_management.md"
+    },
+    {
+      "key": "secit.security_operations_monitoring",
+      "name": "Security Operations & Monitoring",
+      "function": "security_it",
+      "valueStage": "business_operations",
+      "essential": false,
+      "file": "workflows/secit.security_operations_monitoring.md"
+    },
+    {
+      "key": "secit.security_incident_response",
+      "name": "Security Incident Response",
+      "function": "security_it",
+      "valueStage": "business_operations",
+      "essential": false,
+      "file": "workflows/secit.security_incident_response.md"
+    },
+    {
+      "key": "secit.problem_management",
+      "name": "Problem Management",
+      "function": "security_it",
+      "valueStage": "business_operations",
+      "essential": false,
+      "file": "workflows/secit.problem_management.md"
+    },
+    {
+      "key": "secit.change_release_control",
+      "name": "IT Change & Release Control",
+      "function": "security_it",
+      "valueStage": "business_operations",
+      "essential": false,
+      "file": "workflows/secit.change_release_control.md"
+    },
+    {
+      "key": "secit.business_continuity_dr",
+      "name": "Business Continuity & Disaster Recovery",
+      "function": "security_it",
+      "valueStage": "business_operations",
+      "essential": false,
+      "file": "workflows/secit.business_continuity_dr.md"
+    },
+    {
+      "key": "secit.it_vendor_management",
+      "name": "IT Vendor & Provider Management",
+      "function": "security_it",
+      "valueStage": "business_operations",
+      "essential": false,
+      "file": "workflows/secit.it_vendor_management.md"
     }
   ]
 }

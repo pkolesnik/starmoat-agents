@@ -1,0 +1,81 @@
+# KPI & Metric Computation  `calc.kpi`
+
+> category: `other`
+
+Compute metrics, ratios, and KPIs from structured inputs.
+
+## How it is applied
+
+This is a reusable capability composed by the agents listed below. Its concrete
+prompt is specialized inside each agent's bespoke runner (the agent tailors the skill
+to its workflow), so it is documented here by capability rather than a single prompt.
+
+## Used by (65 agents)
+- [Pipeline Forecast Agent](../agents/revenue_gtm/pipeline-forecast.md)
+- [Partner & Channel Agent](../agents/revenue_gtm/partner-channel.md)
+- [Health Score Monitor](../agents/customer_success/health-score-monitor.md)
+- [QBR Preparation Agent](../agents/customer_success/qbr-prep.md)
+- [Success Playbook Agent](../agents/customer_success/success-playbook.md)
+- [Burn Rate Monitor](../agents/finance_ops/burn-rate-monitor.md)
+- [Payroll Anomaly Detector](../agents/finance_ops/payroll-anomaly-detector.md)
+- [Cash Flow Forecaster](../agents/finance_ops/cash-flow-forecaster.md)
+- [Cap Table Manager](../agents/finance_ops/cap-table-manager.md)
+- [Sprint Planning Assistant](../agents/engineering/sprint-planning-assistant.md)
+- [Deployment Monitor](../agents/engineering/deployment-monitor.md)
+- [Employee Onboarding Agent](../agents/people/employee-onboarding.md)
+- [Headcount Planning Agent](../agents/people/headcount-planning.md)
+- [Campaign Performance Summarizer](../agents/marketing/campaign-performance.md)
+- [API Cost Tracker](../agents/finance_ops/api-cost-tracker.md)
+- [Board Report Generator](../agents/executive/board-report-generator.md)
+- [OKR Progress Tracker](../agents/executive/okr-tracker.md)
+- [Investor Update Drafter](../agents/executive/investor-update.md)
+- [Compliance Evidence Collector](../agents/legal_compliance/compliance-evidence-collector.md)
+- [SaaS & License Monitor](../agents/security_it/saas-license-monitor.md)
+- [Contract Renewal Tracker](../agents/procurement/contract-renewal-tracker.md)
+- [SaaS Spend Optimizer](../agents/procurement/saas-spend-optimizer.md)
+- [Territory & Quota Planner](../agents/revenue_gtm/territory-quota-planner.md)
+- [Ad Campaign Optimizer](../agents/marketing/ad-campaign-optimizer.md)
+- [On-Call & Escalation Scheduler](../agents/engineering/oncall-scheduler.md)
+- [Test Coverage Monitor](../agents/engineering/test-coverage-monitor.md)
+- [Performance Regression Detector](../agents/engineering/performance-regression-detector.md)
+- [Product Analytics Insights](../agents/engineering/product-analytics-insights.md)
+- [Market Sizing & TAM Analyst](../agents/executive/market-sizing-analyst.md)
+- [AR & Collections Agent](../agents/finance_ops/ar-collections.md)
+- [Budget vs Actual Analyzer](../agents/finance_ops/budget-variance-analyzer.md)
+- [Compensation Benchmarking](../agents/people/comp-benchmarking.md)
+- [Security Awareness Trainer](../agents/security_it/security-awareness-trainer.md)
+- [Backup & DR Monitor](../agents/security_it/backup-dr-monitor.md)
+- [Device Compliance Monitor](../agents/security_it/device-compliance-monitor.md)
+- [Supplier Performance Tracker](../agents/procurement/supplier-performance.md)
+- [Service Channel Strategy Agent](../agents/customer_success/cs-channel-strategy.md)
+- [Service Quality Assurance Agent](../agents/customer_success/cs-quality-assurance.md)
+- [Service Analytics Agent](../agents/customer_success/cs-service-analytics.md)
+- [Service Strategy Agent](../agents/customer_success/cs-service-strategy.md)
+- [Support Workforce Planning Agent](../agents/customer_success/cs-workforce-planning.md)
+- [Capacity and Skills Forecaster Agent](../agents/engineering/eng-capacity-forecaster.md)
+- [Internal Capability & Health Assessment](../agents/executive/exec-internal-assessment.md)
+- [PMO Portfolio & Program Agent](../agents/executive/exec-pmo-portfolio.md)
+- [Process Excellence Agent](../agents/executive/exec-process-excellence.md)
+- [Fixed-Asset & Capex Accounting Agent](../agents/finance_ops/fin-asset-capex-accounting.md)
+- [Budgeting & Forecasting Agent](../agents/finance_ops/fin-budgeting-forecasting.md)
+- [Customer Invoicing & Billing Agent](../agents/finance_ops/fin-customer-invoicing.md)
+- [Debt & Investment Management Agent](../agents/finance_ops/fin-debt-investment.md)
+- [Cost & Profitability Analytics Agent](../agents/finance_ops/fin-profitability-analytics.md)
+- [Tax Management Agent](../agents/finance_ops/fin-tax-management.md)
+- [DEI Program Agent](../agents/people/hr-dei-program.md)
+- [Learning & Career Development Agent](../agents/people/hr-learning-career-development.md)
+- [HRIS & People Analytics Agent](../agents/people/hr-people-analytics.md)
+- [Time & Attendance Agent](../agents/people/hr-time-attendance.md)
+- [IT Asset Management Agent](../agents/security_it/it-asset-management.md)
+- [Cloud & Infrastructure Operations Agent](../agents/security_it/it-cloud-infra-operations.md)
+- [Network Management Agent](../agents/security_it/it-network-management.md)
+- [IT Vendor Management Agent](../agents/security_it/it-vendor-management.md)
+- [Enterprise Risk Agent](../agents/legal_compliance/legal-enterprise-risk.md)
+- [Attribution Modeling Agent](../agents/marketing/mkt-attribution-modeling.md)
+- [Pricing Strategy Agent](../agents/marketing/mkt-pricing-strategy.md)
+- [Workplace & Real Estate Agent](../agents/procurement/proc-workplace-real-estate.md)
+- [Sales Budget Agent](../agents/revenue_gtm/rev-sales-budget.md)
+- [Sales Compensation Agent](../agents/revenue_gtm/rev-sales-compensation.md)
+
+Skills are composable, versioned capabilities. Agents compose skills rather than embedding a monolithic prompt; this is the reusable layer beneath agents.
+
